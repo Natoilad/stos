@@ -82,17 +82,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    // gap: 10px;
     margin-left: auto;
   }
 }
 
 .list-contact__item {
+  margin-bottom: 5px;
+
   @include tablet {
-    margin-bottom: 10px;
   }
   @include desktop {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 }
 

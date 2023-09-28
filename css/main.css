@@ -109,6 +109,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -210,6 +211,7 @@ body {
   height: 50px;
   border-radius: 4px;
   border-color: transparent;
+  margin-bottom: 10px;
 }
 
 .button-nav {
@@ -622,7 +624,7 @@ textarea {
   height: 100%;
   background: var(--color-text-dark-theme);
   opacity: 1;
-  transform: translateY(800px);
+  transform: translateY(-800px);
   pointer-events: none;
   overflow-y: hidden;
 }
@@ -658,8 +660,8 @@ textarea {
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 9px;
   border: none;
   padding: 0;
   line-height: 0;
@@ -826,22 +828,13 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     margin-left: auto;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .list-contact__item {
-    margin-bottom: 10px;
-  }
+.list-contact__item {
+  margin-bottom: 5px;
 }
-@media screen and (min-width: 1200px) {
-  .list-contact__item {
-    margin-bottom: 0;
-  }
-}
-
 .list-contact-link {
   color: var(--primery-text-color);
   font-weight: 500;
@@ -945,7 +938,6 @@ textarea {
   font-size: 26px;
   font-weight: 900;
   line-height: 1.62;
-  margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   letter-spacing: 0.06em;

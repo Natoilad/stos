@@ -42,7 +42,7 @@ button {
   color: var(--brend-color);
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     width: 100%;
@@ -59,7 +59,8 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
   @include font(14px, 400);
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
