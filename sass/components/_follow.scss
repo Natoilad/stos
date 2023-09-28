@@ -1,0 +1,39 @@
+.follow {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @include desktop {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}
+
+.follow__icon-title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-text-dark-theme);
+  margin-bottom: 20px;
+}
+
+.footer-social__icon {
+  fill: #ffffff;
+}
+
+.social-link {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--transition-dur-fun);
+
+  &:hover,
+  &:focus {
+    background-color: var(--brend-color);
+  }
+}

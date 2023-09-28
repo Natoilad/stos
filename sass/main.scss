@@ -1,0 +1,27 @@
+@import "./utils/variables.scss";
+@import "./utils/visually-hidden";
+@import "./utils/./placeholders";
+@import "./utils/mixin";
+
+@import "./base/base";
+@import "./base/section";
+@import "./base/conteiner";
+
+@import "./components/logo";
+@import "./components/button";
+@import "./components/social";
+@import "./components/follow";
+@import "./components/mail-form";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/madal-form";
+@import "./components/mobile-menu";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/technology";
+@import "./layout/prezents";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/project";
+@import "./layout/footer";

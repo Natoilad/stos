@@ -1,0 +1,113 @@
+.hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f303a;
+  text-align: center;
+
+  @include mobile {
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-tablet.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-desktop.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+.brend_color_text {
+  color: var(--brend-color);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-desktop@2x.jpg);
+  }
+}
+
+.hero__title {
+  color: var(--primery-text-color);
+  @include font(26px, 900);
+  line-height: 1.62;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @include tablet {
+    width: 360px;
+  }
+
+  @include desktop {
+    @include font(44px, 900);
+    line-height: 1.36;
+    width: 696px;
+  }
+}
+
+.button_container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.sub_title {
+  margin-bottom: 30px;
+}

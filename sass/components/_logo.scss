@@ -1,0 +1,47 @@
+.logo__part-color {
+  color: var(--brend-color);
+}
+
+.logo-up {
+  font-family: "Raleway";
+  @include font(24px, 700);
+  line-height: 1.16;
+  color: #000000;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-up {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 87px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-up {
+    @include font(26px, 700);
+    line-height: 1.19;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    transition: color var(--transition-dur-fun);
+  }
+}
+
+.logo-down-link {
+  display: inline-block;
+  font-style: normal;
+  font-family: "Raleway";
+  @include font(26px, 700);
+  line-height: 1.14;
+  color: #ffffff;
+  margin-bottom: 20px;
+  transition: color var(--transition-dur-fun);
+
+  &:hover,
+  &:focus {
+    color: var(--brend-color);
+  }
+}

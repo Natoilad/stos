@@ -1,0 +1,52 @@
+.technology {
+  text-align: center;
+  @include tablet {
+    text-align: start;
+  }
+}
+
+.technology-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+}
+
+.technology__icon {
+  @extend%flex-just;
+  align-items: center;
+  box-sizing: border-box;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 120px;
+}
+
+.technology__icon-pick {
+  width: 70px;
+  height: 70px;
+}
+
+.technology-list__item {
+  width: 100%;
+
+  @include tablet {
+    width: 354px;
+  }
+}
+
+.technology__title {
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--primery-text-color);
+}
+
+.technology__paragraph {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
