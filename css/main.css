@@ -893,6 +893,7 @@ textarea {
 }
 
 .hero {
+  padding-top: 75px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
