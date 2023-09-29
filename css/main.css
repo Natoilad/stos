@@ -431,6 +431,7 @@ body {
   transition: opacity var(--transition-dur-fun), visibility var(--transition-dur-fun);
 }
 .backdrop.is-hidden {
+  display: none;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -616,6 +617,7 @@ textarea {
 }
 
 .mobile-menu {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
