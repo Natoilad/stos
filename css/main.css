@@ -696,7 +696,6 @@ textarea {
 .mobile-list-contact {
   display: flex;
   flex-direction: column;
-  margin-bottom: 64px;
   margin-top: auto;
 }
 
@@ -986,6 +985,7 @@ textarea {
 
 .sub_title {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .hero_address_wraper {
@@ -1104,16 +1104,17 @@ textarea {
 }
 
 .team {
-  background-color: #000;
   text-align: center;
-  background-color: #f5f4fa;
-  background-image: url(../images/service_bg_mobile.jpg);
-  background-repeat: no-repeat;
+  background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url(../images/service_bg_mobile.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 1200px) {
   .team {
-    background-image: url(../images/service_bg_desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/service_bg_desktop.jpg);
   }
 }
 

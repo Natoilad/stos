@@ -1,12 +1,21 @@
 .team {
-  background-color: #000;
   text-align: center;
-  background-color: #f5f4fa;
-  background-image: url(../images/service_bg_mobile.jpg);
-  background-repeat: no-repeat;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.7),
+      rgba(47, 48, 58, 0.7)
+    ),
+    url(../images/service_bg_mobile.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   @include desktop {
-    background-image: url(../images/service_bg_desktop.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/service_bg_desktop.jpg);
   }
 }
 
