@@ -1,11 +1,11 @@
 .team {
   text-align: center;
   background-color: #f5f4fa;
-  background: url(../../images/service_bg_mobile.jpg);
+  background-image: url(../images/service_bg_mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   @include desktop {
-    background-image: url(../../images/service_bg_desktop.jpg);
+    background-image: url(../images/service_bg_desktop.jpg);
   }
 }
 
