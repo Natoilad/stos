@@ -1,4 +1,7 @@
 .studio-header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   background-color: #565c5f;
   // border: 1px solid #ececec;
   padding-top: 10px;
