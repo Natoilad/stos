@@ -1,21 +1,28 @@
 .team {
   text-align: center;
   background-color: #f5f4fa;
+  background: url(../../images/service_bg_mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include desktop {
+    background-image: url(../../images/service_bg_desktop.jpg);
+  }
 }
 
 .team-list {
   align-items: center;
+  justify-content: center;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   @include desktop {
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
   }
 }
 
 .team-list__item {
   box-sizing: content-box;
-//   width: 100%;
+  //   width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -34,13 +41,13 @@
 }
 
 .team-list__img {
-    max-width: 100%;
-    @include tablet {
-        max-width: 354px;
-    }
-    @include desktop {
-        max-width: 370px;
-    }
+  max-width: 100%;
+  @include tablet {
+    max-width: 354px;
+  }
+  @include desktop {
+    max-width: 370px;
+  }
 }
 .card {
   padding: 30px 32px;
@@ -59,4 +66,29 @@
   text-align: center;
   margin-bottom: 16px;
   color: var(--secondary-text-color);
+}
+
+.service_link {
+  padding: 10px 0;
+  text-decoration: none;
+  color: #000;
+  &:hover .service_img_container {
+    background-color: var(--brend-color);
+    color: #ffffff;
+  }
+}
+
+.service_img_container {
+  padding: 10px 0;
+  width: 315px;
+  @include tablet {
+    width: 280px;
+  }
+  @include desktop {
+    width: 270px;
+  }
+}
+
+.service_img_title {
+  margin-bottom: 10px;
 }

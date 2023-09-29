@@ -97,14 +97,24 @@
           </button>
           <ul class="mobile-menu-list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link current link" href=".index.html"
-                >Студія</a
+              <a class="mobile-menu__link current link" href="./index.html"
+                >Головна</a
               >
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="mobile-menu__link link" href="#">Послуги</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Ціни</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Відгуки</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Про нас</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Галерея</a>
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="#">Контакти</a>
@@ -121,14 +131,14 @@
             </li>
             <li class="mobile-list-contact__item">
               <a
-                class="mobile-list-contact__link-mail link"
+                class="mobile-list-contact__link-phone link"
                 href="tel:+38(063) 187-48-84"
               >
                 +38(063) 187-48-84</a
               >
             </li>
           </ul>
-          <ul class="mobile-social-list list">
+          <!-- <ul class="mobile-social-list list">
             <li class="mobile-social__item">
               <a class="mobile-social__link current link" href="#">Instagram</a>
             </li>
@@ -141,7 +151,7 @@
             <li class="mobile-social__item">
               <a class="mobile-social__link current link" href="#">Linkedin</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </header>
@@ -160,7 +170,6 @@
             <button
               type="button"
               class="button-active hero-btn button"
-              style="background-color: #fff"
               data-modal-open
             >
               Записатися на сервіс
@@ -168,6 +177,7 @@
             <button
               type="button"
               class="button-active hero-btn button"
+              style="background-color: #ff9800"
               data-modal-open
             >
               Замовити дзвінок
@@ -300,430 +310,155 @@
       <!-- team -->
       <section class="team section">
         <div class="container">
-          <h2 class="team__title">Наша команда</h2>
+          <h2 class="team__title">
+            <span class="brend_color_text">послуги</span> нашого сервісу
+          </h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/team-desktop/ihor-desktop.webp    1x,
-                    ./images/team-desktop/ihor-desktop@2x.webp 2x
-                  "
-                  media="(min-width:1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-desktop/ihor-desktop.jpg    1x,
-                    ./images/team-desktop/ihor-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-mobile/ihor-mobile.webp    1x,
-                    ./images/team-mobile/ihor-mobile@2x.webp 2x
-                  "
-                  media="(max-width:768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-mobile/ihor-mobile.jpg    1x,
-                    ./images/team-mobile/ihor-mobile@2x.jpg 2x
-                  "
-                  media="(max-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-tablet/ihor-tablet.webp    1x,
-                    ./images/team-tablet/ihor-tablet@2x.webp 2x
-                  "
-                  media="(min-width:768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-tablet/ihor-tablet.jpg    1x,
-                    ./images/team-tablet/ihor-tablet@2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-
-                <img
-                  class="team-list__img"
-                  src="./images/team/ihor-mobile.jpg"
-                  alt="Ігор Дем'яненко проджект менеджер"
-                />
-              </picture>
-              <div class="card">
-                <h3 class="team__title-name">Ігор Дем'яненко</h3>
-                <p class="team__paragraph">Product Designer</p>
-                <ul class="social-icon-list list">
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="instagram icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="twitter icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="facebook icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="linkedim icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">малярні роботи</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/paint.png"
+                    alt=""
+                  />
+                </div>
+              </a>
             </li>
             <li class="team-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/team-desktop/olha-desktop.webp    1x,
-                    ./images/team-desktop/olha-desktop@2x.webp 2x
-                  "
-                  media="(min-width:1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-desktop/olha-desktop.jpg    1x,
-                    ./images/team-desktop/olha-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-mobile/olha-mobile.webp    1x,
-                    ./images/team-mobile/olha-mobile@2x.webp 2x
-                  "
-                  media="(max-width:768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-mobile/olha-mobile.jpg    1x,
-                    ./images/team-mobile/olha-mobile@2x.jpg 2x
-                  "
-                  media="(max-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-tablet/olha-tablet.webp    1x,
-                    ./images/team-tablet/olha-tablet@2x.webp 2x
-                  "
-                  media="(min-width:768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-tablet/olha-tablet.jpg    1x,
-                    ./images/team-tablet/olha-tablet@2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-
-                <img
-                  class="team-list__img"
-                  src="./images/team-mobile/olha-mobile.jpg"
-                  alt="Ольга Рєпіна розробник"
-                />
-              </picture>
-
-              <div class="card">
-                <h3 class="team__title-name">Ольга Рєпіна</h3>
-                <p class="team__paragraph">Frontend Developer</p>
-                <ul class="social-icon-list list">
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="instagram icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="twitter icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="facebook icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="linkedim icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">ремонт двигуна</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/engine.png"
+                    alt=""
+                  />
+                </div>
+              </a>
             </li>
             <li class="team-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/team-desktop/mukola-desktop.webp    1x,
-                    ./images/team-desktop/mukola-desktop@2x.webp 2x
-                  "
-                  media="(min-width:1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-desktop/mukola-desktop.jpg    1x,
-                    ./images/team-desktop/mukola-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-mobile/mukola-mobile.webp    1x,
-                    ./images/team-mobile/mukola-mobile@2x.webp 2x
-                  "
-                  media="(max-width:768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-mobile/mukola-mobile.jpg    1x,
-                    ./images/team-mobile/mukola-mobile@2x.jpg 2x
-                  "
-                  media="(max-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-tablet/mukola-tablet.webp    1x,
-                    ./images/team-tablet/mukola-tablet@2x.webp 2x
-                  "
-                  media="(min-width:768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-tablet/mukola-tablet.jpg    1x,
-                    ./images/team-tablet/mukola-tablet@2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-
-                <img
-                  class="team-list__img"
-                  src="./images/team-mobile/mukola-mobile.jpg"
-                  alt="Микола Тарасов маркетолог"
-                />
-              </picture>
-
-              <div class="card">
-                <h3 class="team__title-name">Микола Тарасов</h3>
-                <p class="team__paragraph">Marketing</p>
-                <ul class="social-icon-list list">
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="instagram icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="twitter icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="facebook icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="linkedim icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">кузовний ремонт</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/body.png"
+                    alt=""
+                  />
+                </div>
+              </a>
             </li>
             <li class="team-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/team-desktop/mukhailo-desktop.webp    1x,
-                    ./images/team-desktop/mukhailo-desktop@2x.webp 2x
-                  "
-                  media="(min-width:1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-desktop/mukhailo-desktop.jpg    1x,
-                    ./images/team-desktop/mukhailo-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-mobile/mukhailo-mobile.webp    1x,
-                    ./images/team-mobile/mukhailo-mobile@2x.webp 2x
-                  "
-                  media="(max-width:768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-mobile/mukhailo-mobile.jpg    1x,
-                    ./images/team-mobile/mukhailo-mobile@2x.jpg 2x
-                  "
-                  media="(max-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-tablet/mukhailo-tablet.webp    1x,
-                    ./images/team-tablet/mukhailo-tablet@2x.webp 2x
-                  "
-                  media="(min-width:768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/team-tablet/mukhailo-tablet.jpg    1x,
-                    ./images/team-tablet/mukhailo-tablet@2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-
-                <img
-                  class="team-list__img"
-                  src="./images/team-mobile/mukhailo-mobile.jpg"
-                  alt="Михайло Єрмаков дизайнер"
-                />
-              </picture>
-
-              <div class="card">
-                <h3 class="team__title-name">Михайло Єрмаков</h3>
-                <p class="team__paragraph">UI Designer</p>
-                <ul class="social-icon-list list">
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="instagram icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="twitter icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="facebook icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-link__item">
-                    <a class="social-link" href=""
-                      ><svg
-                        lang="en"
-                        aria-label="linkedim icon"
-                        class="social-link__icon"
-                      >
-                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">ремонт ходової</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/chassis.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="team-list__item">
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">Заміна шин Балансування</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/tires.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="team-list__item">
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">3D розвал сходження</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/disintegration.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="team-list__item">
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">Система зчеплення</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/clutch.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="team-list__item">
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">Рульове управління</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/steering.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="team-list__item">
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">Технічне обслуговування</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/maintenance.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="team-list__item">
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">Заправка кондиціонера</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/conditioner.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="team-list__item">
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">Замовлення автозапчастин</p>
+                  <img
+                    class="service_img"
+                    src="./images/service/auto_parts.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="team-list__item">
+              <a class="service_link" href="#">
+                <div class="service_img_container">
+                  <p class="service_img_title">
+                    Електрика і комп’ютерна діагностика
+                  </p>
+                  <img
+                    class="service_img"
+                    src="./images/service/diagnosis.png"
+                    alt=""
+                  />
+                </div>
+              </a>
             </li>
           </ul>
         </div>

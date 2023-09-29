@@ -24,8 +24,8 @@
 #scrollToTopBtn {
   background-color: var(--brend-color);
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 15px;
+  right: 15px;
   width: 35px;
   height: 35px;
   font-size: 16px;
@@ -280,11 +280,11 @@ body {
 }
 
 .button-active {
-  background-color: var(--brend-color);
+  background-color: #fff;
   transition: background-color var(--transition-dur-fun);
 }
 .button-active:hover, .button-active:focus {
-  background: #188ce8;
+  background: var(--brend-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -442,7 +442,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--color-text-dark-theme);
+  background-color: var(--brend-color);
   padding: 40px;
 }
 @media screen and (min-width: 1200px) {
@@ -642,7 +642,7 @@ textarea {
 
 .mobile-menu__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
@@ -702,15 +702,15 @@ textarea {
 
 .mobile-list-contact__link-phone {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 20px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--brend-color);
+  color: var(--primery-text-color);
 }
 
 @media screen and (max-width: 360px) {
   .mobile-list-contact__link-phone {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .logo-up_icon {
@@ -1000,7 +1000,6 @@ textarea {
   align-items: center;
   box-sizing: border-box;
   border-bottom: 1px solid var(--brend-color);
-  border-radius: 4px;
   margin-bottom: 30px;
   width: 100%;
 }
@@ -1033,12 +1032,8 @@ textarea {
 }
 
 .prezents {
+  display: none;
   padding-top: 0;
-}
-@media screen and (max-width: 1200px) {
-  .prezents {
-    display: none;
-  }
 }
 
 .prezents_title {
@@ -1079,20 +1074,23 @@ textarea {
 .team {
   text-align: center;
   background-color: #f5f4fa;
+  background: url(../../images/service_bg_mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    background-image: url(../../images/service_bg_desktop.jpg);
+  }
 }
 
 .team-list {
   align-items: center;
+  justify-content: center;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1200px) {
-  .team-list {
-    flex-wrap: nowrap;
-  }
-}
-
 .team-list__item {
   box-sizing: content-box;
   background: #ffffff;
@@ -1145,6 +1143,35 @@ textarea {
   text-align: center;
   margin-bottom: 16px;
   color: var(--secondary-text-color);
+}
+
+.service_link {
+  padding: 10px 0;
+  text-decoration: none;
+  color: #000;
+}
+.service_link:hover .service_img_container {
+  background-color: var(--brend-color);
+  color: #ffffff;
+}
+
+.service_img_container {
+  padding: 10px 0;
+  width: 315px;
+}
+@media screen and (min-width: 768px) {
+  .service_img_container {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service_img_container {
+    width: 270px;
+  }
+}
+
+.service_img_title {
+  margin-bottom: 10px;
 }
 
 .customers {
