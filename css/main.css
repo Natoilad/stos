@@ -1088,6 +1088,7 @@ textarea {
 }
 
 .team {
+  background-color: #000;
   text-align: center;
   background-color: #f5f4fa;
   background-image: url(../images/service_bg_mobile.jpg);
