@@ -19,7 +19,7 @@
 
 .mobile-menu-list {
   display: flex;
-  gap: 32px;
+  gap: 5px;
   flex-direction: column;
 }
 
@@ -45,7 +45,7 @@
 .mobile-menu__close-btn {
   position: absolute;
   top: 12px;
-  right: 9px;
+  right: 14px;
   border: none;
   padding: 0;
   line-height: 0;
@@ -55,6 +55,7 @@
 .mobile-menu__close-icon {
   width: 40px;
   height: 40px;
+  scale: 1.5;
   fill: var(--brend-color);
   transition: fill var(--transition-dur-fun);
 
@@ -65,7 +66,7 @@
 }
 
 .mobile-menu {
-  transition: opacity 0.3s, visibility 0.3s, transform 0.5s;
+  transition: opacity 0.7s, visibility 0.7s, transform 0.7s;
 }
 
 .mobile-menu.is-open {
@@ -80,7 +81,7 @@
 
 .mobile-list-contact {
   display: flex;
-  gap: 32px;
+  // gap: 32px;
   flex-direction: column;
   margin-bottom: 64px;
   margin-top: auto;
@@ -128,4 +129,11 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--brend-color);
+}
+
+.mobile-menu__item {
+  margin-bottom: 20px;
+}
+.mobile-list-contact__item {
+  margin-bottom: 10px;
 }

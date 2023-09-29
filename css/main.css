@@ -636,7 +636,7 @@ textarea {
 
 .mobile-menu-list {
   display: flex;
-  gap: 32px;
+  gap: 5px;
   flex-direction: column;
 }
 
@@ -661,7 +661,7 @@ textarea {
 .mobile-menu__close-btn {
   position: absolute;
   top: 12px;
-  right: 9px;
+  right: 14px;
   border: none;
   padding: 0;
   line-height: 0;
@@ -671,6 +671,7 @@ textarea {
 .mobile-menu__close-icon {
   width: 40px;
   height: 40px;
+  scale: 1.5;
   fill: var(--brend-color);
   transition: fill var(--transition-dur-fun);
 }
@@ -679,7 +680,7 @@ textarea {
 }
 
 .mobile-menu {
-  transition: opacity 0.3s, visibility 0.3s, transform 0.5s;
+  transition: opacity 0.7s, visibility 0.7s, transform 0.7s;
 }
 
 .mobile-menu.is-open {
@@ -694,7 +695,6 @@ textarea {
 
 .mobile-list-contact {
   display: flex;
-  gap: 32px;
   flex-direction: column;
   margin-bottom: 64px;
   margin-top: auto;
@@ -744,6 +744,14 @@ textarea {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--brend-color);
+}
+
+.mobile-menu__item {
+  margin-bottom: 20px;
+}
+
+.mobile-list-contact__item {
+  margin-bottom: 10px;
 }
 
 .studio-header {
@@ -872,6 +880,8 @@ textarea {
   background-color: transparent;
   padding: 0;
   line-height: 0;
+  scale: 1.5;
+  margin-right: 5px;
 }
 
 .open-mobile-menu-btn__icon {
@@ -1001,17 +1011,19 @@ textarea {
 
 .technology-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1200px) {
   .technology-list {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 
 .technology__icon {
-  gap: 35px;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -1045,6 +1057,10 @@ textarea {
 .technology__paragraph {
   line-height: 1.71;
   color: var(--secondary-text-color);
+}
+
+.technology__icon__img {
+  margin-bottom: 25px;
 }
 
 .prezents {
@@ -1105,11 +1121,16 @@ textarea {
   align-items: center;
   justify-content: center;
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    gap: 30px;
+  }
 }
 .team-list__item {
   box-sizing: content-box;
+  margin-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1117,6 +1138,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .team-list__item {
     width: calc(100% - 30px)/2;
+    margin-bottom: 0;
   }
 }
 
@@ -1193,6 +1215,7 @@ textarea {
 
 .customers {
   text-align: center;
+  display: none;
 }
 
 .customers-list {
@@ -1387,13 +1410,13 @@ textarea {
 .address-nav-link {
   display: inline-block;
   line-height: 1.71;
-  color: var(--color-text-dark-theme);
+  color: var(--primery-text-color);
 }
 
 .address-link {
   display: inline-block;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
   transition: color var(--transition-dur-fun);
 }
 .address-link:hover, .address-link:focus {

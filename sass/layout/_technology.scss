@@ -7,16 +7,19 @@
 
 .technology-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
   flex-wrap: wrap;
   @include desktop {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 
 .technology__icon {
   @extend%flex-just;
-  gap: 35px;
+  // gap: 35px;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -49,4 +52,8 @@
 .technology__paragraph {
   line-height: 1.71;
   color: var(--secondary-text-color);
+}
+
+.technology__icon__img {
+  margin-bottom: 25px;
 }

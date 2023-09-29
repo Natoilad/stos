@@ -27,7 +27,7 @@
 
   @include desktop {
     width: 231px;
-    text-align:left;
+    text-align: left;
   }
 }
 
@@ -38,13 +38,13 @@
 .address-nav-link {
   display: inline-block;
   line-height: 1.71;
-  color: var(--color-text-dark-theme);
+  color: var(--primery-text-color);
 }
 
 .address-link {
   display: inline-block;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
   transition: color var(--transition-dur-fun);
 
   &:hover,
