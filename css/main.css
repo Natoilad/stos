@@ -947,6 +947,7 @@ textarea {
   }
 }
 .hero__title {
+  margin-top: 15px;
   color: var(--primery-text-color);
   font-size: 26px;
   font-weight: 900;
