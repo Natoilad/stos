@@ -4,7 +4,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--brend-color);
+  background-color: var(--primery-text-color);
   padding: 40px;
   @include desktop {
     width: 528px;
@@ -27,8 +27,10 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--color-text-dark-theme);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: transparent;
+  // background: var(--color-text-dark-theme);
+  border: none;
+  // border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   transform: fill var(--transition-dur-fun);
 }
@@ -40,4 +42,8 @@
   .modal__btn-close:focus & {
     fill: var(--brend-color);
   }
+}
+
+.modal__cta-title {
+  text-transform: uppercase;
 }

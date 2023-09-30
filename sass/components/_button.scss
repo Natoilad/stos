@@ -73,21 +73,27 @@
   height: 50px;
   left: 700px;
   top: 712px;
-  color: var(--color-text-dark-theme);
-  background: #2196f3;
+  color: var(--text-paragraph);
+  background: var(--brend-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
+  &:hover {
+    opacity: 0.7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .button-active {
   background-color: #fff;
+
   // color: var(--color-text-dark-theme);
   transition: background-color var(--transition-dur-fun);
 
   &:hover,
   &:focus {
     background: var(--brend-color);
+    color: var(--text-paragraph);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }

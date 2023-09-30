@@ -273,11 +273,15 @@ body {
   height: 50px;
   left: 700px;
   top: 712px;
-  color: var(--color-text-dark-theme);
-  background: #2196f3;
+  color: var(--text-paragraph);
+  background: var(--brend-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
+}
+.modal__btn-send:hover {
+  opacity: 0.7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-active {
@@ -286,6 +290,7 @@ body {
 }
 .button-active:hover, .button-active:focus {
   background: var(--brend-color);
+  color: var(--text-paragraph);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -444,7 +449,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--brend-color);
+  background-color: var(--primery-text-color);
   padding: 40px;
 }
 @media screen and (min-width: 1200px) {
@@ -468,8 +473,8 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--color-text-dark-theme);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: transparent;
+  border: none;
   padding: 0;
   transform: fill var(--transition-dur-fun);
 }
@@ -479,6 +484,10 @@ body {
 }
 .modal__btn-close:hover .modal__close-icon, .modal__btn-close:focus .modal__close-icon {
   fill: var(--brend-color);
+}
+
+.modal__cta-title {
+  text-transform: uppercase;
 }
 
 .modal__cta-title {
@@ -505,7 +514,6 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  color: var(--primery-text-color);
   outline: none;
   transition: border-color var(--transition-dur-fun);
 }
@@ -1272,9 +1280,9 @@ textarea {
 .service_link:hover .service_img_container {
   background-color: var(--brend-color);
   color: #ffffff;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
 }
 
 .service_img_container {
