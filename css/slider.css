@@ -216,6 +216,15 @@ ul.slick-dots li.slick-active button {
 }
 
 /*media*/
+
+@media (max-width: 1200px) {
+  .slider_container {
+    width: 100%;
+  }
+  .slick-arrow {
+    display: none;
+  }
+}
 @media (max-width: 480px) {
   .testimonials .slick-list.draggable {
     padding: 0 !important;
@@ -241,7 +250,5 @@ ul.slick-dots li.slick-active button {
   .slider_container {
     width: auto;
     position: static;
-    /* right: 0px; */
-    /* margin-right: 0; */
   }
 }

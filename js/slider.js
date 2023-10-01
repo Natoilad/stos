@@ -30,6 +30,10 @@ $(document).ready(function () {
     infinite: false, // Це додано
     responsive: [
       {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        },
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
