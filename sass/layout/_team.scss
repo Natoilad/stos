@@ -48,7 +48,7 @@
 }
 
 .team__title {
-  @include font(36px, 700);
+  @include font(26px, 500);
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
@@ -107,5 +107,6 @@
 }
 
 .service_img_title {
+  @include font(20px, 600);
   margin-bottom: 10px;
 }

@@ -43,17 +43,27 @@
     />
     <link rel="stylesheet" href="./css/slider.css" />
     <!-- slider end -->
+    <!-- fonts -->
 
-    <!-- styles css -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Inter:wght@500&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font end -->
+
+    <!-- styles css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/slider.css" />
   </head>
@@ -179,7 +189,8 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero__title">
-            <span class="brend_color_text">Надійність</span> на дорозі, яку ми
+            <span class="brend_color_text">Надійність</span>
+            <span style="font-weight: 300"> на дорозі, яку ми </span>
             <span class="brend_color_text">гарантуємо</span>
           </h1>
           <div class="sub_title_wraper">
@@ -530,7 +541,9 @@
             </li>
           </ul>
           <p class="testimonials_text">
-            <span class="brend_color_text"> Відгуки</span> наших клієнтів
+            <a class="link" href="#"
+              ><span class="brend_color_text"> Відгуки</span> наших клієнтів</a
+            >
           </p>
         </div>
         <!-- slider -->
@@ -934,7 +947,10 @@
       </form>
     </div>
     <!-- button topup -->
-    <button id="scrollToTopBtn" style="display: none">&#8593;</button>
+    <button id="scrollToTopBtn" style="display: none">
+      <!-- <img class="top_up_img" src="./images/btn_up.svg" alt="" /> -->
+    </button>
+    <!-- &#8593; -->
     <!-- slider -->
     <script src="./js/slider.js"></script>
     <!-- slider end -->

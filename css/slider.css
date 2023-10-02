@@ -48,16 +48,16 @@
   background: #fff;
 }
 .author-quote h4 {
-  font-size: 20px;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Montserrat', Alternates;
   letter-spacing: 0.5px;
 }
 .author-quote {
   text-align: center;
 }
 .author-quote blockquote i {
-  color: #ffbe00;
-  font-size: 22px;
+  color: var(--brend-color);
+  font-size: 14px;
+  font-weight: 400;
   padding: 0 5px;
 }
 .author-quote blockquote {
@@ -213,6 +213,14 @@ ul.slick-dots li.slick-active button {
   bottom: -300px;
   left: 10%;
   font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+}
+.testimonials_text a {
+  color: var(--primery-text-color);
+}
+.testimonials_text a:hover {
+  color: var(--brend-color);
 }
 
 /*media*/
@@ -230,6 +238,7 @@ ul.slick-dots li.slick-active button {
     padding: 0 !important;
   }
   .testimonials_text {
+    color: #fff;
     width: 200px;
     position: static;
     bottom: 0;
