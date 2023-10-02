@@ -1,0 +1,36 @@
+.usa {
+  background-image: url(../images/usa_bg.png);
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f303a;
+  text-align: center;
+
+  background-color: #efefef;
+  color: #000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.usa_plan_wraper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+  height: 490px;
+  border-top-right-radius: 12px !important;
+}
+
+.usa_plan_wraper img {
+  min-height: auto;
+  margin-bottom: 20px;
+}
+.usa_plan_wraper h4 {
+  margin-bottom: 10px;
+  color: var(--brend-color);
+  text-transform: uppercase;
+  @include font(26px, 400);
+}
