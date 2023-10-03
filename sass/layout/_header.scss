@@ -44,7 +44,7 @@
 
 @include tablet {
   .menu-nav__link {
-    @include font(14px, 400);
+    @include font(12px, 400);
     display: inline-block;
     color: var(--primery-text-color);
     font-weight: 500;
@@ -75,6 +75,7 @@
   flex-direction: column;
 
   @include tablet {
+    @include font(14px, 400);
     display: block;
   }
 
