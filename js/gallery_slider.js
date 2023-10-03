@@ -14,6 +14,7 @@ $(document).ready(function () {
           arrows: false, // Вимикаємо стрілки
           slidesToShow: 2,
           slidesToScroll: 1,
+          dots: true,
         },
       },
       {

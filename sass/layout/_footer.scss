@@ -102,6 +102,16 @@
     color: var(--primery-text-color);
   }
 }
+@media (min-width: 320px) and (max-width: 363px) {
+  .mobile_footer_menu {
+    width: 280px;
+  }
+}
+@media (min-width: 450px) and (max-width: 767px) {
+  .mobile_footer_menu {
+    width: 420px;
+  }
+}
 
 .desktop_footer_menu {
   display: none;
