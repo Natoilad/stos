@@ -134,6 +134,7 @@ body {
   }
 }
 .container {
+  box-sizing: border-box;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -638,7 +639,6 @@ textarea {
   width: 100%;
   height: 100%;
   background: var(--color-text-dark-theme);
-  opacity: 1;
   transform: translateY(-1500px);
   pointer-events: none;
   overflow-y: hidden;
@@ -675,7 +675,7 @@ textarea {
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 12px;
+  top: 20px;
   right: 14px;
   border: none;
   padding: 0;
@@ -695,7 +695,7 @@ textarea {
 }
 
 .mobile-menu {
-  transition: opacity 0.7s, visibility 0.7s, transform 0.7s;
+  transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
 }
 
 .mobile-menu.is-open {
@@ -734,6 +734,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .logo-up_icon {
     scale: 1.2;
+    margin-right: 100px;
   }
 }
 
@@ -996,7 +997,7 @@ textarea {
 }
 
 .hero {
-  padding-top: 75px;
+  padding-top: 100px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1039,7 +1040,6 @@ textarea {
   font-size: 26px;
   font-weight: 900;
   line-height: 1.62;
-  margin: 0 auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -1053,7 +1053,6 @@ textarea {
     font-size: 50px;
     font-weight: 900;
     line-height: 1.36;
-    width: 500px;
     text-align: start;
   }
 }
@@ -1083,7 +1082,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .sub_title {
     text-align: start;
-    width: 500px;
     margin-bottom: 80px;
   }
 }
@@ -1155,9 +1153,9 @@ textarea {
   }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1300px) {
   .discount_img_desktop {
-    margin-right: 0px;
+    margin-right: 50px;
   }
 }
 .technology {
@@ -1266,6 +1264,7 @@ textarea {
 }
 
 .team {
+  padding-top: 100px;
   text-align: center;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url(../images/service_bg_mobile.jpg);
@@ -1396,11 +1395,11 @@ textarea {
   align-items: center;
   text-align: center;
   padding: 20px;
-  height: 490px;
 }
 @media screen and (min-width: 1200px) {
   .usa_plan_wraper {
     width: 270px;
+    height: 490px;
   }
 }
 .usa_plan_wraper img {
@@ -1413,6 +1412,14 @@ textarea {
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 400;
+}
+.usa_plan_paragraph {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .usa_plan_paragraph {
+    display: block;
+  }
 }
 .usa_btn_read_more {
   margin-top: 50px;
@@ -1427,6 +1434,15 @@ textarea {
 .usa_btn_read_more:hover {
   opacity: 1;
   color: var(--primery-text-color);
+}
+
+.usa_plan_paragraph {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .usa_plan_paragraph {
+    display: block;
+  }
 }
 
 .gallery {
@@ -1616,7 +1632,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #2f303a;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
   display: block;
   text-align: center;

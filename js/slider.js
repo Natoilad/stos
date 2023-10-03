@@ -26,8 +26,8 @@ $(document).ready(function () {
   $('.testimonials').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: false, // Це змінено на false
-    infinite: true, // Це додано
+    centerMode: false,
+    infinite: true,
     responsive: [
       {
         breakpoint: 1200,

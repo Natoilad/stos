@@ -1,7 +1,7 @@
 $hero-bg-color: rgba(47, 48, 58, 0.4);
 
 .hero {
-  padding-top: 75px;
+  padding-top: 100px;
   background: {
     image: linear-gradient($hero-bg-color, $hero-bg-color),
       url(../images/hero-bg-mobile.jpg);
@@ -53,7 +53,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     color: var(--primery-text-color);
     @include font(26px, 900);
     line-height: 1.62;
-    margin: 0 auto;
+    // margin: 0 auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -64,7 +64,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     @include desktop {
       @include font(50px, 900);
       line-height: 1.36;
-      width: 500px;
+      // width: 500px;
       text-align: start;
     }
   }
@@ -92,7 +92,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 
   @include desktop {
     text-align: start;
-    width: 500px;
+    // width: 500px;
     margin-bottom: 80px;
   }
 
@@ -161,8 +161,8 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1300px) {
   .discount_img_desktop {
-    margin-right: 0px;
+    margin-right: 50px;
   }
 }

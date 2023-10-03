@@ -10,6 +10,13 @@
   refs.closeMenuBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
+    if (refs.menu) {
+      refs.menu.addEventListener('click', event => {
+        if (event.target.classList.contains('mobile-menu__link')) {
+          refs.menu.classList.remove('is-open');
+        }
+      });
+    }
     refs.mobMenu.style.opacity = '1';
     document.body.classList.toggle('modal-open');
     refs.menu.classList.toggle('is-open');
