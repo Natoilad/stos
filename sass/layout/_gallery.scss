@@ -1,0 +1,25 @@
+.gallery {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-image: url(../images/gallery_bg.jpg);
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+    color: #2f303a;
+  }
+  // background-attachment: fixed;
+  text-align: center;
+
+  &_title {
+    @include font(36px, 500);
+    font-style: normal;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+  &_text {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

@@ -1,16 +1,26 @@
 .usa {
-  background-image: url(../images/usa_bg.png);
-  background-size: contain;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #2f303a;
+  background: {
+    image: url(../images/usa_bg.png);
+    size: cover;
+    attachment: fixed;
+    repeat: no-repeat;
+    position: center;
+    color: #2f303a;
+  }
   text-align: center;
-
   background-color: #efefef;
   color: #000;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
+}
+.usa_text_wraper {
+  color: #878787;
+  text-align: start;
+  padding: 20px;
+  h3 {
+    @include font(50px, 500);
+    text-shadow: 0px 0px 1px var(--primery-text-color);
+    margin-bottom: 20px;
+  }
 }
 .usa_plan_wraper {
   box-sizing: border-box;
@@ -19,18 +29,31 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  width: 250px;
   height: 490px;
-  border-top-right-radius: 12px !important;
+  @include desktop {
+    width: 270px;
+  }
+  img {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+  h4 {
+    margin-bottom: 20px;
+    color: var(--brend-color);
+    text-transform: uppercase;
+    @include font(26px, 400);
+  }
 }
-
-.usa_plan_wraper img {
-  min-height: auto;
-  margin-bottom: 20px;
-}
-.usa_plan_wraper h4 {
-  margin-bottom: 10px;
-  color: var(--brend-color);
-  text-transform: uppercase;
-  @include font(26px, 400);
+.usa_btn_read_more {
+  margin-top: 50px;
+  border-radius: 4px;
+  padding: 10px;
+  color: #000;
+  @include font(18px, 600);
+  opacity: 0.9;
+  background-color: var(--brend-color);
+  &:hover {
+    opacity: 1;
+    color: var(--primery-text-color);
+  }
 }

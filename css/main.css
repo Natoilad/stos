@@ -33,6 +33,7 @@
   border: none;
   border-radius: 50%;
   opacity: 0.9;
+  z-index: 99;
 }
 
 #scrollToTopBtn:hover {
@@ -113,7 +114,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat", Alternates;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -628,7 +629,7 @@ textarea {
 }
 
 .mobile-menu {
-  display: none;
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -865,7 +866,7 @@ textarea {
 }
 
 .list-contact__item {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .list-contact-link {
   color: var(--primery-text-color);
@@ -1039,12 +1040,12 @@ textarea {
   backdrop-filter: blur(5px);
   margin: 0 auto;
   margin-bottom: 20px;
-  max-width: 300px;
+  max-width: 400px;
 }
 @media screen and (min-width: 1200px) {
   .hero_address_wraper {
     margin: 20px 0;
-    width: 345px;
+    max-width: 400px;
     height: 120px;
   }
 }
@@ -1219,6 +1220,9 @@ textarea {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/service_bg_desktop.jpg);
   }
 }
+.team .team-list__item {
+  height: 220px;
+}
 
 .team-list {
   align-items: center;
@@ -1236,7 +1240,7 @@ textarea {
   margin-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
 }
 @media screen and (min-width: 768px) {
   .team-list__item {
@@ -1323,7 +1327,7 @@ textarea {
 
 .usa {
   background-image: url(../images/usa_bg.png);
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -1331,8 +1335,19 @@ textarea {
   text-align: center;
   background-color: #efefef;
   color: #000;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
+}
+
+.usa_text_wraper {
+  color: #878787;
+  text-align: start;
+  padding: 20px;
+}
+.usa_text_wraper h3 {
+  font-size: 50px;
+  font-weight: 500;
+  text-shadow: 0px 0px 1px var(--primery-text-color);
+  margin-bottom: 20px;
 }
 
 .usa_plan_wraper {
@@ -1342,22 +1357,61 @@ textarea {
   align-items: center;
   text-align: center;
   padding: 20px;
-  width: 250px;
   height: 490px;
-  border-top-right-radius: 12px !important;
 }
-
+@media screen and (min-width: 1200px) {
+  .usa_plan_wraper {
+    width: 270px;
+  }
+}
 .usa_plan_wraper img {
   min-height: auto;
   margin-bottom: 20px;
 }
-
 .usa_plan_wraper h4 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: var(--brend-color);
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 400;
+}
+
+.usa_btn_read_more {
+  margin-top: 50px;
+  border-radius: 4px;
+  padding: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.9;
+  background-color: var(--brend-color);
+}
+.usa_btn_read_more:hover {
+  opacity: 1;
+  color: var(--primery-text-color);
+}
+
+.gallery {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-image: url(../images/gallery_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f303a;
+  text-align: center;
+}
+.gallery_title {
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.gallery_text {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .customers {
@@ -1518,14 +1572,20 @@ textarea {
 }
 
 .studio-footer {
+  border-top: 10px solid #6c7073;
+  background-image: url(../../images/footer_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
   display: block;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .studio-footer .container {
-    display: flex;
+    text-align: center;
     flex-wrap: wrap;
     gap: 60px;
     column-gap: 165px;
@@ -1534,10 +1594,20 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .studio-footer .container {
-    display: flex;
     align-items: baseline;
     column-gap: normal;
   }
+  .studio-footer .button_container {
+    justify-content: center;
+  }
+}
+.studio-footer h2,
+.studio-footer h3,
+.studio-footer p {
+  margin-bottom: 20px;
+}
+.studio-footer .menu-nav {
+  justify-content: center;
 }
 
 .footer-address {
@@ -1545,9 +1615,15 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .footer-address {
-    width: 231px;
+    display: flex;
+    justify-content: space-between;
     text-align: left;
   }
+}
+
+.footer-address p {
+  text-align: start;
+  margin-bottom: 10px;
 }
 
 .address {

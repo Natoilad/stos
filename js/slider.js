@@ -24,10 +24,10 @@
 
 $(document).ready(function () {
   $('.testimonials').slick({
-    slidesToShow: 3.5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: false, // Це змінено на false
-    infinite: false, // Це додано
+    infinite: true, // Це додано
     responsive: [
       {
         breakpoint: 1200,
