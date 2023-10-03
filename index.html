@@ -41,7 +41,7 @@
       href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/slick.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/slider.css" />
+    <!-- <link rel="stylesheet" href="./css/slider.css" /> -->
     <!-- slider end -->
 
     <!-- fonts -->
@@ -391,7 +391,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">ремонт двигуна</p>
                   <img
-                    class="service_img"
+                    class="service_img engine_img"
                     src="./images/service/engine.png"
                     alt=""
                   />
@@ -545,7 +545,7 @@
                       orci vel dignissim. Nam posuere, magna pellentesque
                       accumsan tincidunt, libero lorem convallis lectus
                       <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link" href="#">читати далі </a>
+                      <a class="testimonial_link link" href="#">читати далі </a>
                     </blockquote>
                   </div>
                 </div>
@@ -564,7 +564,7 @@
                       orci vel dignissim. Nam posuere, magna pellentesque
                       accumsan tincidunt, libero lorem convallis lectus
                       <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link" href="#">читати далі </a>
+                      <a class="testimonial_link link" href="#">читати далі </a>
                     </blockquote>
                   </div>
                 </div>
@@ -583,7 +583,7 @@
                       orci vel dignissim. Nam posuere, magna pellentesque
                       accumsan tincidunt, libero lorem convallis lectus
                       <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link" href="#">читати далі </a>
+                      <a class="testimonial_link link" href="#">читати далі </a>
                     </blockquote>
                   </div>
                 </div>
@@ -602,7 +602,7 @@
                       orci vel dignissim. Nam posuere, magna pellentesque
                       accumsan tincidunt, libero lorem convallis lectus
                       <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link" href="#">читати далі </a>
+                      <a class="testimonial_link link" href="#">читати далі </a>
                     </blockquote>
                   </div>
                 </div>
@@ -621,7 +621,7 @@
                       orci vel dignissim. Nam posuere, magna pellentesque
                       accumsan tincidunt, libero lorem convallis lectus
                       <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link" href="#">читати далі </a>
+                      <a class="testimonial_link link" href="#">читати далі </a>
                     </blockquote>
                   </div>
                 </div>
@@ -843,47 +843,151 @@
             Замовити дзвінок
           </button>
         </div>
-        <nav class="menu-nav">
-          <ul class="menu-nav-list list">
-            <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="./index.html"
-                ><span class="link-active">Головна</span></a
-              >
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#service">Послуги</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#">Ціни</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#testimonials">Відгуки</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#footer">Про нас</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#gallery">Галерея</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#footer">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="footer-address">
-          <div class="hero_address_wraper">
-            <img style="width: 60px" src="./images/map.svg" alt="" />
-            <ul class="list">
-              <li><p>м.Боярка.</p></li>
-              <li>
-                <p>
-                  <a style="color: #fff" class="link" href="#"
-                    >вул Магістральна, 179</a
-                  >
-                </p>
+        <div
+          style="display: flex; flex-direction: column; align-items: center"
+          class="footer_wraper_menu"
+        >
+          <!-- mobile_footer_menu -->
+          <div class="mobile_footer_menu">
+            <ul
+              class="list"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                /* width: 450px; */
+              "
+            >
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="index.html"
+                >
+                  <span class="brend_color_text">головна</span></a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="price.html"
+                  >ціни</a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="about.html"
+                  >про нас</a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="#service"
+                  >послуги</a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="#testimonials"
+                  >відгуки</a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="#gallery"
+                  >галерея</a
+                >
               </li>
             </ul>
           </div>
+
+          <!-- mobile_footer_menu end -->
+
+          <!-- desktop_footer_menu -->
+          <div class="desktop_footer_menu">
+            <ul
+              class="list"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 450px;
+              "
+            >
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="index.html"
+                >
+                  <span class="brend_color_text">головна</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="price.html"
+                  >ціни</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="about.html"
+                  >про нас</a
+                >
+              </li>
+            </ul>
+            <ul
+              class="list"
+              style="
+                display: flex;
+                justify-content: space-between;
+                width: 450px;
+              "
+            >
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="#service"
+                  >послуги</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="#testimonials"
+                  >відгуки</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="#gallery"
+                  >галерея</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- desktop_footer_menu end -->
+        </div>
+
+        <address class="footer-address">
           <div class="hero_address_wraper">
             <img style="width: 40px" src="./images/phone.svg" alt="" />
             <ul class="list-contact list">
@@ -900,6 +1004,20 @@
             </ul>
           </div>
           <div class="hero_address_wraper">
+            <img style="width: 60px" src="./images/map.svg" alt="" />
+            <ul class="list">
+              <li><p>м.Боярка.</p></li>
+              <li>
+                <p>
+                  <a style="color: #fff" class="link" href="#"
+                    >вул Магістральна, 179</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero_address_wraper">
             <img style="width: 40px" src="./images/little_clock.svg" alt="" />
             <ul class="list">
               <li><p>Субота : з 9:00 до 15:00</p></li>
@@ -908,6 +1026,11 @@
             </ul>
           </div>
         </address>
+        <p>
+          <a class="link directory" href="#" target="_blank"
+            >побудувати маршрут</a
+          >
+        </p>
       </div>
     </footer>
     <!-- form -->

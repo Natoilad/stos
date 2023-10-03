@@ -1,15 +1,14 @@
 .team {
   text-align: center;
-  background-color: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.7),
-      rgba(47, 48, 58, 0.7)
-    ),
-    url(../images/service_bg_mobile.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: {
+    color: #2f303a;
+    image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)),
+      url(../images/service_bg_mobile.jpg);
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
+
   @include desktop {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -17,102 +16,93 @@
       ),
       url(../images/service_bg_desktop.jpg);
   }
-  .team-list__item {
-    // height: 220px;
+
+  &__title {
+    @include font(26px, 500);
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet {
+      gap: 30px;
+    }
+
+    &__item {
+      box-sizing: content-box;
+      margin-bottom: 30px;
+      background: #ffffff;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+
+      @include tablet {
+        width: calc(100% - 30px) / 2;
+        margin-bottom: 0;
+      }
+    }
+
+    &__img {
+      max-width: 100%;
+
+      @include tablet {
+        max-width: 354px;
+      }
+
+      @include desktop {
+        max-width: 370px;
+      }
+    }
   }
 }
 
-.team-list {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  @include tablet {
-    gap: 30px;
+.service {
+  &_link {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+
+    &:hover .service_img_container {
+      background-color: var(--brend-color);
+      color: #ffffff;
+      box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+    }
   }
+
+  &_img {
+    min-height: auto !important;
+
+    &_container {
+      box-sizing: border-box;
+      padding: 10px;
+      width: 315px;
+
+      @include tablet {
+        width: 280px;
+      }
+
+      @include desktop {
+        width: 270px;
+        height: 220px;
+      }
+    }
+
+    &_title {
+      @include font(18px, 600);
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.engine_img {
+  margin: 0 auto;
+  scale: 1.5;
   @include desktop {
-    // flex-wrap: nowrap;
+    margin-top: 25px;
   }
-}
-
-.team-list__item {
-  box-sizing: content-box;
-  margin-bottom: 30px;
-  //   width: 100%;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px 4px 4px 4px;
-
-  @include tablet {
-    width: calc(100% - 30px) / 2;
-    margin-bottom: 0;
-  }
-}
-
-.team__title {
-  @include font(26px, 500);
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.team-list__img {
-  max-width: 100%;
-  @include tablet {
-    max-width: 354px;
-  }
-  @include desktop {
-    max-width: 370px;
-  }
-}
-.card {
-  padding: 30px 32px;
-}
-
-.team__title-name {
-  @include font(16px, 500);
-  line-height: 1.19;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.team__paragraph {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-bottom: 16px;
-  color: var(--secondary-text-color);
-}
-
-.service_link {
-  padding: 10px 0;
-  text-decoration: none;
-  color: #000;
-  &:hover .service_img_container {
-    background-color: var(--brend-color);
-    color: #ffffff;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-  }
-}
-.service_img {
-  min-height: auto !important;
-}
-.service_img_container {
-  padding: 10px 0;
-  width: 315px;
-  @include tablet {
-    width: 280px;
-  }
-  @include desktop {
-    width: 270px;
-    height: 220px;
-  }
-}
-
-.service_img_title {
-  @include font(20px, 600);
-  margin-bottom: 10px;
 }

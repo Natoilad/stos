@@ -1,0 +1,88 @@
+$heading-text-color: #231f20;
+$heading-bg-color: #ffbe00;
+$heading-after-bg: #3c377b;
+$arrow-prev: url(../images/arrow_prev.svg);
+$arrow-prev-hover: url(../images/arrow_prew_hover.svg);
+$arrow-next: url(../images/arrow_next.svg);
+$arrow-next-hover: url(../images/arrow_next_hover.svg);
+
+/* ... (попередній код) ... */
+
+.heading {
+  text-align: center;
+  padding: 20px 0;
+  max-width: 750px;
+  margin: 0 auto;
+
+  h2 {
+    position: relative;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    padding: 0 0 10px;
+    color: $heading-text-color;
+
+    &:before {
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 150px;
+      background: $heading-bg-color;
+      left: 0;
+      right: 0;
+      bottom: 1px;
+      margin: auto;
+    }
+    &:after {
+      content: '';
+      height: 3px;
+      width: 50px;
+      background: $heading-after-bg;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0;
+    }
+  }
+
+  p {
+    // color: $primary-color;
+  }
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.slick-prev {
+  background-image: $arrow-prev;
+
+  &:hover {
+    background-image: $arrow-prev-hover;
+  }
+}
+
+.slick-next {
+  background-image: $arrow-next;
+
+  &:hover {
+    background-image: $arrow-next-hover;
+  }
+}
+
+/* ... (налаштування slick-prev та slick-next) ... */
+
+@media (max-width: 1200px) {
+  .slider_container {
+    width: 100%;
+  }
+
+  .slick-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ... (код для мобільних екранів) ... */
+}
