@@ -49,22 +49,24 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   }
 
   &__title {
+    text-align: center;
     margin-top: 15px;
     color: var(--primery-text-color);
     @include font(26px, 900);
     line-height: 1.62;
-    // margin: 0 auto;
+    margin: 0 auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     @include tablet {
+      text-align: center;
       width: 360px;
     }
 
     @include desktop {
       @include font(50px, 900);
       line-height: 1.36;
-      // width: 500px;
+      margin: 0;
       text-align: start;
     }
   }
