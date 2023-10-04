@@ -1,11 +1,9 @@
 .usa {
   background-image: url(../images/usa_bg_mobile.png);
-
-  // background-attachment: fixed;
   background-size: auto;
   background-repeat: unset;
   background-position: bottom;
-  background-color: #efefef; // Цей колір замінює попереднє значення #2f303a
+  background-color: #efefef;
   text-align: center;
   color: #000;
   padding: 100px 0;
@@ -72,9 +70,9 @@
     }
   }
 }
-.usa_plan_paragraph {
-  display: none;
-  @include desktop {
-    display: block;
-  }
-}
+// .usa_plan_paragraph {
+//   display: none;
+//   @include desktop {
+//     display: block;
+//   }
+// }

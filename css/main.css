@@ -1366,16 +1366,8 @@ textarea {
   color: var(--primery-text-color);
 }
 
-.usa_plan_paragraph {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .usa_plan_paragraph {
-    display: block;
-  }
-}
-
 .gallery {
+  border-bottom: 10px solid #6c7073;
   padding-top: 100px;
   padding-bottom: 200px;
   background-image: url(../images/gallery_bg.jpg);
@@ -1460,7 +1452,6 @@ textarea {
 }
 
 .studio-footer {
-  border-top: 10px solid #6c7073;
   background-image: url(../../images/footer_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1590,4 +1581,204 @@ textarea {
 }
 .directory:hover {
   color: var(--primery-text-color);
+}
+
+.usa_cars {
+  padding-top: 100px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f303a;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .usa_cars {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile@2x.jpg);
+    padding: 118px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_desktop.jpg);
+    padding: 150px 50px 50px 50px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .usa_cars {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .usa_cars {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .usa_cars {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_desktop@2x.jpg);
+  }
+}
+.usa_cars__title {
+  width: 240px;
+  box-sizing: border-box;
+  text-align: start;
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 auto;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 140%; /* 42px */
+}
+@media screen and (min-width: 768px) {
+  .usa_cars__title {
+    text-align: center;
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars__title {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.36;
+    margin: 0;
+    text-align: start;
+  }
+}
+.usa_cars_offer_mobile {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primery-text-color);
+  border: 1px solid var(--brend-color);
+  border-radius: 50px;
+  padding: 10px;
+  text-transform: none;
+}
+.usa_cars_form {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  padding: 20px;
+}
+.usa_cars_discount_mobile {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Montserrat;
+}
+.usa_cars_discount_mobile_text {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.usa_cars p {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.usa_cars_delivery {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_bg_mobile.png);
+  background-size: auto;
+  background-repeat: unset;
+  background-position: bottom;
+  background-color: #efefef;
+  text-align: center;
+  color: #000;
+  padding: 100px 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .usa_cars_delivery {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    background-image: url(../images/usa_bg.png);
+  }
+}
+.usa_cars_delivery_title {
+  text-shadow: 0px 0px 10px #ffffff;
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+}
+.usa_cars_delivery-list {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .usa_cars_delivery-list {
+    gap: 30px;
+  }
+}
+.usa_cars_delivery-list__item {
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .usa_cars_delivery-list__item {
+    width: calc(100% - 30px)/2;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars_delivery-list__item {
+    width: calc(100% - 20px)/3;
+  }
+}
+.usa_cars_delivery-list__item p {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars_delivery-list__item p {
+    display: block;
+  }
+}
+.usa_cars_delivery-list__img {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .usa_cars_delivery-list__img {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars_delivery-list__img {
+    max-width: 370px;
+  }
+}
+.usa_cars_delivery_wraper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars_delivery_wraper {
+    width: 270px;
+    height: 490px;
+  }
+}
+.usa_cars_delivery_wraper img {
+  min-height: auto;
+  margin-bottom: 20px;
+}
+.usa_cars_delivery_wraper h4 {
+  margin-bottom: 20px;
+  color: var(--brend-color);
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

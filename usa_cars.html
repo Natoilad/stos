@@ -77,19 +77,25 @@
               >
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#service">Послуги</a>
+              <a class="menu-nav__link link" href="./index.html#service"
+                >Послуги</a
+              >
             </li>
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="price.html">Ціни</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#testimonials">Відгуки</a>
+              <a class="menu-nav__link link" href="./index.html#testimonials"
+                >Відгуки</a
+              >
             </li>
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="about.html">Про нас</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#gallery">Галерея</a>
+              <a class="menu-nav__link link" href="./index.html#gallery"
+                >Галерея</a
+              >
             </li>
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="#footer">Контакти</a>
@@ -126,19 +132,25 @@
               >
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="#service">Послуги</a>
+              <a class="mobile-menu__link link" href="./index.html#service"
+                >Послуги</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="price.html">Ціни</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="#testimonials">Відгуки</a>
+              <a class="mobile-menu__link link" href="./index.html#testimonials"
+                >Відгуки</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="about.html">Про нас</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="#gallery">Галерея</a>
+              <a class="mobile-menu__link link" href="./index.html#gallery"
+                >Галерея</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="#footer">Контакти</a>
@@ -166,465 +178,143 @@
       </div>
     </header>
     <main>
-      <!-- hero -->
-      <section class="hero section">
+      <section class="usa_cars section">
         <div class="container">
-          <h1 class="hero__title">
-            <span class="brend_color_text">Надійність</span>
-            <span style="font-weight: 300"> на дорозі, яку ми </span>
-            <span class="brend_color_text">гарантуємо</span>
+          <h1 class="usa_cars__title brend_color_text">
+            Авто <span class="usa_cars_offer_mobile"> Під Ключ</span> з америки
           </h1>
-          <div class="sub_title_wraper">
-            <ul class="sub_title list">
-              <li>
-                <p>Якісне обслуговування</p>
-              </li>
-              <li>
-                <p>Оперативний ремонт</p>
-              </li>
-              <li>
-                <p>Доступні ціни</p>
-              </li>
-            </ul>
-            <img
-              class="discount_img_desktop"
-              src="./images/discount_desktop.svg"
-              alt=""
-            />
-            <img
-              class="discount_img_mobile"
-              src="./images/discount_mobile.svg"
-              alt=""
-            />
-          </div>
-          <div class="button_container">
-            <button
-              type="button"
-              class="button-active hero-btn button"
-              data-modal-open
-            >
-              Записатися на сервіс
-            </button>
-            <button
-              type="button"
-              class="button-active hero-btn button"
-              style="background-color: #ff9800"
-              data-modal-open
-            >
-              Замовити дзвінок
-            </button>
-          </div>
-          <div class="hero_address_container">
-            <div class="hero_address_wraper">
-              <img style="width: 60px" src="./images/map.svg" alt="" />
-              <p>
-                м.Боярка. <br />
-                вул Магістральна, 179
-              </p>
+          <p>
+            Подайте заявку і отримайте від 5-ти до 10-ти варіантів автомобілів
+          </p>
+          <p style="margin-bottom: 10px">Запит на доставку авто</p>
+          <form class="usa_cars_form">
+            <div class="modal__input-position">
+              <input
+                required
+                class="modal__input-name"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Сергій"
+              />
+              <svg class="modal__icon-input">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
             </div>
-            <div class="hero_address_wraper">
-              <img style="width: 40px" src="./images/little_clock.svg" alt="" />
-              <ul class="list">
-                <li><p>Субота : з 9:00 до 15:00</p></li>
-                <li><p>Пн-Пт: з 9:00 до 18:00</p></li>
-                <li><p>Неділя: Вихідний</p></li>
-              </ul>
+            <div class="modal__input-position">
+              <input
+                required
+                class="modal__input-phone"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                pattern="[0-9]{10}"
+                title="xxxxxxxxxx"
+                placeholder="+380"
+              />
+              <svg class="modal__icon-input">
+                <use href="./images/sprite.svg#icon-phone-form"></use>
+              </svg>
             </div>
-          </div>
+            <textarea
+              class="modal__input-coment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Повідомлення"
+            ></textarea>
+            <div class="centre">
+              <button class="modal__btn-send" type="submit">
+                замовити консультацію
+              </button>
+            </div>
+          </form>
+          <p class="usa_cars_discount_mobile_text">
+            до <span class="usa_cars_discount_mobile">40%</span> економії
+          </p>
         </div>
       </section>
-      <!-- techniligy -->
-      <section class="technology section">
+      <section class="usa_cars_delivery section">
         <div class="container">
-          <h2 class="visually-hidden">Переваги</h2>
-          <ul class="technology-list list">
-            <li class="technology-list__item">
-              <div class="technology__icon">
-                <img
-                  class="technology__icon__img"
-                  src="./images/about/cost.svg"
-                  alt=""
-                />
-                <h3 class="technology__title">конкурентні ціни</h3>
-              </div>
-            </li>
-            <li class="technology-list__item">
-              <div class="technology__icon">
-                <img
-                  class="technology__icon__img"
-                  src="./images/about/seting.svg"
-                  alt=""
-                />
-                <h3 class="technology__title">Сучасне обладнання</h3>
-              </div>
-            </li>
-            <li class="technology-list__item">
-              <div class="technology__icon">
-                <img
-                  class="technology__icon__img"
-                  src="./images/about/clock.svg"
-                  alt=""
-                />
-                <h3 class="technology__title">швидке обслуговування</h3>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- team -->
-      <section id="service" class="team section">
-        <div class="container">
-          <h2 class="team__title">
-            <span class="brend_color_text">послуги</span> нашого сервісу
-          </h2>
-          <ul class="team-list list">
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">малярні роботи</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/paint.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">ремонт двигуна</p>
-                  <img
-                    class="service_img engine_img"
-                    src="./images/service/engine.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">кузовний ремонт</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/body.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">ремонт ходової</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/chassis.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">Заміна шин Балансування</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/tires.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">3D розвал сходження</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/disintegration.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">Система зчеплення</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/clutch.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">Рульове управління</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/steering.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">Технічне обслуговування</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/maintenance.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">Заправка кондиціонера</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/conditioner.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">Замовлення автозапчастин</p>
-                  <img
-                    class="service_img"
-                    src="./images/service/auto_parts.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="team-list__item">
-              <a class="service_link" href="#">
-                <div class="service_img_container">
-                  <p class="service_img_title">
-                    Електрика і комп’ютерна діагностика
-                  </p>
-                  <img
-                    class="service_img"
-                    src="./images/service/diagnosis.png"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div style="padding-top: 100px" id="testimonials">
-            <p id="testimonials" class="testimonials_text">
-              <a class="link" href="#"
-                ><span class="brend_color_text"> Відгуки</span> наших
-                клієнтів</a
+          <h2 class="usa_cars_delivery_title">етапи доставки авто із сша</h2>
+          <ul class="usa_cars_delivery-list list">
+            <li class="usa_cars_delivery-list__item">
+              <div
+                class="usa_cars_delivery_wraper usa_cars_delivery_img_container"
               >
-            </p>
-            <div class="slider_container">
-              <div class="testimonials wow fadeInUp">
-                <div class="testimonial">
-                  <div class="author-img">
-                    <img
-                      src="https://srmahour.github.io/custom-testimonial-slider-and-blog/images/5.jpg"
-                      alt=""
-                      class="img-fluid rounded"
-                    />
-                  </div>
-                  <div class="author-quote">
-                    <h4>Maecenas varius finibus orci vel</h4>
-                    <blockquote>
-                      <i class="fa fa-quote-left"></i> Maecenas varius finibus
-                      orci vel dignissim. Nam posuere, magna pellentesque
-                      accumsan tincidunt, libero lorem convallis lectus
-                      <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link link" href="#">читати далі </a>
-                    </blockquote>
-                  </div>
-                </div>
-                <div class="testimonial">
-                  <div class="author-img">
-                    <img
-                      src="https://srmahour.github.io/custom-testimonial-slider-and-blog/images/4.jpg"
-                      alt=""
-                      class="img-fluid rounded"
-                    />
-                  </div>
-                  <div class="author-quote">
-                    <h4>Maecenas varius finibus orci vel</h4>
-                    <blockquote>
-                      <i class="fa fa-quote-left"></i> Maecenas varius finibus
-                      orci vel dignissim. Nam posuere, magna pellentesque
-                      accumsan tincidunt, libero lorem convallis lectus
-                      <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link link" href="#">читати далі </a>
-                    </blockquote>
-                  </div>
-                </div>
-                <div class="testimonial">
-                  <div class="author-img">
-                    <img
-                      src="https://srmahour.github.io/custom-testimonial-slider-and-blog/images/3.jpg"
-                      alt=""
-                      class="img-fluid rounded"
-                    />
-                  </div>
-                  <div class="author-quote">
-                    <h4>Maecenas varius finibus orci vel</h4>
-                    <blockquote>
-                      <i class="fa fa-quote-left"></i> Maecenas varius finibus
-                      orci vel dignissim. Nam posuere, magna pellentesque
-                      accumsan tincidunt, libero lorem convallis lectus
-                      <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link link" href="#">читати далі </a>
-                    </blockquote>
-                  </div>
-                </div>
-                <div class="testimonial">
-                  <div class="author-img">
-                    <img
-                      src="https://srmahour.github.io/custom-testimonial-slider-and-blog/images/2.jpg"
-                      alt=""
-                      class="img-fluid rounded"
-                    />
-                  </div>
-                  <div class="author-quote">
-                    <h4>Maecenas varius finibus orci vel</h4>
-                    <blockquote>
-                      <i class="fa fa-quote-left"></i> Maecenas varius finibus
-                      orci vel dignissim. Nam posuere, magna pellentesque
-                      accumsan tincidunt, libero lorem convallis lectus
-                      <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link link" href="#">читати далі </a>
-                    </blockquote>
-                  </div>
-                </div>
-                <div class="testimonial">
-                  <div class="author-img">
-                    <img
-                      src="https://srmahour.github.io/custom-testimonial-slider-and-blog/images/1.jpg"
-                      alt=""
-                      class="img-fluid rounded"
-                    />
-                  </div>
-                  <div class="author-quote">
-                    <h4>Maecenas varius finibus orci vel</h4>
-                    <blockquote>
-                      <i class="fa fa-quote-left"></i> Maecenas varius finibus
-                      orci vel dignissim. Nam posuere, magna pellentesque
-                      accumsan tincidunt, libero lorem convallis lectus
-                      <i class="fa fa-quote-right"></i>
-                      <a class="testimonial_link link" href="#">читати далі </a>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- slider end -->
-      </section>
-      <!-- usa -->
-      <section class="usa section">
-        <div class="container">
-          <div class="usa_text_wraper">
-            <h3><span class="brend_color_text"> Авто з Америки</span></h3>
-            <p>Етапи роботи</p>
-          </div>
-
-          <ul style="margin-bottom: 50px" class="team-list list">
-            <li class="team-list__item">
-              <div class="usa_plan_wraper service_img_container">
                 <img src="./images/offer_usa.svg" alt="" />
-                <h4 class="usa_plan_title">Формування замовлення</h4>
-                <p class="usa_plan_paragraph">
+                <h4 class="usa_cars_delivery_title">Формування замовлення</h4>
+                <p class="usa_cars_delivery_paragraph">
                   Ви вказуєте всі необхідні деталі щодо автомобіля, який ви
                   хочете перегнати з США.
                 </p>
               </div>
             </li>
-            <li class="team-list__item">
-              <div class="usa_plan_wraper service_img_container">
-                <img src="./images/check_usa.svg" alt="" />
-                <h4 class="usa_plan_title">перевірка історії авто</h4>
-                <p class="usa_plan_paragraph">
+            <li class="usa_cars_delivery-list__item">
+              <div
+                class="usa_cars_delivery_wraper usa_cars_delivery_img_container"
+              >
+                <img src="./images/car_selection.svg" alt="" />
+                <h4 class="usa_cars_delivery_title">підбір автомобіля</h4>
+                <p class="usa_cars_delivery_paragraph">
+                  Здійснює пошук та відбір автомобілів на аукціонах в США, які
+                  відповідають вашим вимогам і бюджету.
+                </p>
+              </div>
+            </li>
+            <li class="usa_cars_delivery-list__item">
+              <div
+                class="usa_cars_delivery_wraper usa_cars_delivery_img_container"
+              >
+                <img src="./images/checking_history.svg" alt="" />
+                <h4 class="usa_cars_delivery_title">перевірка історії авто</h4>
+                <p class="usa_cars_delivery_paragraph">
                   Наша команда експертів розпочинає детальну перевірку історії
                   автомобіля. Ми надамо вам повну інформацію про авто, щоб ви
                   могли прийняти остаточне рішення
                 </p>
               </div>
             </li>
-            <li class="team-list__item">
-              <div class="usa_plan_wraper service_img_container">
-                <img src="./images/shop_usa.svg" alt="" />
-                <h4 class="usa_plan_title">Купівля автомобіля</h4>
-                <p class="usa_plan_paragraph">
+            <li class="usa_cars_delivery-list__item">
+              <div
+                class="usa_cars_delivery_wraper usa_cars_delivery_img_container"
+              >
+                <img src="./images/buying_car.svg" alt="" />
+                <h4 class="usa_cars_delivery_title">Купівля автомобіля</h4>
+                <p class="usa_cars_delivery_paragraph">
                   Після перевірки історії вибраного автомобіля, наступним кроком
                   є сама купівля.
                 </p>
               </div>
             </li>
-            <li class="team-list__item">
-              <div class="usa_plan_wraper service_img_container">
+            <li class="usa_cars_delivery-list__item">
+              <div
+                class="usa_cars_delivery_wraper usa_cars_delivery_img_container"
+              >
+                <img src="./images/transportation.svg" alt="" />
+                <h4 class="usa_cars_delivery_title">
+                  перевезення за договором
+                </h4>
+                <p class="usa_cars_delivery_paragraph">
+                  Перевезення вантажу за договором з пункту відправки до пункту
+                  отримання
+                </p>
+              </div>
+            </li>
+            <li class="usa_cars_delivery-list__item">
+              <div
+                class="usa_cars_delivery_wraper usa_cars_delivery_img_container"
+              >
                 <img src="./images/delivery_usa.svg" alt="" />
-                <h4 class="usa_plan_title">Доставка автомобіля</h4>
-                <p class="usa_plan_paragraph">
+                <h4 class="usa_cars_delivery_title">Доставка автомобіля</h4>
+                <p class="usa_cars_delivery_paragraph">
                   Митне очищення та передача автомобіля клієнтові з повним
                   пакетом документів
                 </p>
               </div>
             </li>
           </ul>
-          <a class="usa_btn_read_more link" href="usa_cars.html"
-            >Дізнатися більше</a
-          >
         </div>
       </section>
-      <!-- usa end -->
-      <!-- gallery -->
-      <section id="gallery" class="gallery section">
-        <div class="container">
-          <h3 class="gallery_title brend_color_text">галерея</h3>
-          <p class="gallery_text">
-            Яксть та рівень досвіду, які ви можете побачити зараз, перш ніж
-            відвідати нас
-          </p>
-          <div class="my-slider">
-            <div class="gallery_img_wraper">
-              <img src="./images/gallery_img_1.jpg" alt="Image 1" />
-            </div>
-            <div class="gallery_img_wraper">
-              <img src="./images/gallery_img_2.jpg" alt="Image 2" />
-            </div>
-            <div class="gallery_img_wraper">
-              <img src="./images/gallery_img_3.jpg" alt="Image 3" />
-            </div>
-            <div class="gallery_img_wraper">
-              <img src="./images/gallery_img_1.jpg" alt="Image 1" />
-            </div>
-            <div class="gallery_img_wraper">
-              <img src="./images/gallery_img_2.jpg" alt="Image 2" />
-            </div>
-            <div class="gallery_img_wraper">
-              <img src="./images/gallery_img_3.jpg" alt="Image 3" />
-            </div>
-            <!-- Add as many slides as you want -->
-          </div>
-        </div>
-      </section>
-      <!-- gallery end -->
     </main>
     <!-- footer -->
     <footer class="studio-footer" id="footer">
@@ -699,7 +389,7 @@
                 <a
                   class="menu-nav__link link"
                   style="text-transform: uppercase"
-                  href="#service"
+                  href="./index.html#service"
                   >послуги</a
                 >
               </li>
@@ -707,7 +397,7 @@
                 <a
                   class="menu-nav__link link"
                   style="text-transform: uppercase"
-                  href="#testimonials"
+                  href="./index.html#testimonials"
                   >відгуки</a
                 >
               </li>
@@ -715,7 +405,7 @@
                 <a
                   class="menu-nav__link link"
                   style="text-transform: uppercase"
-                  href="#gallery"
+                  href="./index.html#gallery"
                   >галерея</a
                 >
               </li>
