@@ -1326,6 +1326,11 @@ textarea {
   text-align: center;
   padding: 20px;
 }
+@media screen and (min-width: 768px) {
+  .usa_plan_wraper {
+    width: 270px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .usa_plan_wraper {
     width: 270px;
@@ -1718,6 +1723,11 @@ textarea {
     gap: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .usa_cars_delivery-list {
+    gap: 50px;
+  }
+}
 .usa_cars_delivery-list__item {
   box-sizing: content-box;
   margin-bottom: 30px;
@@ -1733,7 +1743,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .usa_cars_delivery-list__item {
-    width: calc(100% - 20px)/3;
+    width: calc(100% - 10px)/3;
   }
 }
 .usa_cars_delivery-list__item p {
@@ -1758,16 +1768,20 @@ textarea {
   }
 }
 .usa_cars_delivery_wraper {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .usa_cars_delivery_wraper {
     width: 270px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars_delivery_wraper {
+    width: 260px;
     height: 490px;
   }
 }
@@ -1781,4 +1795,42 @@ textarea {
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 400;
+}
+.usa_cars_pay {
+  padding: 100px 0;
+  text-align: center;
+  color: #000;
+}
+.usa_cars_pay h3 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.usa_cars_pay_list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .usa_cars_pay_list {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.usa_cars_pay_wraper {
+  max-width: 300px;
+}
+.usa_cars_pay_wraper img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.usa_cars_pay h4 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.usa_cars_pay p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px 0;
 }/*# sourceMappingURL=main.css.map */

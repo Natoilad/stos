@@ -132,6 +132,9 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
       @include tablet {
         gap: 30px;
       }
+      @include desktop {
+        gap: 50px;
+      }
 
       &__item {
         box-sizing: content-box;
@@ -146,7 +149,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
           margin-bottom: 0;
         }
         @include desktop {
-          width: calc(100% - 20px) / 3;
+          width: calc(100% - 10px) / 3;
         }
         p {
           display: none;
@@ -169,14 +172,17 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
       }
     }
     &_wraper {
-      box-sizing: border-box;
+      // box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       padding: 20px;
-      @include desktop {
+      @include tablet {
         width: 270px;
+      }
+      @include desktop {
+        width: 260px;
         height: 490px;
       }
       img {
@@ -192,6 +198,39 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     }
     &_img_container {
       // background-color: rebeccapurple;
+    }
+  }
+  &_pay {
+    padding: 100px 0;
+    text-align: center;
+    color: #000;
+    h3 {
+      @include font(16px, 500);
+      text-transform: uppercase;
+    }
+    &_list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @include tablet {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    }
+    &_wraper {
+      max-width: 300px;
+      img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
+    h4 {
+      @include font(16px, 500);
+      text-transform: uppercase;
+    }
+    p {
+      @include font(16px, 400);
+      margin: 20px 0;
     }
   }
 }
