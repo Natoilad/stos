@@ -72,6 +72,9 @@
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0px);
+  .header-header {
+    backdrop-filter: none !important;
+  }
 }
 
 .current {

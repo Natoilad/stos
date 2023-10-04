@@ -658,6 +658,9 @@ textarea {
   pointer-events: auto;
   transform: translateY(0px);
 }
+.mobile-menu.is-open .header-header {
+  backdrop-filter: none !important;
+}
 
 .current {
   color: var(--brend-color);
@@ -800,7 +803,8 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 999;
-  background-color: rgba(86, 92, 95, 0.95);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
   padding-top: 10px;
   padding-bottom: 16px;
 }
@@ -1597,35 +1601,6 @@ textarea {
   background-color: #2f303a;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .usa_cars {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile@2x.jpg);
-    padding: 118px 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .usa_cars {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_desktop.jpg);
-    padding: 150px 50px 50px 50px;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .usa_cars {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile@2x.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .usa_cars {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile@2x.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .usa_cars {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_desktop@2x.jpg);
-  }
-}
 .usa_cars__title {
   width: 240px;
   box-sizing: border-box;
@@ -1637,7 +1612,7 @@ textarea {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-style: normal;
-  line-height: 140%; /* 42px */
+  line-height: 140%;
 }
 @media screen and (min-width: 768px) {
   .usa_cars__title {
@@ -1683,26 +1658,13 @@ textarea {
   margin-bottom: 40px;
 }
 .usa_cars_delivery {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_bg_mobile.png);
-  background-size: auto;
-  background-repeat: unset;
-  background-position: bottom;
-  background-color: #efefef;
-  text-align: center;
-  color: #000;
   padding: 100px 0;
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .usa_cars_delivery {
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    background-image: url(../images/usa_bg.png);
-  }
+  background-color: #efefef;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_bg_mobile.png);
+  background-repeat: unset;
+  background-position: bottom;
+  color: #000;
 }
 .usa_cars_delivery_title {
   text-shadow: 0px 0px 10px #ffffff;
@@ -1713,15 +1675,11 @@ textarea {
   text-transform: uppercase;
 }
 .usa_cars_delivery-list {
-  align-items: center;
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-}
-@media screen and (min-width: 768px) {
-  .usa_cars_delivery-list {
-    gap: 30px;
-  }
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .usa_cars_delivery-list {
@@ -1731,7 +1689,7 @@ textarea {
 .usa_cars_delivery-list__item {
   box-sizing: content-box;
   margin-bottom: 30px;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
@@ -1833,4 +1791,28 @@ textarea {
   font-size: 16px;
   font-weight: 400;
   margin: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .usa_cars {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile@2x.jpg);
+    padding: 118px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_desktop.jpg);
+    padding: 150px 50px 50px 50px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .usa_cars {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .usa_cars {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_desktop@2x.jpg);
+  }
 }/*# sourceMappingURL=main.css.map */
