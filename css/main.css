@@ -803,7 +803,7 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   padding-top: 10px;
   padding-bottom: 16px;
@@ -1630,6 +1630,8 @@ textarea {
   }
 }
 .usa_cars_offer_mobile {
+  position: relative;
+  top: -5px;
   font-size: 14px;
   font-weight: 400;
   color: var(--primery-text-color);
@@ -1766,8 +1768,10 @@ textarea {
 }
 .usa_cars_pay_list {
   display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
   flex-direction: column;
-  gap: 30px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   .usa_cars_pay_list {
@@ -1776,7 +1780,21 @@ textarea {
   }
 }
 .usa_cars_pay_wraper {
-  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--brend-color);
+  box-sizing: border-box;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars_pay_wraper {
+    flex-direction: row;
+    width: 540px;
+  }
 }
 .usa_cars_pay_wraper img {
   margin: 0 auto;
@@ -1787,9 +1805,25 @@ textarea {
   font-weight: 500;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .usa_cars_pay h4 {
+    width: 340px;
+  }
+}
 .usa_cars_pay p {
   font-size: 16px;
   font-weight: 400;
+  margin: 20px 0 50px 0;
+}
+.usa_cars_pay_alert {
+  padding: 10px;
+  background-color: #00193e;
+}
+.usa_cars_pay_alert p {
+  color: var(--primery-text-color);
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: normal;
   margin: 20px 0;
 }
 @media screen and (min-width: 768px) {
@@ -1815,4 +1849,9 @@ textarea {
   .usa_cars {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_desktop@2x.jpg);
   }
+}
+
+.case {
+  padding: 100px 0;
+  background-color: rgba(239, 239, 239, 0.4);
 }/*# sourceMappingURL=main.css.map */

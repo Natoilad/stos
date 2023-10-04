@@ -38,6 +38,8 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   }
 
   &_offer_mobile {
+    position: relative;
+    top: -5px;
     @include font(14px, 400);
     color: var(--primery-text-color);
     border: 1px solid var(--brend-color);
@@ -178,8 +180,10 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 
     &_list {
       display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
       flex-direction: column;
-      gap: 30px;
+      margin-bottom: 50px;
 
       @include tablet {
         flex-direction: row;
@@ -188,8 +192,19 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     }
 
     &_wraper {
-      max-width: 300px;
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 4px;
+      border: 1px solid var(--brend-color);
+      box-sizing: border-box;
+      gap: 20px;
+      width: 100%;
+      padding: 20px;
+      @include desktop {
+        flex-direction: row;
+        width: 540px;
+      }
       img {
         margin: 0 auto;
         margin-bottom: 20px;
@@ -199,11 +214,25 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     h4 {
       @include font(16px, 500);
       text-transform: uppercase;
+      @include desktop {
+        width: 340px;
+      }
     }
 
     p {
       @include font(16px, 400);
-      margin: 20px 0;
+      margin: 20px 0 50px 0;
+    }
+    &_alert {
+      padding: 10px;
+      background-color: #00193e;
+      p {
+        color: var(--primery-text-color);
+        text-transform: uppercase;
+        font-style: normal;
+        line-height: normal;
+        margin: 20px 0;
+      }
     }
   }
 
