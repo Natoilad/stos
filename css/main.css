@@ -59,6 +59,10 @@
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -599,7 +603,8 @@ textarea {
   z-index: 99;
   width: 100%;
   height: 100%;
-  background: var(--color-text-dark-theme);
+  background: rgba(86, 92, 95, 0.95);
+  backdrop-filter: blur(10px);
   transform: translateY(-1500px);
   pointer-events: none;
   overflow-y: hidden;
@@ -806,12 +811,11 @@ textarea {
   /* ... (код для мобільних екранів) ... */
 }
 .vivat-header {
+  background: rgba(0, 25, 62, 0.2);
+  backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  background: transparent;
   padding-top: 10px;
   padding-bottom: 16px;
 }
@@ -1034,7 +1038,7 @@ textarea {
 
 .button_container {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
@@ -1194,7 +1198,7 @@ textarea {
   margin-bottom: 25px;
 }
 
-.team {
+.service_section {
   padding-top: 100px;
   text-align: center;
   background-color: #2f303a;
@@ -1204,28 +1208,28 @@ textarea {
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 1200px) {
-  .team {
+  .service_section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/service_bg_desktop.jpg);
   }
 }
-.team__title {
+.service_section__title {
   font-size: 26px;
   font-weight: 500;
   line-height: 1.16;
   margin-bottom: 50px;
 }
-.team-list {
+.service_section-list {
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
-  .team-list {
+  .service_section-list {
     gap: 30px;
   }
 }
-.team-list__item {
+.service_section-list__item {
   box-sizing: content-box;
   margin-bottom: 30px;
   background: #ffffff;
@@ -1233,21 +1237,21 @@ textarea {
   border-radius: 4px;
 }
 @media screen and (min-width: 768px) {
-  .team-list__item {
+  .service_section-list__item {
     width: calc(100% - 30px)/2;
     margin-bottom: 0;
   }
 }
-.team-list__img {
+.service_section-list__img {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .team-list__img {
+  .service_section-list__img {
     max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .team-list__img {
+  .service_section-list__img {
     max-width: 370px;
   }
 }
@@ -1299,7 +1303,7 @@ textarea {
 }
 
 .usa {
-  background-image: url(../images/usa_bg_mobile.png);
+  background: url(../images/usa_bg_mobile.png);
   background-size: auto;
   background-repeat: unset;
   background-position: bottom;
@@ -1310,13 +1314,11 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .usa {
-    background-attachment: fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/usa_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    background-image: url(../images/usa_bg.png);
+    background-attachment: fixed;
   }
 }
 .usa_text_wraper {
@@ -1661,6 +1663,10 @@ textarea {
     text-align: start;
   }
 }
+.usa_cars__title_wraper {
+  display: flex;
+  align-items: flex-end;
+}
 .usa_cars_offer_mobile {
   position: relative;
   top: -5px;
@@ -1675,6 +1681,23 @@ textarea {
 @media screen and (min-width: 1200px) {
   .usa_cars_offer_mobile {
     display: none;
+  }
+}
+.usa_cars_offer_mobile_desktop {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .usa_cars_offer_mobile_desktop {
+    text-transform: uppercase;
+    position: relative;
+    top: -15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primery-text-color);
+    border: 1px solid var(--brend-color);
+    border-radius: 50px;
+    padding: 10px;
+    display: block;
   }
 }
 .usa_cars_form {
@@ -1741,8 +1764,7 @@ textarea {
 .usa_cars_delivery {
   padding: 100px 0;
   text-align: center;
-  background-color: #efefef;
-  background-image: url(../images/usa_bg_mobile.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/usa_bg.png);
   background-repeat: no-repeat;
   background-position: center;
   color: #000;

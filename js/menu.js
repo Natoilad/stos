@@ -22,7 +22,7 @@
 
     // Set the backdrop-filter property based on the presence of the is-open class
     refs.header.style.backdropFilter = refs.menu.classList.contains('is-open')
-      ? 'blur(5px)'
+      ? 'blur(10px)'
       : 'none';
 
     document.body.classList.toggle('modal-open');
