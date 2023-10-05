@@ -1853,5 +1853,115 @@ textarea {
 
 .case {
   padding: 100px 0;
-  background-color: rgba(239, 239, 239, 0.4);
+  background-color: #efefef;
+}
+.case_list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  .case_list {
+    justify-content: space-between;
+  }
+}
+.case_wraper {
+  box-sizing: border-box;
+  max-width: 300px;
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.case_wraper_sub_title,
+.case_wraper h4 {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%; /* 36.4px */
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .case_wraper_sub_title,
+  .case_wraper h4 {
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%; /* 36.4px */
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 350px) {
+  .case_wraper {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .case_wraper {
+    max-width: 360px;
+  }
+}
+.case_wraper_total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-top: 1px solid var(--brend-color);
+  color: #00193e;
+}
+.case_wraper_total_hidden {
+  text-align: start;
+  padding: 10px;
+  visibility: hidden;
+  color: #878787;
+}
+.case_wraper_table {
+  width: 100%;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (min-width: 1200px) {
+  .case_wraper_table {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+.case_wraper_table_td1 {
+  color: #878787;
+  padding: 5px 10px;
+  padding-left: 0;
+  padding-right: 50px;
+}
+.case_wraper_table_td2 {
+  color: #00193e;
+  padding: 5px 10px;
+  text-align: start;
+}
+.case ul.slick-dots {
+  position: relative;
+  top: -40px;
+  z-index: 999;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.case ul.slick-dots li button {
+  border: none;
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+.case ul.slick-dots li.slick-active button {
+  background: var(--brend-color);
+  scale: 1.1;
+}
+.case .slick-slide img {
+  width: 100%;
+  min-height: 285px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
