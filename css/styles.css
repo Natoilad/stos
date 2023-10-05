@@ -3,7 +3,7 @@
   --primery-text-color: #212121;
   --secondary-text-color: #757575;
   --color-text-dark-theme: #ffffff;
-  --text-paragraph: "Roboto", sans-serif;
+  --text-paragraph: 'Roboto', sans-serif;
   --color-icon: #afb1b8;
   --transition-dur-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -77,7 +77,7 @@ button {
   padding-bottom: 94px;
 }
 
-.studio-header .container {
+.vivat-header .container {
   display: flex;
   align-items: center;
 }
@@ -109,7 +109,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -118,7 +118,7 @@ body {
 
 /* header */
 
-.studio-header {
+.vivat-header {
   border: 1px solid #ececec;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .logo-up {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -164,9 +164,9 @@ body {
 }
 
 .address-link:hover,
-.studio-header a:hover,
+.vivat-header a:hover,
 .address-link:focus,
-.studio-header a:focus,
+.vivat-header a:focus,
 .logo-down-link:hover,
 .logo-down-link:focus {
   color: var(--brend-color);
@@ -179,7 +179,7 @@ body {
 }
 
 .link-active::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 100%;
@@ -223,7 +223,7 @@ body {
 }
 
 .hero-btn {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -579,13 +579,13 @@ body {
 
 /* footer */
 
-.studio-footer {
+.vivat-footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.studio-footer .container {
+.vivat-footer .container {
   display: flex;
   align-items: baseline;
 }
@@ -601,7 +601,7 @@ body {
 .logo-down-link {
   display: inline-block;
   font-style: normal;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.14;
@@ -856,7 +856,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   margin-bottom: 30px;
   font-weight: 400;
@@ -867,7 +867,7 @@ textarea {
 }
 
 .checkbox-title {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

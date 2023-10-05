@@ -1,7 +1,7 @@
 $hero-bg-color: rgba(47, 48, 58, 0.4);
 
 .usa_cars {
-  padding-top: 100px;
+  padding: 100px 0;
   background: {
     image: linear-gradient($hero-bg-color, $hero-bg-color),
       url(../images/usa_hero_bg_mobile.jpg);
@@ -11,6 +11,27 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     color: #2f303a;
   }
   text-align: center;
+  p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    @include tablet {
+      width: 90%;
+    }
+    @include desktop {
+      width: 100%;
+      max-width: 450px;
+      text-align: start;
+      font-style: normal;
+      line-height: normal;
+    }
+  }
+  .container {
+    @include tablet {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
 
   &__title {
     width: 240px;
@@ -46,13 +67,39 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     border-radius: 50px;
     padding: 10px;
     text-transform: none;
+    @include desktop {
+      display: none;
+    }
   }
 
   &_form {
+    box-sizing: border-box;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
     padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    @include mobile {
+      // width: 322;
+    }
+    @include tablet {
+      width: 340px;
+      padding: 30px;
+    }
+    &_wrapper {
+      padding: 20px;
+      text-align: center;
+    }
+    &_text {
+      font-size: 16px;
+      margin-bottom: 10px !important;
+      text-transform: uppercase;
+      @include tablet {
+        font-size: 26px;
+        margin-bottom: 30px !important;
+      }
+    }
   }
 
   &_discount_mobile {
@@ -62,26 +109,44 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     &_text {
       font-weight: 400;
       text-transform: uppercase;
-    }
-  }
+      @include tablet {
+        display: none;
+      }
 
-  p {
-    margin-top: 10px;
-    margin-bottom: 40px;
+      &_desktop {
+        display: none;
+        @include font(26px, 500);
+        font-style: normal;
+        line-height: 140%;
+        text-transform: uppercase;
+        @include desktop {
+          display: block;
+        }
+
+        span {
+          @include font(50px, 600);
+        }
+      }
+    }
   }
 
   &_delivery {
     padding: 100px 0;
     text-align: center;
     background-color: #efefef;
-    background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-      url(../images/usa_bg_mobile.png);
-    background-repeat: unset;
-    background-position: bottom;
+    background-image: url(../images/usa_bg_mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
     color: #000;
+    @include desktop {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
 
     &_title {
-      text-shadow: 0px 0px 10px #ffffff;
+      // text-shadow: 0px 0px 10px #ffffff;
       margin-bottom: 50px;
       @include font(18px, 600);
       color: black;
@@ -189,6 +254,10 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
         flex-direction: row;
         justify-content: space-evenly;
       }
+      &_item {
+        // width: 100%;
+      }
+      // @include
     }
 
     &_wraper {
@@ -245,7 +314,8 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   @include desktop {
     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
       url(../images/usa_hero_bg_desktop.jpg);
-    padding: 150px 50px 50px 50px;
+    // padding: 150px 50px 50px 50px;
+    padding-bottom: 150px;
     max-width: 1600px;
     margin: 0 auto;
   }
@@ -255,7 +325,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     screen and (min-resolution: 2dppx) {
     @include tablet {
       background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-        url(../images/usa_hero_bg_mobile@2x.jpg);
+        url(../images/usa_hero_bg_desktop@2x.jpg);
     }
 
     @include desktop {

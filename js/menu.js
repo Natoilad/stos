@@ -4,7 +4,7 @@
     closeMenuBtn: document.querySelector('[data-menu-close]'),
     menu: document.querySelector('[data-menu]'),
     mobMenu: document.querySelector('.mobile-menu'),
-    header: document.querySelector('.studio-header'),
+    header: document.querySelector('.vivat-header'),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleModal);
@@ -36,7 +36,7 @@
 //     closeMenuBtn: document.querySelector('[data-menu-close]'),
 //     menu: document.querySelector('[data-menu]'),
 //     mobMenu: document.querySelector('.mobile-menu'),
-//     header: document.querySelector('.studio-header'),
+//     header: document.querySelector('.vivat-header'),
 //   };
 
 //   refs.openMenuBtn.addEventListener('click', toggleModal);
