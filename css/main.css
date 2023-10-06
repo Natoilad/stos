@@ -2178,4 +2178,26 @@ textarea {
   width: 100%;
   min-height: 285px;
   margin: 0 auto;
+}
+
+.price {
+  text-align: center;
+  background-image: url(../images/price_bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f303a;
+}
+.price_title {
+  margin-top: 250px;
+  font-size: 50px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.price p {
+  font-style: normal;
+  line-height: normal;
 }/*# sourceMappingURL=main.css.map */

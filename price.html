@@ -61,6 +61,32 @@
 
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/slider.css" />
+    <style>
+      .accordion-item {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+
+      .accordion-item__header {
+        margin: 0;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0 15px;
+      }
+
+      .accordion-item.active .accordion-content {
+        max-height: 500px;
+        /* ви можете встановити максимальну висоту відповідно до своїх потреб */
+        padding: 15px 0;
+      }
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -184,7 +210,78 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="price section">
+        <div class="container">
+          <h1 class="price_title brend_color_text">ціни</h1>
+          <p>Які задовольнять кожгого клієнта</p>
+        </div>
+      </section>
+      <section class="price_accordion section">
+        <div class="container">
+          <div class="accordion">
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header" style="color: #000">
+                  Діагностика автомобіля
+                </p>
+              </div>
+              <div class="accordion-content">
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+              </div>
+            </div>
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header" style="color: #000">
+                  Діагностика автомобіля
+                </p>
+              </div>
+              <div class="accordion-content">
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+                <p style="color: #000">Це вміст для акордеона.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer -->
     <footer class="vivat-footer" id="footer">
       <div class="container">
@@ -513,5 +610,23 @@
     <script src="./js/totop.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let accordionTriggers = document.querySelectorAll(
+          '[data-role="trigger"]'
+        );
+
+        accordionTriggers.forEach(function (trigger) {
+          trigger.addEventListener('click', function () {
+            let parent = trigger.closest('.accordion-item');
+            if (parent.classList.contains('active')) {
+              parent.classList.remove('active');
+            } else {
+              parent.classList.add('active');
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

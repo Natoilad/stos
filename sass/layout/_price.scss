@@ -1,0 +1,24 @@
+.price {
+  //   padding-top: 0px;
+  //   padding-bottom: 200px;
+  text-align: center;
+  background: {
+    image: url(../images/price_bg.jpeg);
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+    color: #2f303a;
+  }
+  &_title {
+    margin-top: 250px;
+    @include font(50px, 600);
+    font-style: normal;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  p {
+    font-style: normal;
+    line-height: normal;
+  }
+}
