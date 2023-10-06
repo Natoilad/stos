@@ -48,7 +48,7 @@
   width: 50px;
 }
 
-.customer-link-icon, .customers-icon, .technology__icon, .polity, .modal__btn-close, .button-nav {
+.technology__icon, .polity, .modal__btn-close, .button-nav {
   display: flex;
   justify-content: center;
 }
@@ -138,8 +138,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 .container {
@@ -603,7 +603,7 @@ textarea {
   z-index: 99;
   width: 100%;
   height: 100%;
-  background: rgba(86, 92, 95, 0.95);
+  background: rgb(86, 92, 95);
   backdrop-filter: blur(10px);
   transform: translateY(-1500px);
   pointer-events: none;
@@ -811,7 +811,7 @@ textarea {
   /* ... (код для мобільних екранів) ... */
 }
 .vivat-header {
-  background: rgba(0, 25, 62, 0.2);
+  background: rgba(0, 25, 62, 0.3);
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
@@ -1199,7 +1199,6 @@ textarea {
 }
 
 .service_section {
-  padding-top: 100px;
   text-align: center;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url(../images/service_bg_mobile.jpg);
@@ -1310,7 +1309,6 @@ textarea {
   background-color: #efefef;
   text-align: center;
   color: #000;
-  padding: 100px 0;
 }
 @media screen and (min-width: 768px) {
   .usa {
@@ -1387,7 +1385,6 @@ textarea {
 
 .gallery {
   border-bottom: 10px solid #6c7073;
-  padding-top: 100px;
   padding-bottom: 200px;
   background-image: url(../images/gallery_bg.jpg);
   background-size: cover;
@@ -1409,65 +1406,174 @@ textarea {
   margin-bottom: 20px;
 }
 
-.customers {
+.about {
+  padding-bottom: 60px;
+  background-image: url(../images/about_bg_desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f303a;
   text-align: center;
-  display: none;
 }
-
-.customers-list {
+.about h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 140%; /* 70px */
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .about h1 {
+    text-align: start;
+    font-size: 50px;
+    font-weight: 600;
+    /* ЗАГОЛОВОК */
+  }
+}
+.about p {
+  font-style: normal;
+  line-height: normal;
+}
+@media screen and (min-width: 1200px) {
+  .about p {
+    max-width: 500px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about_title_wraper {
+    width: 50%;
+    margin-bottom: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about_title_wraper_text {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 200px;
+  }
+}
+.about_title_wraper_text p {
+  width: 100%;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 20px;
+  padding-right: 0;
+  border-left: 1px solid var(--brend-color);
+}
+@media screen and (min-width: 1200px) {
+  .about_description .container {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+  }
+}
+.about_description_img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .about_description_img {
+    margin-right: 60px;
+  }
+}
+.about_description_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about_description p {
+  color: #00193e;
+  text-align: center;
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .about_description p {
+    text-align: start;
+    font-size: 26px;
+    font-weight: 500;
+  }
+}
+.about_difference {
+  padding-bottom: 60px;
+  text-align: center;
+  background-image: url(../images/difference.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f303a;
+}
+.about_difference_wraper {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .about_difference_wraper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 470px;
+    text-align: start;
+    gap: 30px;
+  }
+}
+.about_difference h2 {
+  margin-bottom: 30px;
+  color: #00193e;
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 1px solid var(--brend-color);
+}
+@media screen and (min-width: 1200px) {
+  .about_difference h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+}
+.about_difference_list {
+  color: #00193e;
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.about_difference_list img {
+  margin-bottom: 20px;
+}
+.about_difference_list h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
-  .customers-list {
-    flex-wrap: nowrap;
+  .about_difference_list h3 {
+    text-align: start;
   }
 }
-
-.customers-list-item {
-  box-sizing: border-box;
-  background-color: #fff;
-  width: calc((100% - 30px) / 2);
-}
-@media screen and (min-width: 768px) {
-  .customers-list-item {
-    width: 226px;
-  }
-}
-
-.customers-icon {
-  align-items: center;
-  fill: #afb1b8;
-  transition: fill var(--transition-dur-fun);
-}
-.customer-link-icon:hover .customers-icon, .customer-link-icon:focus .customers-icon {
-  fill: var(--brend-color);
-}
-
-.customers-icon-border {
-  width: 106px;
-  height: 60px;
-}
-
-.customer-link-icon {
-  align-items: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  background-color: #fff;
-  transition: border var(--transition-dur-fun);
-}
-.customer-link-icon:hover, .customer-link-icon:focus {
-  border: 1px solid var(--brend-color);
-}
-@media screen and (min-width: 1200px) {
-  .customer-link-icon {
-    width: 170px;
-  }
+.about_bonus {
+  text-align: center;
+  color: #000;
 }
 
 .vivat-footer {
@@ -1603,7 +1709,6 @@ textarea {
 }
 
 .usa_cars {
-  padding: 100px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/usa_hero_bg_mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1762,7 +1867,6 @@ textarea {
   font-weight: 600;
 }
 .usa_cars_delivery {
-  padding: 100px 0;
   text-align: center;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/usa_bg.png);
   background-repeat: no-repeat;
@@ -1865,7 +1969,6 @@ textarea {
   font-weight: 400;
 }
 .usa_cars_pay {
-  padding: 100px 0;
   text-align: center;
   color: #000;
 }
@@ -1960,7 +2063,6 @@ textarea {
 }
 
 .case {
-  padding: 100px 0;
   background-color: #efefef;
 }
 .case_list {
