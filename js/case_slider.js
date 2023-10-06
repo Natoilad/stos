@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('.my-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true, // Вмикаємо стрілки за замовчуванням
+    arrows: false, // Вмикаємо стрілки за замовчуванням
     centerMode: false,
     infinite: true,
     adaptiveHeight: true,
