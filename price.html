@@ -61,32 +61,6 @@
 
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/slider.css" />
-    <style>
-      .accordion-item {
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        margin-bottom: 10px;
-      }
-
-      .accordion-item__header {
-        margin: 0;
-        padding: 10px 15px;
-        cursor: pointer;
-      }
-
-      .accordion-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
-        padding: 0 15px;
-      }
-
-      .accordion-item.active .accordion-content {
-        max-height: 500px;
-        /* ви можете встановити максимальну висоту відповідно до своїх потреб */
-        padding: 15px 0;
-      }
-    </style>
   </head>
   <body>
     <!-- header -->
@@ -229,24 +203,78 @@
               aria-expanded="true"
             >
               <div data-role="trigger" tabindex="0">
-                <p class="accordion-item__header" style="color: #000">
-                  Діагностика автомобіля
-                </p>
+                <p class="accordion-item__header">малярні роботи</p>
               </div>
               <div class="accordion-content">
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Повне фарбування автомобіля</p>
+                      <p class="price_list_content_wraper_cost">
+                        від 50 000 грн
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Локальне фарбування</p>
+                      <p class="price_list_content_wraper_cost">
+                        від 3 500 грн
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Фарбування бампера</p>
+                      <p class="price_list_content_wraper_cost">
+                        від 4 000 грн
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Фарбування дзеркала</p>
+                      <p class="price_list_content_wraper_cost">від 700 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Фарбування молдинга</p>
+                      <p class="price_list_content_wraper_cost">від 350 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Фарбування спойлера</p>
+                      <p class="price_list_content_wraper_cost">від 2000 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Локальне фарбування пошкодження на порозі</p>
+                      <p class="price_list_content_wraper_cost">від 2000 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Фарбування капота</p>
+                      <p class="price_list_content_wraper_cost">від 5000 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Ремонт і видалення подряпин</p>
+                      <p class="price_list_content_wraper_cost">від 1000 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Ремонт і видалення відколів</p>
+                      <p class="price_list_content_wraper_cost">від 1000 грн</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div
@@ -258,25 +286,74 @@
               aria-expanded="true"
             >
               <div data-role="trigger" tabindex="0">
-                <p class="accordion-item__header" style="color: #000">
-                  Діагностика автомобіля
-                </p>
+                <p class="accordion-item__header">Діагностика автомобіля</p>
               </div>
-              <div class="accordion-content">
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
-                <p style="color: #000">Це вміст для акордеона.</p>
+              <div class="accordion-content"></div>
+            </div>
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">Діагностика автомобіля</p>
               </div>
+              <div class="accordion-content"></div>
+            </div>
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">Діагностика автомобіля</p>
+              </div>
+              <div class="accordion-content"></div>
+            </div>
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">Діагностика автомобіля</p>
+              </div>
+              <div class="accordion-content"></div>
+            </div>
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">Діагностика автомобіля</p>
+              </div>
+              <div class="accordion-content"></div>
+            </div>
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">Діагностика автомобіля</p>
+              </div>
+              <div class="accordion-content"></div>
             </div>
           </div>
         </div>
@@ -619,9 +696,17 @@
         accordionTriggers.forEach(function (trigger) {
           trigger.addEventListener('click', function () {
             let parent = trigger.closest('.accordion-item');
-            if (parent.classList.contains('active')) {
-              parent.classList.remove('active');
-            } else {
+            let wasActive = parent.classList.contains('active');
+            let allAccordionItems =
+              document.querySelectorAll('.accordion-item');
+
+            // Закриваємо всі елементи акордеона
+            allAccordionItems.forEach(function (item) {
+              item.classList.remove('active');
+            });
+
+            // Якщо клікнутий елемент акордеона був закритий, то відкриваємо його
+            if (!wasActive) {
               parent.classList.add('active');
             }
           });

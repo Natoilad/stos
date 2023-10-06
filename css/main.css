@@ -2200,4 +2200,70 @@ textarea {
 .price p {
   font-style: normal;
   line-height: normal;
+}
+.price_list_content_wraper {
+  border-bottom: 1px solid var(--brend-color);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+}
+.price_list_content_wraper_cost {
+  width: 100px;
+  text-align: start;
+}
+.price_list_content_wraper p {
+  max-width: 150px;
+  padding: 0;
+  font-size: 10px;
+  font-weight: 400;
+}
+@media screen and (min-width: 350px) {
+  .price_list_content_wraper p {
+    max-width: 200px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.accordion {
+  text-align: center;
+  color: #000;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-item__header {
+  border: 1px solid var(--brend-color);
+  margin: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.active .accordion-item__header {
+  border: none;
+  color: var(--primery-text-color);
+  background-color: var(--brend-color);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  /* transition: max-height 0.3s ease-in-out; */
+  padding: 0 15px;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 300px; /* ви можете встановити максимальну висоту відповідно до своїх потреб */
+  overflow-y: auto;
+  padding: 10px 10px;
+  border: 1px solid var(--brend-color);
+  border-top: none;
+}
+
+*:focus {
+  outline: none;
 }/*# sourceMappingURL=main.css.map */
