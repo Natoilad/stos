@@ -187,13 +187,16 @@
     <main>
       <section class="price section">
         <div class="container">
-          <h1 class="price_title brend_color_text">ціни</h1>
+          <h1>
+            <a class="link brend_color_text" href="#price_accordion">ціни</a>
+          </h1>
           <p>Які задовольнять кожгого клієнта</p>
         </div>
       </section>
-      <section class="price_accordion section">
+      <section id="price_accordion" class="price_accordion section">
         <div class="container">
           <div class="accordion">
+            <!-- item -->
             <div
               class="accordion-item allow"
               data-role="collapsible"
@@ -207,15 +210,6 @@
               </div>
               <div class="accordion-content">
                 <ul class="list">
-                  <li>
-                    <div class="price_list_content_wraper">
-                      <p>Повне фарбування автомобіля</p>
-                      <p class="price_list_content_wraper_cost">
-                        від 50 000 грн
-                      </p>
-                    </div>
-                  </li>
-
                   <li>
                     <div class="price_list_content_wraper">
                       <p>Локальне фарбування</p>
@@ -274,9 +268,19 @@
                       <p class="price_list_content_wraper_cost">від 1000 грн</p>
                     </div>
                   </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Повне фарбування автомобіля</p>
+                      <p class="price_list_content_wraper_cost">
+                        від 50 000 грн
+                      </p>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
+            <!-- item end -->
+            <!-- item -->
             <div
               class="accordion-item allow"
               data-role="collapsible"
@@ -286,10 +290,69 @@
               aria-expanded="true"
             >
               <div data-role="trigger" tabindex="0">
-                <p class="accordion-item__header">Діагностика автомобіля</p>
+                <p class="accordion-item__header">Ремонт дигуна</p>
               </div>
-              <div class="accordion-content"></div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна прокладки піддону картера</p>
+                      <p class="price_list_content_wraper_cost">від 600 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна прокладки клапанної кришки</p>
+                      <p class="price_list_content_wraper_cost">від 400 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна сальників клапанів на встановлені ГБУ</p>
+                      <p class="price_list_content_wraper_cost">від 150 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна заднього сальника</p>
+                      <p class="price_list_content_wraper_cost">від 2000 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна прокладки передньої кришки двигуна</p>
+                      <p class="price_list_content_wraper_cost">від 700 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна ланцюга ГРМ з роликами</p>
+                      <p class="price_list_content_wraper_cost">від 3000 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна свічок запалювання або розжарювання</p>
+                      <p class="price_list_content_wraper_cost">від 300 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>регулювання клапанів</p>
+                      <p class="price_list_content_wraper_cost">від 500 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна прокладки / прокладок головки блоку циліндра</p>
+                      <p class="price_list_content_wraper_cost">від 2000 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- item end -->
+            <!-- item -->
             <div
               class="accordion-item allow"
               data-role="collapsible"
@@ -299,10 +362,45 @@
               aria-expanded="true"
             >
               <div data-role="trigger" tabindex="0">
-                <p class="accordion-item__header">Діагностика автомобіля</p>
+                <p class="accordion-item__header">кузовний ремонт</p>
               </div>
-              <div class="accordion-content"></div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Рихтування кузовних елементів</p>
+                      <p class="price_list_content_wraper_cost">від 2000 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>відновлення геометрії кузова на стапелі</p>
+                      <p class="price_list_content_wraper_cost">від 9000 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>локальний ремонт деталей кузова без демонтажу</p>
+                      <p class="price_list_content_wraper_cost">від 800 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>рихтування даху автомобіля</p>
+                      <p class="price_list_content_wraper_cost">від 7500 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>антикорозійна обробка авто</p>
+                      <p class="price_list_content_wraper_cost">від 2000 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- item end -->
+            <!-- item -->
             <div
               class="accordion-item allow"
               data-role="collapsible"
@@ -312,10 +410,54 @@
               aria-expanded="true"
             >
               <div data-role="trigger" tabindex="0">
-                <p class="accordion-item__header">Діагностика автомобіля</p>
+                <p class="accordion-item__header">ремонт ходової</p>
               </div>
-              <div class="accordion-content"></div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна передніх стійок (штука)</p>
+                      <p class="price_list_content_wraper_cost">від 400 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>ззаміна переднього важеля (штука)</p>
+                      <p class="price_list_content_wraper_cost">від 300 грн</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна помпи водяної (комплект)</p>
+                      <p class="price_list_content_wraper_cost">від 600 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна підшипника маточини</p>
+                      <p class="price_list_content_wraper_cost">від 350 грн</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна головного циліндра гальм</p>
+                      <p class="price_list_content_wraper_cost">від 700 грн</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна пружин підвіски</p>
+                      <p class="price_list_content_wraper_cost">від 300 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- item end -->
+            <!-- item -->
             <div
               class="accordion-item allow"
               data-role="collapsible"
@@ -325,10 +467,63 @@
               aria-expanded="true"
             >
               <div data-role="trigger" tabindex="0">
-                <p class="accordion-item__header">Діагностика автомобіля</p>
+                <p class="accordion-item__header">заміна шин / балансування</p>
               </div>
-              <div class="accordion-content"></div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>R14 - Легкові автомобілі / шт</p>
+                      <p class="price_list_content_wraper_cost">від 150 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>R15 - Легкові автомобілі / шт</p>
+                      <p class="price_list_content_wraper_cost">від 170 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>R16 - Легкові автомобілі / шт</p>
+                      <p class="price_list_content_wraper_cost">від 180 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>R17 - Легкові автомобілі / шт</p>
+                      <p class="price_list_content_wraper_cost">від 200 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>R18 - Легкові автомобілі / шт</p>
+                      <p class="price_list_content_wraper_cost">від 220 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>R19 - Легкові автомобілі / шт</p>
+                      <p class="price_list_content_wraper_cost">від 250 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>R20 - Легкові автомобілі / шт</p>
+                      <p class="price_list_content_wraper_cost">від 255 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>R21 - Легкові автомобілі / шт</p>
+                      <p class="price_list_content_wraper_cost">від 270 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- item end -->
+            <!-- item -->
             <div
               class="accordion-item allow"
               data-role="collapsible"
@@ -338,10 +533,27 @@
               aria-expanded="true"
             >
               <div data-role="trigger" tabindex="0">
-                <p class="accordion-item__header">Діагностика автомобіля</p>
+                <p class="accordion-item__header">3D розвал сходження</p>
               </div>
-              <div class="accordion-content"></div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Регулювання розвал-сходження</p>
+                      <p class="price_list_content_wraper_cost">від 1150 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Перевірка розвал-сходження</p>
+                      <p class="price_list_content_wraper_cost">від 699 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- item end -->
+            <!-- item -->
             <div
               class="accordion-item allow"
               data-role="collapsible"
@@ -351,10 +563,280 @@
               aria-expanded="true"
             >
               <div data-role="trigger" tabindex="0">
-                <p class="accordion-item__header">Діагностика автомобіля</p>
+                <p class="accordion-item__header">система зчеплення</p>
               </div>
-              <div class="accordion-content"></div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна зчеплення</p>
+                      <p class="price_list_content_wraper_cost">від 2200 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна троса зчеплення</p>
+                      <p class="price_list_content_wraper_cost">від 350 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна головного циліндра зчеплення</p>
+                      <p class="price_list_content_wraper_cost">від 700 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Заміна комплекту зчеплення без зняття підрамника</p>
+                      <p class="price_list_content_wraper_cost">від 1990 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- item end -->
+            <!-- item -->
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">рульове управління</p>
+              </div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Заміна насоса гідропідсилювача</p>
+                      <p class="price_list_content_wraper_cost">від 1300 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Заміна пильовика рульової рейки</p>
+                      <p class="price_list_content_wraper_cost">від 650 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Заміна кермового наконечника</p>
+                      <p class="price_list_content_wraper_cost">від 520 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Заміна рульової тяги</p>
+                      <p class="price_list_content_wraper_cost">від 490 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- item end -->
+            <!-- item -->
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">технічне обслуговування</p>
+              </div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна масла у двигуні та масляного фільтра</p>
+                      <p class="price_list_content_wraper_cost">від 150 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна паливного фільтра</p>
+                      <p class="price_list_content_wraper_cost">від 100 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна охолоджувальної рідини</p>
+                      <p class="price_list_content_wraper_cost">від 400 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна ременя/ремнів ГРМ з роликами</p>
+                      <p class="price_list_content_wraper_cost">від 1200 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна масла редуктора або КПП, роздатки</p>
+                      <p class="price_list_content_wraper_cost">від 250 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна передніх/задніх дискових гальмівних колодок</p>
+                      <p class="price_list_content_wraper_cost">від 300 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>заміна масла і фільтра АКПП</p>
+                      <p class="price_list_content_wraper_cost">від 800 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>чистка бензинових форсунок (штука)</p>
+                      <p class="price_list_content_wraper_cost">від 70 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- item end -->
+            <!-- item -->
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">заправка кондиціонера</p>
+              </div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>зняття та установка компресора кондиціонера</p>
+                      <p class="price_list_content_wraper_cost">від 600 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Діагностика кондиціонера (візуальний огляд)</p>
+                      <p class="price_list_content_wraper_cost">від 299 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Заправка системи кондиціювання (фреон та олива)</p>
+                      <p class="price_list_content_wraper_cost">від 999 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Антибактеріальна чистка кондиціонера</p>
+                      <p class="price_list_content_wraper_cost">від 899 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Заміна радіатора кондиціонера</p>
+                      <p class="price_list_content_wraper_cost">від 1099 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Діагностика системи кондиціювання</p>
+                      <p class="price_list_content_wraper_cost">від 550 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- item end -->
+            <!-- item -->
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">замовдення автозапчастин</p>
+              </div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Замовлення запчастин за vin-кодом</p>
+                      <p class="price_list_content_wraper_cost">від 100 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- item end -->
+            <!-- item -->
+            <div
+              class="accordion-item allow"
+              data-role="collapsible"
+              role="tab"
+              data-collapsible="true"
+              aria-selected="true"
+              aria-expanded="true"
+            >
+              <div data-role="trigger" tabindex="0">
+                <p class="accordion-item__header">
+                  електрика і комп’ютерна діагностика
+                </p>
+              </div>
+              <div class="accordion-content">
+                <ul class="list">
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Діагностика кондиціонера (візуальний огляд)</p>
+                      <p class="price_list_content_wraper_cost">від 299 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Діагностика системи електроживлення автомобіля</p>
+                      <p class="price_list_content_wraper_cost">від 149 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Комп'ютерна діагностика</p>
+                      <p class="price_list_content_wraper_cost">від 599 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Перевірка акумулятора</p>
+                      <p class="price_list_content_wraper_cost">від 139 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Ендоскопія бензинового двигуна</p>
+                      <p class="price_list_content_wraper_cost">від 1099 грн</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="price_list_content_wraper">
+                      <p>Діагностика перед купівлею</p>
+                      <p class="price_list_content_wraper_cost">від 1999 грн</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- item end -->
           </div>
         </div>
       </section>
