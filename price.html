@@ -199,6 +199,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item1"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -283,6 +284,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item2"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -355,6 +357,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item3"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -403,6 +406,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item4"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -460,6 +464,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item5"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -526,6 +531,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item6"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -556,6 +562,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item7"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -598,6 +605,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item8"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -640,6 +648,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item9"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -706,6 +715,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item10"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -760,6 +770,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item11"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -784,6 +795,7 @@
             <!-- item -->
             <div
               class="accordion-item allow"
+              id="item12"
               data-role="collapsible"
               role="tab"
               data-collapsible="true"
@@ -844,41 +856,41 @@
         <div class="test container">
           <!-- Лівий блок елементів -->
           <div class="accordion test_accordion" style="width: 30%">
-            <div class="accordion-item" data-target="content1">
+            <div class="accordion-item" id="item1" data-target="content1">
               <p class="accordion-item__header">малярні роботи</p>
             </div>
-            <div class="accordion-item" data-target="content2">
+            <div class="accordion-item" id="item2" data-target="content2">
               <p class="accordion-item__header">ремонт двигуна</p>
             </div>
-            <div class="accordion-item" data-target="content3">
+            <div class="accordion-item" id="item3" data-target="content3">
               <p class="accordion-item__header">кузовний ремонт</p>
             </div>
-            <div class="accordion-item" data-target="content4">
+            <div class="accordion-item" id="item4" data-target="content4">
               <p class="accordion-item__header">ремонт ходової</p>
             </div>
-            <div class="accordion-item" data-target="content5">
+            <div class="accordion-item" id="item5" data-target="content5">
               <p class="accordion-item__header">заміна шин / балансування</p>
             </div>
-            <div class="accordion-item" data-target="content6">
+            <div class="accordion-item" id="item6" data-target="content6">
               <p class="accordion-item__header">3D розвал сходження</p>
             </div>
-            <div class="accordion-item" data-target="content7">
+            <div class="accordion-item" id="item7" data-target="content7">
               <p class="accordion-item__header">система зчеплення</p>
             </div>
-            <div class="accordion-item" data-target="content8">
+            <div class="accordion-item" id="item8" data-target="content8">
               <p class="accordion-item__header">рульове управління</p>
             </div>
-            <div class="accordion-item" data-target="content9">
+            <div class="accordion-item" id="item9" data-target="content9">
               <p class="accordion-item__header">технічне обслуговування</p>
             </div>
-            <div class="accordion-item" data-target="content10">
+            <div class="accordion-item" id="item10" data-target="content10">
               <p class="accordion-item__header">заправка кондиціонера</p>
             </div>
 
-            <div class="accordion-item" data-target="content11">
+            <div class="accordion-item" id="item11" data-target="content11">
               <p class="accordion-item__header">замовдення автозапчастин</p>
             </div>
-            <div class="accordion-item" data-target="content12">
+            <div class="accordion-item" id="item12" data-target="content12">
               <p class="accordion-item__header">
                 електрика і комп’ютерна діагностика
               </p>
@@ -1489,6 +1501,13 @@
     <script src="./js/menu.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
+        let hash = window.location.hash;
+        if (hash) {
+          let targetItem = document.querySelector(hash);
+          if (targetItem) {
+            targetItem.classList.add('active');
+          }
+        }
         let accordionItems = document.querySelectorAll('.accordion-item');
         let allContents = [
           ...document.querySelectorAll('.accordion-content-display li'),
