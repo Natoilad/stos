@@ -2250,6 +2250,7 @@ textarea {
 }
 
 .accordion {
+  text-transform: lowercase;
   text-align: center;
   color: #000;
 }
