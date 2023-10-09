@@ -2312,15 +2312,6 @@ textarea {
   padding-left: 50px;
 }
 
-.offset-anchor::before {
-  display: block;
-  content: " ";
-  height: 100px;
-  margin: -100px 0 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .service_page {
   font-family: Montserrat;
 }

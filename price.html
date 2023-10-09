@@ -197,9 +197,8 @@
         <div class="container">
           <div class="accordion">
             <!-- item -->
-            <a class="anchor" id="item1-anchor"></a>
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item1"
               data-role="collapsible"
               role="tab"
@@ -283,9 +282,8 @@
             </div>
             <!-- item end -->
             <!-- item -->
-            <a class="anchor" id="item2-anchor"></a>
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item2"
               data-role="collapsible"
               role="tab"
@@ -358,7 +356,7 @@
             <!-- item end -->
             <!-- item -->
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item3"
               data-role="collapsible"
               role="tab"
@@ -407,7 +405,7 @@
             <!-- item end -->
             <!-- item -->
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item4"
               data-role="collapsible"
               role="tab"
@@ -465,7 +463,7 @@
             <!-- item end -->
             <!-- item -->
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item5"
               data-role="collapsible"
               role="tab"
@@ -531,9 +529,8 @@
             </div>
             <!-- item end -->
             <!-- item -->
-            <a class="anchor" id="item6-anchor"></a>
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item6"
               data-role="collapsible"
               role="tab"
@@ -564,7 +561,7 @@
             <!-- item end -->
             <!-- item -->
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item7"
               data-role="collapsible"
               role="tab"
@@ -607,7 +604,7 @@
             <!-- item end -->
             <!-- item -->
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item8"
               data-role="collapsible"
               role="tab"
@@ -650,7 +647,7 @@
             <!-- item end -->
             <!-- item -->
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item9"
               data-role="collapsible"
               role="tab"
@@ -717,7 +714,7 @@
             <!-- item end -->
             <!-- item -->
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item10"
               data-role="collapsible"
               role="tab"
@@ -772,7 +769,7 @@
             <!-- item end -->
             <!-- item -->
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item11"
               data-role="collapsible"
               role="tab"
@@ -798,7 +795,7 @@
             <!-- item -->
 
             <div
-              class="accordion-item allow offset-anchor"
+              class="accordion-item allow"
               id="item12"
               data-role="collapsible"
               role="tab"
@@ -1504,45 +1501,38 @@
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/accordion.js"></script>
-    <!-- <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        let hash = window.location.hash;
-        if (hash) {
-          let targetItem = document.querySelector(hash);
-          if (targetItem) {
-            targetItem.classList.add('active');
-          }
-        }
-        let accordionItems = document.querySelectorAll('.accordion-item');
-        let allContents = [
-          ...document.querySelectorAll('.accordion-content-display li'),
-          ...document.querySelectorAll('.accordion-content-display2 li'),
-        ];
+    <script>
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          const anchors = [
+            'item1',
+            'item2',
+            'item3',
+            'item4',
+            'item5',
+            'item6',
+            'item7',
+            'item8',
+            'item9',
+            'item10',
+            'item11',
+            'item12',
+          ];
+          let currentHash = window.location.hash.substring(1); // отримати поточний хеш без "#"
 
-        accordionItems.forEach(item => {
-          item.addEventListener('click', function () {
-            let targetId = this.getAttribute('data-target');
-            let targetContent = document.getElementById(targetId);
-            let wasActive = this.classList.contains('active');
-
-            // Видаліть клас 'active' з усіх елементів
-            accordionItems.forEach(i => {
-              i.classList.remove('active');
-            });
-
-            // Приховуємо всі елементи
-            allContents.forEach(content => {
-              content.classList.add('hidden');
-            });
-
-            // Якщо клікнутий елемент був закритий, то відкриваємо його
-            if (!wasActive) {
-              this.classList.add('active');
-              targetContent.classList.remove('hidden');
+          if (anchors.includes(currentHash)) {
+            const anchorElement = document.getElementById(currentHash);
+            if (anchorElement) {
+              const yOffset = -100;
+              const y =
+                anchorElement.getBoundingClientRect().top +
+                window.pageYOffset +
+                yOffset;
+              window.scrollTo({ top: y, behavior: 'smooth' });
             }
-          });
-        });
+          }
+        }, 1000);
       });
-    </script> -->
+    </script>
   </body>
 </html>
