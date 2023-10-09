@@ -1503,35 +1503,33 @@
     <script src="./js/accordion.js"></script>
     <script>
       window.addEventListener('load', function () {
-        setTimeout(function () {
-          const anchors = [
-            'item1',
-            'item2',
-            'item3',
-            'item4',
-            'item5',
-            'item6',
-            'item7',
-            'item8',
-            'item9',
-            'item10',
-            'item11',
-            'item12',
-          ];
-          let currentHash = window.location.hash.substring(1); // отримати поточний хеш без "#"
+        const anchors = [
+          'item1',
+          'item2',
+          'item3',
+          'item4',
+          'item5',
+          'item6',
+          'item7',
+          'item8',
+          'item9',
+          'item10',
+          'item11',
+          'item12',
+        ];
+        let currentHash = window.location.hash.substring(1); // отримати поточний хеш без "#"
 
-          if (anchors.includes(currentHash)) {
-            const anchorElement = document.getElementById(currentHash);
-            if (anchorElement) {
-              const yOffset = -100;
-              const y =
-                anchorElement.getBoundingClientRect().top +
-                window.pageYOffset +
-                yOffset;
-              window.scrollTo({ top: y, behavior: 'smooth' });
-            }
+        if (anchors.includes(currentHash)) {
+          const anchorElement = document.getElementById(currentHash);
+          if (anchorElement) {
+            const yOffset = -100;
+            const y =
+              anchorElement.getBoundingClientRect().top +
+              window.pageYOffset +
+              yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
           }
-        }, 1000);
+        }
       });
     </script>
   </body>
