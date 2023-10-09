@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelectorAll('.content-item').forEach(item => {
         item.style.display = 'none';
       });
-      targetElement.style.display = 'flex';
+      targetElement.style.display = 'block';
     }
   }
 });

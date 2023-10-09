@@ -1,14 +1,29 @@
 .service_page {
+  font-family: Montserrat;
   &_list {
+    background-image: url(../../images/usa_bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-top: 0;
     color: #000;
+    &_item {
+      padding-top: 100px;
+      @include desktop {
+        display: flex;
+      }
+    }
     &_text_wraper {
+      background-color: rgba(255, 255, 255, 0.7) !important;
+
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       text-align: center;
       @include desktop {
         align-items: flex-start;
-        padding-left: 30px;
+        padding: 0 30px;
       }
 
       h2 {
@@ -17,25 +32,30 @@
         text-transform: uppercase;
       }
       p {
-        text-align: start;
-        //   padding: 0;
+        @include desktop {
+          text-align: start;
+        }
         margin-bottom: 20px;
       }
       a {
         @include font(10px, 600);
         text-transform: uppercase;
-        color: #000;
+        color: var(--primery-text-color);
         background-color: var(--brend-color);
         padding: 10px;
         border-radius: 4px;
+        // margin-bottom: 10px;
       }
       a:hover {
-        color: var(--primery-text-color);
+        color: #000;
       }
     }
 
     img {
-      margin-bottom: 20px;
+      margin: 20px auto;
+      //   margin-top: 20px;
+      //   margin-bottom: 20px;
+      width: 100%;
       @include desktop {
         margin: 0;
       }
@@ -44,9 +64,6 @@
 
   .content-item {
     display: block;
-    flex-direction: column;
-    @include desktop {
-      flex-direction: row;
-    }
+    padding: 100px 0;
   }
 }

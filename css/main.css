@@ -2321,10 +2321,27 @@ textarea {
   pointer-events: none;
 }
 
+.service_page {
+  font-family: Montserrat;
+}
 .service_page_list {
+  background-image: url(../../images/usa_bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 0;
   color: #000;
 }
+.service_page_list_item {
+  padding-top: 100px;
+}
+@media screen and (min-width: 1200px) {
+  .service_page_list_item {
+    display: flex;
+  }
+}
 .service_page_list_text_wraper {
+  background-color: rgba(255, 255, 255, 0.7) !important;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -2333,7 +2350,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .service_page_list_text_wraper {
     align-items: flex-start;
-    padding-left: 30px;
+    padding: 0 30px;
   }
 }
 .service_page_list_text_wraper h2 {
@@ -2343,23 +2360,28 @@ textarea {
   text-transform: uppercase;
 }
 .service_page_list_text_wraper p {
-  text-align: start;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .service_page_list_text_wraper p {
+    text-align: start;
+  }
 }
 .service_page_list_text_wraper a {
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #000;
+  color: var(--primery-text-color);
   background-color: var(--brend-color);
   padding: 10px;
   border-radius: 4px;
 }
 .service_page_list_text_wraper a:hover {
-  color: var(--primery-text-color);
+  color: #000;
 }
 .service_page_list img {
-  margin-bottom: 20px;
+  margin: 20px auto;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .service_page_list img {
@@ -2368,10 +2390,5 @@ textarea {
 }
 .service_page .content-item {
   display: block;
-  flex-direction: column;
-}
-@media screen and (min-width: 1200px) {
-  .service_page .content-item {
-    flex-direction: row;
-  }
+  padding: 100px 0;
 }/*# sourceMappingURL=main.css.map */
