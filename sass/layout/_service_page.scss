@@ -1,5 +1,18 @@
 .service_page {
+  text-align: center;
+  background: {
+    image: url(../images/service/service_page_bg.jpg);
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+    color: #2f303a;
+  }
   font-family: Montserrat;
+  h1 {
+    @include font(36px, 500);
+    text-transform: uppercase;
+    margin: 100px auto;
+  }
   &_list {
     background-image: url(../../images/usa_bg.png);
     background-attachment: fixed;

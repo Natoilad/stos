@@ -853,7 +853,7 @@
           </div>
         </div>
       </section>
-      <section id="price_accordion" class="test_section section">
+      <section id="test_section" class="test_section section">
         <div class="test container">
           <!-- Лівий блок елементів -->
           <div class="accordion test_accordion" style="width: 30%">
@@ -1465,7 +1465,7 @@
                     class="link"
                     href="https://maps.app.goo.gl/zCxoG3Vxegtyjpmh7"
                     target="_blank"
-                    >вул Магістральна, 179</a
+                    >вул. Магістральна, 179</a
                   >
                 </p>
               </li>
@@ -1528,6 +1528,34 @@
               window.pageYOffset +
               yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        }
+      });
+    </script>
+
+    <!-- пошук по id для дексктопної сторінки -->
+
+    <script>
+      window.addEventListener('load', function () {
+        const currentHash = window.location.hash.substring(1);
+
+        const section = document.getElementById('test_section');
+        if (section) {
+          const targetElement = section.querySelector(`#${currentHash}`);
+          if (targetElement) {
+            targetElement.classList.add('active');
+
+            const targetContentId = targetElement.getAttribute('data-target');
+            const targetContent = document.getElementById(targetContentId);
+            if (targetContent) {
+              targetContent.classList.remove('hidden');
+            }
+
+            // Додаємо скрол до секції
+            section.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
           }
         }
       });

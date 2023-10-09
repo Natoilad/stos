@@ -61,6 +61,8 @@
   padding: 0 5px;
 }
 .author-quote blockquote {
+  max-height: 200px;
+  overflow: hidden;
   line-height: 30px;
   color: #676767;
   margin: 15px 0;

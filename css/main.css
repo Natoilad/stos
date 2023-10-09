@@ -704,7 +704,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .logo-up_icon {
     scale: 1.2;
-    margin-right: 100px;
+    margin-right: 50px;
   }
 }
 
@@ -1215,6 +1215,7 @@ textarea {
 .service_section__title {
   font-size: 26px;
   font-weight: 500;
+  color: var(--primery-text-color);
   line-height: 1.16;
   margin-bottom: 50px;
 }
@@ -1302,6 +1303,15 @@ textarea {
   }
 }
 
+.testimonial_link {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--brend-color);
+}
+.testimonial_link:hover {
+  border-bottom: 2px solid var(--brend-color);
+}
+
 .usa {
   background: url(../images/usa_bg_mobile.png);
   background-size: auto;
@@ -1374,7 +1384,7 @@ textarea {
   border-radius: 4px;
   padding: 10px 20px;
   color: #000;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   opacity: 0.9;
   background-color: var(--brend-color);
@@ -2179,6 +2189,19 @@ textarea {
   min-height: 285px;
   margin: 0 auto;
 }
+.case a {
+  font-size: 24px;
+  font-weight: 600;
+  background-color: var(--brend-color);
+  padding: 10px 20px;
+  margin: 0 auto;
+  color: var(--primery-text-color);
+  border-radius: 4px;
+}
+.case p {
+  margin-top: 50px;
+  text-align: center;
+}
 
 .price {
   text-align: center;
@@ -2313,7 +2336,19 @@ textarea {
 }
 
 .service_page {
+  text-align: center;
+  background-image: url(../images/service/service_page_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f303a;
   font-family: Montserrat;
+}
+.service_page h1 {
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 100px auto;
 }
 .service_page_list {
   background-image: url(../../images/usa_bg.png);

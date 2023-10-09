@@ -19,6 +19,7 @@
 
   &__title {
     @include font(26px, 500);
+    color: var(--primery-text-color);
     line-height: 1.16;
     margin-bottom: 50px;
   }
@@ -105,5 +106,12 @@
   scale: 1.5;
   @include desktop {
     margin-top: 25px;
+  }
+}
+.testimonial_link {
+  @include font(20px, 500);
+  color: var(--brend-color);
+  &:hover {
+    border-bottom: 2px solid var(--brend-color);
   }
 }
