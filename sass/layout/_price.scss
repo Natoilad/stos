@@ -117,8 +117,11 @@
   padding-left: 50px;
 }
 
-// .accordion-item.active {
-//   /* Задайте тут ваші стилі для активного елемента */
-//   background-color: var(--brend-color);
-//   color: #fff;
-// }
+.offset-anchor::before {
+  display: block;
+  content: ' ';
+  height: 100px;
+  margin: -100px 0 0;
+  visibility: hidden;
+  pointer-events: none;
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="VIVAT - car service! Якісне обслуговування Оперативний ремонт Доступні ціни"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>VIVAT - car service</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link
+      href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/slick.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/slider.css" /> -->
+    <!-- slider end -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Inter:wght@500&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font end -->
+
+    <!-- styles css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="vivat-header">
+      <div class="container page-header__conteiner">
+        <nav class="menu-nav">
+          <a class="link" href="./index.html">
+            <img class="logo-up_icon" src="./images/logo.svg" alt=""
+          /></a>
+          <ul class="menu-nav-list list">
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="./index.html">Головна</a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="index.html#service"
+                >Послуги</a
+              >
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="price.html">Ціни</a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="index.html#testimonials"
+                >Відгуки</a
+              >
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="about.html"
+                ><span class="link-active"> Про нас</span></a
+              >
+            </li>
+            <!-- <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="#gallery">Галерея</a>
+            </li> -->
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="usa_cars.html">
+                Авто з USA</a
+              >
+            </li>
+
+            <li class="menu-nav__item">
+              <a class="menu-nav__link link" href="#footer">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list-contact list">
+          <li class="list-contact__item">
+            <a class="list-contact-link link" href="tel:+380963039767">
+              +38(096) 303-97-67</a
+            >
+          </li>
+          <li class="list-contact__item">
+            <a class="list-contact-link link" href="tel:+380631874884">
+              +38(063) 187-48-84</a
+            >
+          </li>
+        </ul>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <img class="" src="./images/icon-burger.svg" alt="" />
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./index.html">Головна</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./index.html#service"
+                >Послуги</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="price.html">Ціни</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./index.html#testimonials"
+                >Відгуки</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link current link" href="about.html"
+                >Про нас</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./index.html#gallery"
+                >Галерея</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./usa_cars.html"
+                >Авто з USA</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#footer">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-list-contact list">
+            <li class="mobile-list-contact__item">
+              <a
+                class="mobile-list-contact__link-phone link"
+                href="tel:+380963039767"
+              >
+                +38(096) 303-97-67</a
+              >
+            </li>
+            <li class="mobile-list-contact__item">
+              <a
+                class="mobile-list-contact__link-phone link"
+                href="tel:+380631874884"
+              >
+                +38(063) 187-48-84</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="service_page_list section">
+        <div class="container">
+          <div id="item1" class="content-item">
+            <img src="./images/service/item1.jpg" alt="" />
+            <div class="service_page_list_text_wraper">
+              <h2>Малярні роботи</h2>
+              <p>
+                Малярні роботи на СТО VIVAT - це важлива послуга, спрямована на
+                відновлення зовнішнього вигляду автомобіля та його захист від
+                впливу негативних факторів навколишнього середовища. Наші
+                досвідчені маляри та фахівці використовують сучасні технології
+                та матеріали для виконання цих робіт.
+              </p>
+              <a class="link" href="#">дізнатись ціни</a>
+            </div>
+          </div>
+          <div id="item2" class="content-item">
+            <div class="service_page_list_text_wraper">
+              <h2>PЕМОНТ ДВИГУНА</h2>
+              <p>
+                Малярні роботи на СТО VIVAT - це важлива послуга, спрямована на
+                відновлення зовнішнього вигляду автомобіля та його захист від
+                впливу негативних факторів навколишнього середовища. Наші
+                досвідчені маляри та фахівці використовують сучасні технології
+                та матеріали для виконання цих робіт.
+              </p>
+              <a class="link" href="#">дізнатись ціни</a>
+            </div>
+            <img src="./images/service/item1.jpg" alt="" />
+          </div>
+          <div id="item3" class="content-item"></div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="vivat-footer" id="footer">
+      <div class="container">
+        <h2>Наші контакти</h2>
+        <h3 class="brend_color_text">
+          Наші фахівці готові надати консультацію
+        </h3>
+        <p class="brend_color_text">
+          Запишіться на обслуговування зараз та отримайте знижку на перше
+          відвідування
+        </p>
+        <div class="button_container">
+          <button
+            type="button"
+            class="button-active hero-btn button"
+            data-modal-open
+          >
+            Записатися на сервіс
+          </button>
+          <button
+            type="button"
+            class="button-active hero-btn button"
+            style="background-color: #ff9800"
+            data-modal-open
+          >
+            Замовити дзвінок
+          </button>
+        </div>
+        <div
+          style="display: flex; flex-direction: column; align-items: center"
+          class="footer_wraper_menu"
+        >
+          <!-- mobile_footer_menu -->
+          <div class="mobile_footer_menu">
+            <ul
+              class="list"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                /* width: 450px; */
+              "
+            >
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="index.html"
+                >
+                  головна</a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="price.html"
+                  >ціни</a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="about.html"
+                  ><span class="brend_color_text">про нас</span></a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="./index.html#service"
+                  >послуги</a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="./index.html#testimonials"
+                  >відгуки</a
+                >
+              </li>
+              <li style="margin: 10px">
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase"
+                  href="./index.html#gallery"
+                  >галерея</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- mobile_footer_menu end -->
+
+          <!-- desktop_footer_menu -->
+          <div class="desktop_footer_menu">
+            <ul
+              class="list"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 450px;
+              "
+            >
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="index.html"
+                >
+                  головна</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="price.html"
+                  >ціни</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="about.html"
+                  ><span class="brend_color_text">про нас</span></a
+                >
+              </li>
+            </ul>
+            <ul
+              class="list"
+              style="
+                display: flex;
+                justify-content: space-between;
+                width: 450px;
+              "
+            >
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="index.html#service"
+                  >послуги</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="index.html#testimonials"
+                  >відгуки</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-nav__link link"
+                  style="text-transform: uppercase; padding: 5px"
+                  href="index.html#gallery"
+                  >галерея</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- desktop_footer_menu end -->
+        </div>
+
+        <address class="footer-address">
+          <div class="hero_address_wraper">
+            <img style="width: 40px" src="./images/phone.svg" alt="" />
+            <ul class="list-contact list">
+              <li class="list-contact__item">
+                <a class="list-contact-link link" href="tel:+380963039767">
+                  +38(096) 303-97-67</a
+                >
+              </li>
+              <li class="list-contact__item">
+                <a class="list-contact-link link" href="tel:+380631874884">
+                  +38(063) 187-48-84</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hero_address_wraper">
+            <img style="width: 60px" src="./images/map.svg" alt="" />
+            <ul class="list">
+              <li><p>м.Боярка.</p></li>
+              <li>
+                <p>
+                  <a
+                    style="color: #fff"
+                    class="link"
+                    href="https://maps.app.goo.gl/zCxoG3Vxegtyjpmh7"
+                    target="_blank"
+                    >вул Магістральна, 179</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero_address_wraper">
+            <img style="width: 40px" src="./images/little_clock.svg" alt="" />
+            <ul class="list">
+              <li><p>Субота : з 9:00 до 15:00</p></li>
+              <li><p>Пн-Пт: з 9:00 до 18:00</p></li>
+              <li><p>Неділя: Вихідний</p></li>
+            </ul>
+          </div>
+        </address>
+        <p>
+          <a
+            class="link directory"
+            href="https://www.google.com/maps/dir//%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B0%D0%B3%D1%96%D1%81%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0,+179,+%D0%91%D0%BE%D1%8F%D1%80%D0%BA%D0%B0,+%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB.,+08150/@50.4006035,30.1943865,8z/data=!4m9!4m8!1m0!1m5!1m1!1s0x40d4b59681bd8bcb:0xab5d9e340df8bdcb!2m2!1d30.2933359!2d50.3522254!3e0?entry=ttu"
+            target="_blank"
+            >побудувати маршрут</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- button topup -->
+    <button id="scrollToTopBtn" style="display: none"></button>
+    <!-- slider -->
+    <script src="./js/slider.js"></script>
+    <script src="./js/gallery_slider.js"></script>
+    <!-- slider end -->
+    <script src="./js/totop.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/service_page.js"></script>
+  </body>
+</html>

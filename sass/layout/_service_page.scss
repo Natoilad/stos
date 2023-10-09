@@ -1,0 +1,52 @@
+.service_page {
+  &_list {
+    color: #000;
+    &_text_wraper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+      @include desktop {
+        align-items: flex-start;
+        padding-left: 30px;
+      }
+
+      h2 {
+        @include font(26px, 500);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      p {
+        text-align: start;
+        //   padding: 0;
+        margin-bottom: 20px;
+      }
+      a {
+        @include font(10px, 600);
+        text-transform: uppercase;
+        color: #000;
+        background-color: var(--brend-color);
+        padding: 10px;
+        border-radius: 4px;
+      }
+      a:hover {
+        color: var(--primery-text-color);
+      }
+    }
+
+    img {
+      margin-bottom: 20px;
+      @include desktop {
+        margin: 0;
+      }
+    }
+  }
+
+  .content-item {
+    display: block;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+}
