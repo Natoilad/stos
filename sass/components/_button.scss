@@ -100,7 +100,7 @@
   }
 }
 #scrollToTopBtn {
-  background: url(../../images/btn_up.svg);
+  background: url(../../images/svg/btn_up.svg);
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
@@ -115,7 +115,7 @@
 }
 
 #scrollToTopBtn:hover {
-  background: url(../../images/btn_up_hover.svg);
+  background: url(../../images/svg/btn_up_hover.svg);
   background-size: cover;
   opacity: 1;
 }

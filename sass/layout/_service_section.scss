@@ -3,7 +3,7 @@
   background: {
     color: #2f303a;
     image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)),
-      url(../images/service_bg_mobile.jpg);
+      url(../images/bg/service_bg_mobile.jpg);
     size: cover;
     position: center;
     repeat: no-repeat;
@@ -14,7 +14,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/service_bg_desktop.jpg);
+      url(../images/bg/service_bg_desktop.jpg);
   }
 
   &__title {

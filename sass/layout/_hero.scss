@@ -4,7 +4,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   padding-top: 100px;
   background: {
     image: linear-gradient($hero-bg-color, $hero-bg-color),
-      url(../images/hero-bg-mobile.jpg);
+      url(../images/bg/hero-bg-mobile.jpg);
     size: cover;
     repeat: no-repeat;
     position: center;
@@ -17,13 +17,13 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 
   @include tablet {
     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-      url(../images/hero-bg-tablet.jpg);
+      url(../images/bg/hero-bg-tablet.jpg);
     padding: 118px 0;
   }
 
   @include desktop {
     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-      url(../images/hero-bg-desktop.jpg);
+      url(../images/bg/hero-bg-desktop.jpg);
     padding: 150px 50px 50px 50px;
     max-width: 1600px;
     margin: 0 auto;
@@ -35,15 +35,15 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     & {
       @media (max-width: 767px) {
         background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-          url(../images/hero-bg-mobile@2x.jpg);
+          url(../images/bg/hero-bg-mobile@2x.jpg);
       }
       @media (min-width: 768px) {
         background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-          url(../images/hero-bg-tablet@2x.jpg);
+          url(../images/bg/hero-bg-tablet@2x.jpg);
       }
       @media (min-width: 1200px) {
         background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-          url(../images/hero-bg-desktop@2x.jpg);
+          url(../images/bg/hero-bg-desktop@2x.jpg);
       }
     }
   }

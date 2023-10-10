@@ -3,7 +3,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 .about {
   padding-bottom: 60px;
   background: {
-    image: url(../images/about_bg_desktop.jpg);
+    image: url(../images/bg/about_bg_desktop.jpg);
     size: cover;
     repeat: no-repeat;
     position: center;
@@ -95,7 +95,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     padding-bottom: 60px;
     text-align: center;
     background: {
-      image: url(../images/difference.jpg);
+      image: url(../images/bg/difference.jpg);
       size: cover;
       repeat: no-repeat;
       position: center;

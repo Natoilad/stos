@@ -1,7 +1,7 @@
 .service_page {
   text-align: center;
   background: {
-    image: url(../images/service/service_page_bg.jpg);
+    image: url(../../images/bg/service_page_bg.jpg);
     size: cover;
     repeat: no-repeat;
     position: center;
@@ -14,7 +14,7 @@
     margin: 100px auto;
   }
   &_list {
-    background-image: url(../../images/usa_bg.png);
+    background-image: url(../../images/bg/usa_bg.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

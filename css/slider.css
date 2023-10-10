@@ -166,16 +166,16 @@ ul.slick-dots li.slick-active button {
 }
 
 .slick-prev {
-  background-image: url(../images/arrow_prev.svg);
+  background-image: url(../images/svg/arrow_prev.svg);
 }
 .slick-prev:hover {
-  background-image: url(../images/arrow_prew_hover.svg);
+  background-image: url(../images/svg/arrow_prew_hover.svg);
 }
 .slick-next {
-  background-image: url(../images/arrow_next.svg);
+  background-image: url(../images/svg/arrow_next.svg);
 }
 .slick-next:hover {
-  background-image: url(../images/arrow_next_hover.svg);
+  background-image: url(../images/svg/arrow_next_hover.svg);
 }
 .slick-prev,
 .slick-next {
@@ -277,26 +277,26 @@ ul.slick-dots li.slick-active button {
 
 .my-slider .slick-prev {
   right: 60% !important;
-  background-image: url(../images/gallery_arrow_prev.svg) !important;
+  background-image: url(../images/svg/gallery_arrow_prev.svg) !important;
   background-repeat: no-repeat;
   background-position: center;
 }
 .my-slider .slick-next {
   right: 17% !important;
-  background-image: url(../images/gallery_arrow_next.svg) !important;
+  background-image: url(../images/svg/gallery_arrow_next.svg) !important;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .my-slider .slick-prev:hover {
   right: 60% !important;
-  background-image: url(../images/gallery_arrow_prev_hover.svg) !important;
+  background-image: url(../images/svg/gallery_arrow_prev_hover.svg) !important;
   background-repeat: no-repeat;
   background-position: center;
 }
 .my-slider .slick-next:hover {
   right: 17% !important;
-  background-image: url(../images/gallery_arrow_next_hover.svg) !important;
+  background-image: url(../images/svg/gallery_arrow_next_hover.svg) !important;
   background-repeat: no-repeat;
   background-position: center;
 }

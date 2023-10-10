@@ -3,7 +3,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 .usa_cars {
   background: {
     image: linear-gradient($hero-bg-color, $hero-bg-color),
-      url(../images/usa_hero_bg_mobile.jpg);
+      url(../images/bg/usa_hero_bg_mobile.jpg);
     size: cover;
     repeat: no-repeat;
     position: center;
@@ -152,13 +152,13 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     // background-color: #efefef;
     // background: {
     //   image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    //     url(../images/usa_bg.jpg);
+    //     url(../images/bg/usa_bg.jpg);
     // }
     background: linear-gradient(
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
       ),
-      url(../images/usa_bg.png);
+      url(../images/bg/usa_bg.png);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -333,13 +333,13 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 
   @include tablet {
     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-      url(../images/usa_hero_bg_mobile@2x.jpg);
+      url(../images/bg/usa_hero_bg_mobile@2x.jpg);
     padding: 118px 0;
   }
 
   @include desktop {
     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-      url(../images/usa_hero_bg_desktop.jpg);
+      url(../images/bg/usa_hero_bg_desktop.jpg);
     // padding: 150px 50px 50px 50px;
     padding-bottom: 150px;
     max-width: 1600px;
@@ -351,12 +351,12 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     screen and (min-resolution: 2dppx) {
     @include tablet {
       background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-        url(../images/usa_hero_bg_desktop@2x.jpg);
+        url(../images/bg/usa_hero_bg_desktop@2x.jpg);
     }
 
     @include desktop {
       background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-        url(../images/usa_hero_bg_desktop@2x.jpg);
+        url(../images/bg/usa_hero_bg_desktop@2x.jpg);
     }
   }
 }
@@ -367,7 +367,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 //   padding-top: 100px;
 //   background: {
 //     image: linear-gradient($hero-bg-color, $hero-bg-color),
-//       url(../images/usa_hero_bg_mobile.jpg);
+//       url(../images/bg/usa_hero_bg_mobile.jpg);
 //     size: cover;
 //     repeat: no-repeat;
 //     position: center;
@@ -377,13 +377,13 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 
 //   @include tablet {
 //     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-//       url(../images/usa_hero_bg_mobile@2x.jpg);
+//       url(../images/bg/usa_hero_bg_mobile@2x.jpg);
 //     padding: 118px 0;
 //   }
 
 //   @include desktop {
 //     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-//       url(../images/usa_hero_bg_desktop.jpg);
+//       url(../images/bg/usa_hero_bg_desktop.jpg);
 //     padding: 150px 50px 50px 50px;
 //     max-width: 1600px;
 //     margin: 0 auto;
@@ -395,15 +395,15 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 //     & {
 //       @media (max-width: 767px) {
 //         background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-//           url(../images/usa_hero_bg_mobile@2x.jpg);
+//           url(../images/bg/usa_hero_bg_mobile@2x.jpg);
 //       }
 //       @media (min-width: 768px) {
 //         background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-//           url(../images/usa_hero_bg_mobile@2x.jpg);
+//           url(../images/bg/usa_hero_bg_mobile@2x.jpg);
 //       }
 //       @media (min-width: 1200px) {
 //         background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-//           url(../images/usa_hero_bg_desktop@2x.jpg);
+//           url(../images/bg/usa_hero_bg_desktop@2x.jpg);
 //       }
 //     }
 //   }
@@ -460,7 +460,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 //   }
 //   &_delivery {
 //     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
-//       url(../images/usa_bg_mobile.png);
+//       url(../images/bg/usa_bg_mobile.png);
 //     background-size: auto;
 //     background-repeat: unset;
 //     background-position: bottom;
@@ -476,7 +476,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
 
 //       background-color: rgba(255, 255, 255, 0.2);
 //       backdrop-filter: blur(5px);
-//       background-image: url(../images/usa_bg.png);
+//       background-image: url(../images/bg/usa_bg.png);
 //     }
 //     text-align: center;
 //     &_title {
