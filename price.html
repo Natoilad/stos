@@ -29,21 +29,6 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-
-    <!-- slider -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link
-      href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/slick.css"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="./css/slider.css" /> -->
-    <!-- slider end -->
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,7 +45,6 @@
     />
 
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/slider.css" />
   </head>
   <body>
     <!-- header -->
@@ -1505,12 +1489,7 @@
     </footer>
     <!-- button topup -->
     <button id="scrollToTopBtn" style="display: none"></button>
-    <!-- slider -->
-    <script src="./js/slider.js"></script>
-    <script src="./js/gallery_slider.js"></script>
-    <!-- slider end -->
     <script src="./js/totop.js"></script>
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/accordion.js"></script>
     <script>
@@ -1529,8 +1508,7 @@
           'item11',
           'item12',
         ];
-        let currentHash = window.location.hash.substring(1); // отримати поточний хеш без "#"
-
+        let currentHash = window.location.hash.substring(1);
         if (anchors.includes(currentHash)) {
           const anchorElement = document.getElementById(currentHash);
           if (anchorElement) {
@@ -1544,9 +1522,7 @@
         }
       });
     </script>
-
     <!-- пошук по id для дексктопної сторінки -->
-
     <script>
       window.addEventListener('load', function () {
         const currentHash = window.location.hash.substring(1);
@@ -1556,14 +1532,11 @@
           const targetElement = section.querySelector(`#${currentHash}`);
           if (targetElement) {
             targetElement.classList.add('active');
-
             const targetContentId = targetElement.getAttribute('data-target');
             const targetContent = document.getElementById(targetContentId);
             if (targetContent) {
               targetContent.classList.remove('hidden');
             }
-
-            // Додаємо скрол до секції
             section.scrollIntoView({
               behavior: 'smooth',
               block: 'start',

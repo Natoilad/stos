@@ -2122,6 +2122,9 @@ textarea {
 .case {
   background-color: #efefef;
 }
+.case p {
+  text-align: center;
+}
 .case_list {
   display: flex;
   gap: 10px;
@@ -2178,7 +2181,7 @@ textarea {
   color: #00193e;
 }
 .case_wraper_total_hidden {
-  text-align: start;
+  text-align: start !important;
   padding: 10px;
   visibility: hidden;
   color: #878787;
@@ -2240,10 +2243,6 @@ textarea {
   margin: 0 auto;
   color: var(--primery-text-color);
   border-radius: 4px;
-}
-.case p {
-  margin-top: 50px;
-  text-align: center;
 }
 
 .price {

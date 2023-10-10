@@ -30,20 +30,6 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- slider -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link
-      href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/slick.css"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="./css/slider.css" /> -->
-    <!-- slider end -->
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,7 +46,6 @@
     />
 
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/slider.css" />
   </head>
   <body>
     <!-- header -->
@@ -80,7 +65,7 @@
               >
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="price.html">Ціни</a>
+              <a class="menu-nav__link link" href="price.html#item9">Ціни</a>
             </li>
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="index.html#testimonials"
@@ -139,7 +124,7 @@
               >
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="price.html">Ціни</a>
+              <a class="mobile-menu__link link" href="price.html#item9">Ціни</a>
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="./index.html#testimonials"
@@ -416,7 +401,7 @@
                 <a
                   class="menu-nav__link link"
                   style="text-transform: uppercase"
-                  href="price.html"
+                  href="price.html#item9"
                   >ціни</a
                 >
               </li>
@@ -597,107 +582,10 @@
         </p>
       </div>
     </footer>
-    <!-- form -->
-    <div class="backdrop is-hidden" data-modal>
-      <form class="modal">
-        <button type="button" class="modal__btn-close" data-modal-close>
-          <svg class="modal__close-icon" width="18px" height="18px">
-            <use href="./images/sprite.svg#modal-close-btn"></use>
-          </svg>
-        </button>
-        <p class="modal__cta-title">записатис на сервіс</p>
-        <label class="modal__label-title" for="user-name"
-          ><span class="modal__label-name">Ваше Ім’я </span></label
-        >
-        <div class="modal__input-position">
-          <input
-            required
-            class="modal__input-name"
-            type="text"
-            name="user-name"
-            id="user-name"
-            placeholder="Сергій"
-          />
-          <svg class="modal__icon-input">
-            <use href="./images/sprite.svg#icon-person"></use>
-          </svg>
-        </div>
-        <label class="modal__label-title" for="user-phone"
-          ><span class="modal__label-name">Номер телефону</span></label
-        >
-        <div class="modal__input-position">
-          <input
-            required
-            class="modal__input-phone"
-            type="tel"
-            name="user-phone"
-            id="user-phone"
-            pattern="[0-9]{10}"
-            title="xxxxxxxxxx"
-            placeholder="+380"
-          />
-          <svg class="modal__icon-input">
-            <use href="./images/sprite.svg#icon-phone-form"></use>
-          </svg>
-        </div>
-
-        <label class="modal__label-title" for="user-email"
-          ><span class="modal__label-name"
-            >Коли Вам зателефонувати?</span
-          ></label
-        >
-        <div class="modal__input-position">
-          <input
-            required
-            class="modal__input-mail"
-            type="email"
-            name="user-email"
-            id="user-email"
-          />
-          <svg class="modal__icon-input">
-            <use href="./images/sprite.svg#icon-email-form"></use>
-          </svg>
-        </div>
-        <label class="modal__label-title" for="user-comment"
-          ><span class="modal__label-name">Послуга</span></label
-        >
-
-        <textarea
-          class="modal__input-coment"
-          name="user-comment"
-          id="user-comment"
-          placeholder="Введіть текст"
-        ></textarea>
-        <div class="centre">
-          <div class="agree">
-            <label class="polity" for="agree">
-              <input
-                class="checkbox visually-hidden"
-                required
-                type="checkbox"
-                name="topic"
-                value="agree"
-                id="agree"
-                title="Дайте згоду"
-              />
-              <span class="checkbox__icon"> </span>
-              Погоджуюся з розсилкою та приймаю
-              <a class="checkbox__link" href="#">&nbsp;Умови договору</a>
-            </label>
-          </div>
-
-          <button class="modal__btn-send" type="submit">Відправити</button>
-        </div>
-      </form>
-    </div>
     <!-- button topup -->
     <button id="scrollToTopBtn" style="display: none"></button>
-    <!-- slider -->
-    <script src="./js/slider.js"></script>
-    <script src="./js/gallery_slider.js"></script>
-    <!-- slider end -->
+
     <script src="./js/totop.js"></script>
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>

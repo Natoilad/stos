@@ -1,5 +1,8 @@
 .case {
   background-color: #efefef;
+  p {
+    text-align: center;
+  }
   &_list {
     display: flex;
     gap: 10px;
@@ -43,7 +46,7 @@
       border-top: 1px solid var(--brend-color);
       color: #00193e;
       &_hidden {
-        text-align: start;
+        text-align: start !important;
         padding: 10px;
         visibility: hidden;
         color: #878787;
@@ -114,9 +117,5 @@
     margin: 0 auto;
     color: var(--primery-text-color);
     border-radius: 4px;
-  }
-  p {
-    margin-top: 50px;
-    text-align: center;
   }
 }
