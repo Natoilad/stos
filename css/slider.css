@@ -183,6 +183,7 @@ ul.slick-dots li.slick-active button {
   bottom: -100px;
   width: 80px;
   height: 80px;
+  scale: 0.8;
   background-color: transparent;
   color: #000;
   border-radius: 50%;

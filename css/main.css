@@ -1587,6 +1587,46 @@ textarea {
   text-align: center;
   color: #000;
 }
+.about_partners {
+  background-color: #efefef;
+  font-family: Montserrat;
+  text-align: center;
+  color: #00193e;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.about_partners h3 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 140%; /* 70px */
+}
+.about_partners p {
+  margin-bottom: 30px;
+}
+.about_partners ul {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .about_partners ul {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 950px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.about_partners ul li {
+  margin-bottom: 30px;
+}
+.about_partners ul li img {
+  margin: 0 auto;
+  max-width: 100%;
+}
 
 .vivat-footer {
   background-image: url(../../images/bg/footer_bg.jpg);

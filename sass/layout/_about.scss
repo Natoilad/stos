@@ -161,4 +161,43 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     text-align: center;
     color: #000;
   }
+  &_partners {
+    background-color: #efefef;
+    font-family: Montserrat;
+    text-align: center;
+    color: #00193e;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+
+    h3 {
+      @include font(50px, 600);
+      line-height: 140%; /* 70px */
+    }
+    p {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      @include desktop {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        width: 950px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      li {
+        margin-bottom: 30px;
+        img {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }
