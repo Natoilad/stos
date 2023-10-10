@@ -1142,6 +1142,9 @@ textarea {
     text-align: start;
   }
 }
+.technology h2 {
+  margin: 0 auto;
+}
 
 .technology-list {
   display: flex;
