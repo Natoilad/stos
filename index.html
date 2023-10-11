@@ -29,13 +29,22 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- old fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Inter:wght@500&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
+    /> -->
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Inter:wght@500&family=Montserrat+Alternates:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
+    <!-- font end -->
 
     <!-- styles css -->
     <link
@@ -44,6 +53,9 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/slider.css" />
+    <!-- <style>
+      @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Inter:wght@500&family=Montserrat+Alternates:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+    </style> -->
   </head>
   <body>
     <!-- header -->
@@ -51,7 +63,11 @@
       <div class="container page-header__conteiner">
         <nav class="menu-nav">
           <a class="link" href="./index.html">
-            <img class="logo-up_icon" src="./images/svg/logo.svg" alt="logo"
+            <img
+              loading="lazy"
+              class="logo-up_icon"
+              src="./images/svg/logo.svg"
+              alt="logo"
           /></a>
           <ul class="menu-nav-list list">
             <li class="menu-nav__item">
@@ -93,12 +109,17 @@
           </li>
         </ul>
         <button type="button" class="open-mobile-menu-btn" data-menu-open>
-          <img class="" src="./images/svg/icon-burger.svg" alt="mobile menu" />
+          <img
+            loading="lazy"
+            class=""
+            src="./images/svg/icon-burger.svg"
+            alt="mobile menu"
+          />
         </button>
       </div>
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-          <button class="mobile-menu__close-btn" data-menu-close>
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
             <svg class="mobile-menu__close-icon">
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
@@ -176,11 +197,13 @@
               </li>
             </ul>
             <img
+              loading="lazy"
               class="discount_img_desktop"
               src="./images/svg/discount_desktop.svg"
               alt="discount icon"
             />
             <img
+              loading="lazy"
               class="discount_img_mobile"
               src="./images/svg/discount_mobile.svg"
               alt="discount icon"
@@ -205,7 +228,12 @@
           </div>
           <div class="hero_address_container">
             <div class="hero_address_wraper">
-              <img style="width: 60px" src="./images/svg/map.svg" alt="map" />
+              <img
+                loading="lazy"
+                style="width: 60px"
+                src="./images/svg/map.svg"
+                alt="map"
+              />
               <p>
                 м.Боярка. <br />
                 вул. Магістральна, 179
@@ -213,6 +241,7 @@
             </div>
             <div class="hero_address_wraper">
               <img
+                loading="lazy"
                 style="width: 40px"
                 src="./images/svg/little_clock.svg"
                 alt="clock icon"
@@ -234,6 +263,7 @@
             <li class="technology-list__item">
               <div class="technology__icon">
                 <img
+                  loading="lazy"
                   class="technology__icon__img"
                   src="../images/svg/cost.svg"
                   alt="cost icon"
@@ -244,6 +274,7 @@
             <li class="technology-list__item">
               <div class="technology__icon">
                 <img
+                  loading="lazy"
                   class="technology__icon__img"
                   src="./images/svg/seting.svg"
                   alt="setting icon"
@@ -254,6 +285,7 @@
             <li class="technology-list__item">
               <div class="technology__icon">
                 <img
+                  loading="lazy"
                   class="technology__icon__img"
                   src="./images/svg/clock.svg"
                   alt="clock icon"
@@ -278,6 +310,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">малярні роботи</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/paint.png"
                     alt="paint image"
@@ -290,6 +323,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">ремонт двигуна</p>
                   <img
+                    loading="lazy"
                     class="service_img engine_img"
                     src="./images/service/engine.png"
                     alt="engine image"
@@ -302,6 +336,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">кузовний ремонт</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/body.png"
                     alt="car body image"
@@ -314,6 +349,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">ремонт ходової</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/chassis.png"
                     alt="chassis image"
@@ -326,6 +362,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">Заміна шин Балансування</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/tires.png"
                     alt="tires image"
@@ -338,6 +375,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">3D розвал сходження</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/disintegration.png"
                     alt="disintegration image"
@@ -350,6 +388,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">Система зчеплення</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/clutch.png"
                     alt="clutch image"
@@ -362,6 +401,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">Рульове управління</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/steering.png"
                     alt="steering image"
@@ -374,6 +414,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">Технічне обслуговування</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/maintenance.png"
                     alt="maintenance image"
@@ -386,6 +427,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">Заправка кондиціонера</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/conditioner.png"
                     alt="conditioner image"
@@ -398,6 +440,7 @@
                 <div class="service_img_container">
                   <p class="service_img_title">Замовлення автозапчастин</p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/auto_parts.png"
                     alt="auto parts image"
@@ -412,6 +455,7 @@
                     Електрика і комп’ютерна діагностика
                   </p>
                   <img
+                    loading="lazy"
                     class="service_img"
                     src="./images/service/diagnosis.png"
                     alt="diagnosis image"
@@ -435,13 +479,14 @@
                 <div class="testimonial">
                   <div class="author-img">
                     <img
+                      loading="lazy"
                       src="https://srmahour.github.io/custom-testimonial-slider-and-blog/images/5.jpg"
                       alt="Олег Шишкін photo"
                       class="img-fluid rounded"
                     />
                   </div>
                   <div class="author-quote">
-                    <h4>Олег Шишкін</h4>
+                    <h5>Олег Шишкін</h5>
                     <blockquote>
                       <i class="fa fa-quote-left"></i>Відвідував СТО двічі.
                       Проводив ТО та ремонт (слесарні роботи). Приємний
@@ -464,13 +509,14 @@
                 <div class="testimonial">
                   <div class="author-img">
                     <img
+                      loading="lazy"
                       src="https://srmahour.github.io/custom-testimonial-slider-and-blog/images/4.jpg"
                       alt="Ruslan Melnychenko photo"
                       class="img-fluid rounded"
                     />
                   </div>
                   <div class="author-quote">
-                    <h4>Ruslan Melnychenko</h4>
+                    <h5>Ruslan Melnychenko</h5>
                     <blockquote>
                       <i class="fa fa-quote-left"></i> Звертався з приводу
                       непрацюючого дверцята, зробили швидко. Співробітники
@@ -492,13 +538,14 @@
                 <div class="testimonial">
                   <div class="author-img">
                     <img
+                      loading="lazy"
                       src="https://srmahour.github.io/custom-testimonial-slider-and-blog/images/2.jpg"
                       alt="Олег Стралківський photo"
                       class="img-fluid rounded"
                     />
                   </div>
                   <div class="author-quote">
-                    <h4>Олег Стралківський</h4>
+                    <h5>Олег Стралківський</h5>
                     <blockquote>
                       <i class="fa fa-quote-left"></i>Не працювало ліве світло
                       гальма ззаду, електрик знайшов причину та поладив швидко.
@@ -520,13 +567,14 @@
                 <div class="testimonial">
                   <div class="author-img">
                     <img
+                      loading="lazy"
                       src="https://lh3.googleusercontent.com/a-/ALV-UjWfcmPl160ldWLTIrlPpH2vwExcNCU_6uYw9t58LJho8Sg=w60-h60-p-rp-mo-ba2-br100"
                       alt="Vasich photo"
                       class="img-fluid rounded"
                     />
                   </div>
                   <div class="author-quote">
-                    <h4>Vasich</h4>
+                    <h5>Vasich</h5>
                     <blockquote>
                       <i class="fa fa-quote-left"></i>Кадик обслуговував на
                       цьому СТО. Працюють справжні професіонали своєї справи.
@@ -549,13 +597,14 @@
                 <div class="testimonial">
                   <div class="author-img">
                     <img
+                      loading="lazy"
                       src="https://lh3.googleusercontent.com/a-/ALV-UjVWeGZUH3377DGpwVwoOrgClf6lx8sots-gCUhpP613WiU=w60-h60-p-rp-mo-br100"
                       alt="Andrey lobas photo"
                       class="img-fluid rounded"
                     />
                   </div>
                   <div class="author-quote">
-                    <h4>Andrey lobas</h4>
+                    <h5>Andrey lobas</h5>
                     <blockquote>
                       <i class="fa fa-quote-left"></i> Всім рекомендую, це СТО.
                       Сьогодні сталося, що треба було терміново знайти причину
@@ -593,7 +642,11 @@
           <ul style="margin-bottom: 50px" class="service_section-list list">
             <li class="service_section-list__item">
               <div class="usa_plan_wraper service_img_container">
-                <img src="./images/svg/offer_usa.svg" alt="offer icon" />
+                <img
+                  loading="lazy"
+                  src="./images/svg/offer_usa.svg"
+                  alt="offer icon"
+                />
                 <h4 class="usa_plan_title">Формування замовлення</h4>
                 <p class="usa_plan_paragraph">
                   Ви вказуєте всі необхідні деталі щодо автомобіля, який ви
@@ -603,7 +656,11 @@
             </li>
             <li class="service_section-list__item">
               <div class="usa_plan_wraper service_img_container">
-                <img src="./images/svg/check_usa.svg" alt="checklist icon" />
+                <img
+                  loading="lazy"
+                  src="./images/svg/check_usa.svg"
+                  alt="checklist icon"
+                />
                 <h4 class="usa_plan_title">перевірка історії авто</h4>
                 <p class="usa_plan_paragraph">
                   Наша команда експертів розпочинає детальну перевірку історії
@@ -614,7 +671,11 @@
             </li>
             <li class="service_section-list__item">
               <div class="usa_plan_wraper service_img_container">
-                <img src="./images/svg/shop_usa.svg" alt="shop usa car icon" />
+                <img
+                  loading="lazy"
+                  src="./images/svg/shop_usa.svg"
+                  alt="shop usa car icon"
+                />
                 <h4 class="usa_plan_title">Купівля автомобіля</h4>
                 <p class="usa_plan_paragraph">
                   Після перевірки історії вибраного автомобіля, наступним кроком
@@ -624,7 +685,11 @@
             </li>
             <li class="service_section-list__item">
               <div class="usa_plan_wraper service_img_container">
-                <img src="./images/svg/delivery_usa.svg" alt="delivery icon" />
+                <img
+                  loading="lazy"
+                  src="./images/svg/delivery_usa.svg"
+                  alt="delivery icon"
+                />
                 <h4 class="usa_plan_title">Доставка автомобіля</h4>
                 <p class="usa_plan_paragraph">
                   Митне очищення та передача автомобіля клієнтові з повним
@@ -649,25 +714,46 @@
           </p>
           <div class="my-slider">
             <div class="gallery_img_wraper">
-              <img src="./images/content_img/gallery_img_1.jpg" alt="Image 1" />
-            </div>
-            <div class="gallery_img_wraper">
-              <img src="./images/content_img/gallery_img_2.jpg" alt="Image 2" />
-            </div>
-            <div class="gallery_img_wraper">
-              <img src="./images/content_img/gallery_img_3.jpg" alt="Image 3" />
+              <img
+                loading="lazy"
+                src="./images/content_img/gallery_img_1.jpg"
+                alt="Image 1"
+              />
             </div>
             <div class="gallery_img_wraper">
               <img
+                loading="lazy"
+                src="./images/content_img/gallery_img_2.jpg"
+                alt="Image 2"
+              />
+            </div>
+            <div class="gallery_img_wraper">
+              <img
+                loading="lazy"
+                src="./images/content_img/gallery_img_3.jpg"
+                alt="Image 3"
+              />
+            </div>
+            <div class="gallery_img_wraper">
+              <img
+                loading="lazy"
                 src="./images/content_img/gallery_img_4.jpeg"
                 alt="Image 1"
               />
             </div>
             <div class="gallery_img_wraper">
-              <img src="./images/content_img/gallery_img6.jpeg" alt="Image 2" />
+              <img
+                loading="lazy"
+                src="./images/content_img/gallery_img6.jpeg"
+                alt="Image 2"
+              />
             </div>
             <div class="gallery_img_wraper">
-              <img src="./images/content_img/gallery_img7.jpeg" alt="Image 3" />
+              <img
+                loading="lazy"
+                src="./images/content_img/gallery_img7.jpeg"
+                alt="Image 3"
+              />
             </div>
           </div>
         </div>
@@ -850,6 +936,7 @@
         <address class="footer-address">
           <div class="hero_address_wraper">
             <img
+              loading="lazy"
               style="width: 40px"
               src="./images/svg/phone.svg"
               alt="phone icon"
@@ -869,6 +956,7 @@
           </div>
           <div class="hero_address_wraper">
             <img
+              loading="lazy"
               style="width: 60px"
               src="./images/svg/map.svg"
               alt="map icon"
@@ -891,6 +979,7 @@
 
           <div class="hero_address_wraper">
             <img
+              loading="lazy"
               style="width: 40px"
               src="./images/svg/little_clock.svg"
               alt="clock"
