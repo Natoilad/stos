@@ -108,6 +108,11 @@
     margin-top: 25px;
   }
 }
+.testimonial {
+  h3{
+    color: #000
+  }
+}
 .testimonial_link {
   @include font(20px, 500);
   color: var(--brend-color);

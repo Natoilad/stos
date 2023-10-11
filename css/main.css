@@ -1306,6 +1306,10 @@ textarea {
   }
 }
 
+.testimonial h3 {
+  color: #000;
+}
+
 .testimonial_link {
   font-size: 20px;
   font-weight: 500;

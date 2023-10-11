@@ -48,6 +48,11 @@
     <!-- <style>
       @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Inter:wght@500&family=Montserrat+Alternates:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
     </style> -->
+
+<!-- form -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </head>
 
   <body>
@@ -1112,7 +1117,7 @@
     </footer>
     <!-- form -->
     <div class="backdrop is-hidden" data-modal>
-      <form action="sender.php" method="post" class="modal">
+      <form id="first_modal"  action="sender.php" method="post" class="modal">
         <button type="button" class="modal__btn-close" data-modal-close>
           <svg class="modal__close-icon" width="18px" height="18px">
             <use href="./images/sprite.svg#modal-close-btn"></use>
@@ -1203,10 +1208,10 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
       defer
     ></script>
-    <link
+    <!-- <link
       href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/font-awesome.min.css"
       rel="stylesheet"
-    >
+    > -->
     <link
       href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/slick.css"
       rel="stylesheet"
@@ -1219,5 +1224,28 @@
     <script src="./js/totop.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script>$(document).ready(function () {
+      $('#first_modal').submit(function (e) {
+          e.preventDefault(); // Зупинити стандартну відправку форми
+          
+          $.ajax({
+              type: 'POST',
+              url: './sender.php', // Змініть на шлях до вашого PHP скрипта
+              data: $(this).serialize(),
+              success: function (response) {
+                  // Ваш код для обробки успішної відправки
+                  alert('Форма успішно відправлена!');
+                  $('#first_modal')[0].reset(); // Скинути форму
+                  // Якщо у вас є модальне вікно або щось подібне для закриття форми:
+                  // $('#yourModalId').modal('hide'); 
+              },
+              error: function (error) {
+                  // Ваш код для обробки помилки
+                  alert('Помилка при відправці форми. Спробуйте ще раз.');
+              }
+          });
+      });
+  });
+  </script>
   </body>
 </html>
