@@ -1712,7 +1712,7 @@ textarea {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    width: 950px;
+    width: 750px;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
@@ -2319,7 +2319,7 @@ textarea {
   color: #878787;
   padding: 5px 10px;
   padding-left: 0;
-  padding-right: 50px;
+  padding-right: 40px;
 }
 .case_wraper_table_td2 {
   color: #00193e;
