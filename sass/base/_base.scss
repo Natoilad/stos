@@ -16,6 +16,17 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+h2,
+h3,
+h4,
+h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  @include desktop {
+    font-size: 26px;
+  }
+}
 p {
   font-style: normal;
   line-height: normal;

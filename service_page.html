@@ -454,14 +454,15 @@
           >
             Записатися на сервіс
           </button>
-          <button
+          <a
+            href="https://t.me/OlexandrYakowenko"
+            target="_blank"
             type="button"
-            class="button-active hero-btn button"
+            class="button-active hero-btn button link telegram_link"
             style="background-color: #ff9800"
-            data-modal-open
           >
-            Замовити дзвінок
-          </button>
+            спілкуватися в telegram
+          </a>
         </div>
         <div
           style="display: flex; flex-direction: column; align-items: center"
@@ -682,5 +683,29 @@
     <script src="./js/totop.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/service_page.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#first_modal').submit(function (e) {
+          e.preventDefault(); // Зупинити стандартну відправку форми
+
+          $.ajax({
+            type: 'POST',
+            url: './sender.php', // Змініть на шлях до вашого PHP скрипта
+            data: $(this).serialize(),
+            success: function (response) {
+              // Ваш код для обробки успішної відправки
+              alert('Форма успішно відправлена!');
+              $('#first_modal')[0].reset(); // Скинути форму
+              // Якщо у вас є модальне вікно або щось подібне для закриття форми:
+              // $('#yourModalId').modal('hide');
+            },
+            error: function (error) {
+              // Ваш код для обробки помилки
+              alert('Помилка при відправці форми. Спробуйте ще раз.');
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>

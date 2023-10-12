@@ -12,10 +12,12 @@
   text-align: center;
 
   &_title {
-    @include font(36px, 500);
+    font-family: 'Montserrat';
+    @include font(26px, 500);
     font-style: normal;
     line-height: 140%;
     text-transform: uppercase;
+    text-align: center;
   }
   &_text {
     max-width: 450px;

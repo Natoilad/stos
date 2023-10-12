@@ -52,7 +52,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     text-align: center;
     margin-top: 15px;
     color: var(--primery-text-color);
-    @include font(26px, 900);
+    @include font(26px, 500);
     line-height: 1.62;
     margin: 0 auto;
     letter-spacing: 0.06em;
@@ -168,4 +168,11 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   .discount_img_desktop {
     margin-right: 50px;
   }
+}
+
+.telegram_link {
+  padding: 15px 0;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 12px;
 }

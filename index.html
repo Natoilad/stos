@@ -30,7 +30,7 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- font -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
     </style>
     <!-- font end -->
     <!-- styles css -->
@@ -39,10 +39,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/slider.css" />
-    <!-- form -->
   </head>
 
   <body>
@@ -210,14 +208,16 @@
             >
               Записатися на сервіс
             </button>
-            <button
+
+            <a
+              href="https://t.me/OlexandrYakowenko"
+              target="_blank"
               type="button"
-              class="button-active hero-btn button"
+              class="button-active hero-btn button link telegram_link"
               style="background-color: #ff9800"
-              data-modal-open
             >
-              Замовити дзвінок
-            </button>
+              спілкуватися в telegram
+            </a>
           </div>
           <div class="hero_address_container">
             <div class="hero_address_wraper">
@@ -875,14 +875,15 @@
           >
             Записатися на сервіс
           </button>
-          <button
+          <a
+            href="https://t.me/OlexandrYakowenko"
+            target="_blank"
             type="button"
-            class="button-active hero-btn button"
+            class="button-active hero-btn button link telegram_link"
             style="background-color: #ff9800"
-            data-modal-open
           >
-            Замовити дзвінок
-          </button>
+            спілкуватися в telegram
+          </a>
         </div>
         <div
           style="display: flex; flex-direction: column; align-items: center"
@@ -1113,9 +1114,9 @@
             <use href="./images/sprite.svg#modal-close-btn"></use>
           </svg>
         </button>
-        <p class="modal__cta-title">записатис на сервіс</p>
+        <p class="modal__cta-title">записатись на сервіс</p>
         <label class="modal__label-title" for="user-name"
-          ><span class="modal__label-name">Ваше Ім’я </span></label
+          ><span class="modal__label-name">Ваше Ім’я</span></label
         >
         <div class="modal__input-position">
           <input
@@ -1142,21 +1143,6 @@
             placeholder="+380"
           />
         </div>
-
-        <label class="modal__label-title" for="user-email"
-          ><span class="modal__label-name"
-            >Коли Вам зателефонувати?</span
-          ></label
-        >
-        <div class="modal__input-position">
-          <input
-            required
-            class="modal__input-mail"
-            type="email"
-            name="user-email"
-            id="user-email"
-          />
-        </div>
         <label class="modal__label-title" for="user-comment"
           ><span class="modal__label-name">Послуга</span></label
         >
@@ -1168,24 +1154,9 @@
           placeholder="Введіть текст"
         ></textarea>
         <div class="centre">
-          <div class="agree">
-            <label class="polity" for="agree">
-              <input
-                class="checkbox visually-hidden"
-                required
-                type="checkbox"
-                name="topic"
-                value="agree"
-                id="agree"
-                title="Дайте згоду"
-              />
-              <span class="checkbox__icon"> </span>
-              Погоджуюся з розсилкою та приймаю
-              <a class="checkbox__link" href="#">&nbsp;Умови договору</a>
-            </label>
-          </div>
-
-          <button class="modal__btn-send" type="submit">Відправити</button>
+          <button class="modal__btn-send" type="submit">
+            <img src="./images/svg/write_on.svg" alt="write om icon" />
+          </button>
         </div>
       </form>
     </div>
@@ -1198,10 +1169,7 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
       defer
     ></script>
-    <!-- <link
-      href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/font-awesome.min.css"
-      rel="stylesheet"
-    > -->
+
     <link
       href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/slick.css"
       rel="stylesheet"

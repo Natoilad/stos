@@ -211,6 +211,7 @@ ul.slick-dots li.slick-active button {
   color: #000;
 }
 .testimonials_text {
+  text-transform: uppercase;
   width: 130px;
   position: relative;
   bottom: -300px;

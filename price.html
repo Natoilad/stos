@@ -30,12 +30,9 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Inter:wght@500&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
+    </style>
     <!-- font end -->
 
     <!-- styles css -->
@@ -1279,14 +1276,15 @@
           >
             Записатися на сервіс
           </button>
-          <button
+          <a
+            href="https://t.me/OlexandrYakowenko"
+            target="_blank"
             type="button"
-            class="button-active hero-btn button"
+            class="button-active hero-btn button link telegram_link"
             style="background-color: #ff9800"
-            data-modal-open
           >
-            Замовити дзвінок
-          </button>
+            спілкуватися в telegram
+          </a>
         </div>
         <div
           style="display: flex; flex-direction: column; align-items: center"
@@ -1501,9 +1499,96 @@
         </p>
       </div>
     </footer>
+    <!-- form -->
+    <div class="backdrop is-hidden" data-modal>
+      <form id="first_modal" action="sender.php" method="post" class="modal">
+        <button type="button" class="modal__btn-close" data-modal-close>
+          <svg class="modal__close-icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#modal-close-btn"></use>
+          </svg>
+        </button>
+        <p class="modal__cta-title">записатись на сервіс</p>
+        <label class="modal__label-title" for="user-name"
+          ><span class="modal__label-name">Ваше Ім’я</span></label
+        >
+        <div class="modal__input-position">
+          <input
+            required
+            class="modal__input-name"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Сергій"
+          />
+        </div>
+        <label class="modal__label-title" for="user-phone"
+          ><span class="modal__label-name">Номер телефону</span></label
+        >
+        <div class="modal__input-position">
+          <input
+            required
+            class="modal__input-phone"
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            pattern="[0-9]{10}"
+            title="xxxxxxxxxx"
+            placeholder="+380"
+          />
+        </div>
+
+        <!-- <label class="modal__label-title" for="user-email"
+          ><span class="modal__label-name"
+            >Коли Вам зателефонувати?</span
+          ></label
+        >
+        <div class="modal__input-position">
+          <input
+            required
+            class="modal__input-mail"
+            type="email"
+            name="user-email"
+            id="user-email"
+          />
+        </div> -->
+        <label class="modal__label-title" for="user-comment"
+          ><span class="modal__label-name">Послуга</span></label
+        >
+
+        <textarea
+          class="modal__input-coment"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Введіть текст"
+        ></textarea>
+        <div class="centre">
+          <!-- <div class="agree">
+            <label class="polity" for="agree">
+              <input
+                class="checkbox visually-hidden"
+                required
+                type="checkbox"
+                name="topic"
+                value="agree"
+                id="agree"
+                title="Дайте згоду"
+              />
+              <span class="checkbox__icon"> </span>
+              Погоджуюся з розсилкою та приймаю
+              <a class="checkbox__link" href="#">&nbsp;Умови договору</a>
+            </label>
+          </div> -->
+
+          <button class="modal__btn-send" type="submit">
+            <img src="./images/svg/write_on.svg" alt="write om icon" />
+          </button>
+        </div>
+      </form>
+    </div>
     <!-- button topup -->
     <button id="scrollToTopBtn" style="display: none"></button>
     <script src="./js/totop.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/accordion.js"></script>
     <script>
@@ -1557,6 +1642,30 @@
             });
           }
         }
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('#first_modal').submit(function (e) {
+          e.preventDefault(); // Зупинити стандартну відправку форми
+
+          $.ajax({
+            type: 'POST',
+            url: './sender.php', // Змініть на шлях до вашого PHP скрипта
+            data: $(this).serialize(),
+            success: function (response) {
+              // Ваш код для обробки успішної відправки
+              alert('Форма успішно відправлена!');
+              $('#first_modal')[0].reset(); // Скинути форму
+              // Якщо у вас є модальне вікно або щось подібне для закриття форми:
+              // $('#yourModalId').modal('hide');
+            },
+            error: function (error) {
+              // Ваш код для обробки помилки
+              alert('Помилка при відправці форми. Спробуйте ще раз.');
+            },
+          });
+        });
       });
     </script>
   </body>

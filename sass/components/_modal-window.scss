@@ -1,18 +1,44 @@
 .modal {
-  width: 450px;
+  background: transparent;
+  background-image: url(../images/svg/modal_bg_mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--primery-text-color);
   padding: 40px;
+  padding-bottom: 50px;
+  border-radius: 4px;
+  text-align: center;
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    padding-bottom: 50px;
+  }
+
+  @include tablet {
+    padding: 40px;
+    width: 80%;
+    background-color: var(--brend-color);
+  }
+
   @include desktop {
-    width: 528px;
+    padding: 40px;
+    text-align: left;
+    background-color: transparent;
+    background-image: url(../images/svg/modal_bg.svg);
+    width: 840px;
+    padding-bottom: 100px;
+    background-size: cover;
+    padding-bottom: 170px;
   }
 }
 @media screen and (max-width: 450px) {
   .modal {
-    width: 90%;
+    // width: 90%;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -36,11 +62,12 @@
 }
 
 .modal__close-icon {
+  fill: #878787;
   transition: fill var(--transition-dur-fun);
 
   .modal__btn-close:hover &,
   .modal__btn-close:focus & {
-    fill: var(--brend-color);
+    fill: var(--primery-text-color);
   }
 }
 
