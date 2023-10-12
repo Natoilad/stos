@@ -299,10 +299,15 @@ body {
   margin-right: auto;
 }
 
+.write_on_img {
+  width: 60px;
+  height: 60px;
+}
+
 .modal__btn-send {
-  scale: 0.6;
+  padding: 5px;
   position: relative;
-  top: 33px;
+  top: 60px;
   border-radius: 100%;
   background: var(--brend-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -310,15 +315,17 @@ body {
 }
 @media screen and (min-width: 768px) {
   .modal__btn-send {
-    scale: 1;
-    top: 110px;
+    scale: 1.5;
+    top: 75px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal__btn-send {
+    padding: 10px;
+    scale: 1.6;
     position: absolute;
-    top: 84%;
-    right: 42.5%;
+    top: 92%;
+    right: 45%;
   }
 }
 .modal__btn-send:hover {
@@ -343,7 +350,7 @@ body {
 }
 
 #scrollToTopBtn {
-  background: url(../../images/svg/btn_up.svg);
+  background: url(../images/svg/btn_up.svg);
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
@@ -358,7 +365,7 @@ body {
 }
 
 #scrollToTopBtn:hover {
-  background: url(../../images/svg/btn_up_hover.svg);
+  background: url(../images/svg/btn_up_hover.svg);
   background-size: cover;
   opacity: 1;
 }
@@ -484,7 +491,7 @@ body {
     width: 840px;
     padding-bottom: 100px;
     background-size: cover;
-    padding-bottom: 170px;
+    padding-bottom: 150px;
   }
 }
 
@@ -1219,8 +1226,9 @@ textarea {
 .telegram_link {
   padding: 15px 0;
   text-transform: uppercase;
-  color: #000;
+  color: var(--primery-text-color);
   font-size: 12px;
+  background-color: var(--brend-color);
 }
 
 .technology {
@@ -2120,7 +2128,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .usa_cars_delivery_wraper {
     width: 260px;
-    height: 490px;
+    height: 400px;
   }
 }
 .usa_cars_delivery_wraper img {
@@ -2329,7 +2337,6 @@ textarea {
 .case ul.slick-dots {
   position: relative;
   top: -40px;
-  z-index: 999;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -2474,16 +2481,16 @@ textarea {
   display: none;
 }
 
-.test {
+.price_desktop {
   display: flex;
   justify-content: space-between;
 }
 
-.test_section {
+.price_desktop_section {
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  .test_section {
+  .price_desktop_section {
     display: block;
   }
 }

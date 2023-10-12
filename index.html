@@ -8,6 +8,8 @@
       content="VIVAT - car service! Якісне обслуговування Оперативний ремонт Доступні ціни"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VIVAT - car service</title>
 
     <!-- favicon -->
@@ -35,7 +37,6 @@
     <!-- font end -->
     <!-- styles css -->
     <link
-      rel
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
@@ -212,7 +213,6 @@
             <a
               href="https://t.me/OlexandrYakowenko"
               target="_blank"
-              type="button"
               class="button-active hero-btn button link telegram_link"
               style="background-color: #ff9800"
             >
@@ -878,9 +878,7 @@
           <a
             href="https://t.me/OlexandrYakowenko"
             target="_blank"
-            type="button"
             class="button-active hero-btn button link telegram_link"
-            style="background-color: #ff9800"
           >
             спілкуватися в telegram
           </a>
@@ -1143,6 +1141,7 @@
             placeholder="+380"
           />
         </div>
+
         <label class="modal__label-title" for="user-comment"
           ><span class="modal__label-name">Послуга</span></label
         >
@@ -1155,7 +1154,11 @@
         ></textarea>
         <div class="centre">
           <button class="modal__btn-send" type="submit">
-            <img src="./images/svg/write_on.svg" alt="write om icon" />
+            <img
+              class="write_on_img"
+              src="./images/svg/write_on.svg"
+              alt="write on icon"
+            />
           </button>
         </div>
       </form>

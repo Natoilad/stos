@@ -68,23 +68,28 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+.write_on_img {
+  width: 60px;
+  height: 60px;
+}
 .modal__btn-send {
-  scale: 0.6;
+  padding: 5px;
   position: relative;
-  top: 33px;
+  top: 60px;
   border-radius: 100%;
   background: var(--brend-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   @include tablet {
-    scale: 1;
-    top: 110px;
+    scale: 1.5;
+    top: 75px;
   }
   @include desktop {
+    padding: 10px;
+    scale: 1.6;
     position: absolute;
-    top: 84%;
-    right: 42.5%;
+    top: 92%;
+    right: 45%;
   }
 
   &:hover {
@@ -114,7 +119,7 @@
   }
 }
 #scrollToTopBtn {
-  background: url(../../images/svg/btn_up.svg);
+  background: url(../images/svg/btn_up.svg);
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
@@ -129,7 +134,7 @@
 }
 
 #scrollToTopBtn:hover {
-  background: url(../../images/svg/btn_up_hover.svg);
+  background: url(../images/svg/btn_up_hover.svg);
   background-size: cover;
   opacity: 1;
 }

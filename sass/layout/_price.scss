@@ -102,11 +102,11 @@
 .hidden {
   display: none;
 }
-.test {
+.price_desktop {
   display: flex;
   justify-content: space-between;
 }
-.test_section {
+.price_desktop_section {
   display: none;
   @include desktop {
     display: block;

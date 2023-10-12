@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const subSliders = document.querySelectorAll('.sub-slider');
-
   subSliders.forEach(subSlider => {
     new Swiper(subSlider, {
       pagination: {

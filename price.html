@@ -845,8 +845,8 @@
           </div>
         </div>
       </section>
-      <section id="test_section" class="test_section section">
-        <div class="test container">
+      <section id="price_desktop_section" class="price_desktop_section section">
+        <div class="price_desktop container">
           <!-- Лівий блок елементів -->
           <div class="accordion test_accordion" style="width: 30%">
             <div class="accordion-item" id="item1" data-target="content1">
@@ -1279,9 +1279,7 @@
           <a
             href="https://t.me/OlexandrYakowenko"
             target="_blank"
-            type="button"
             class="button-active hero-btn button link telegram_link"
-            style="background-color: #ff9800"
           >
             спілкуватися в telegram
           </a>
@@ -1580,7 +1578,11 @@
           </div> -->
 
           <button class="modal__btn-send" type="submit">
-            <img src="./images/svg/write_on.svg" alt="write om icon" />
+            <img
+              class="write_on_img"
+              src="./images/svg/write_on.svg"
+              alt="write on icon"
+            />
           </button>
         </div>
       </form>
@@ -1626,7 +1628,7 @@
       window.addEventListener('load', function () {
         const currentHash = window.location.hash.substring(1);
 
-        const section = document.getElementById('test_section');
+        const section = document.getElementById('price_desktop_section');
         if (section) {
           const targetElement = section.querySelector(`#${currentHash}`);
           if (targetElement) {

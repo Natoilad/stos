@@ -18,17 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
       let targetContent = document.getElementById(targetId);
       let wasActive = this.classList.contains('active');
 
-      // Видаліть клас 'active' з усіх елементів
       accordionItems.forEach(i => {
         i.classList.remove('active');
       });
 
-      // Приховуємо всі елементи
       allContents.forEach(content => {
         content.classList.add('hidden');
       });
 
-      // Якщо клікнутий елемент був закритий, то відкриваємо його
       if (!wasActive) {
         this.classList.add('active');
         targetContent.classList.remove('hidden');
