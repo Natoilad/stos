@@ -32,8 +32,8 @@
   }
 }
 
-.logo-up_icon {
-  animation: rotateAnimation 3s forwards; /* 3 секунди тривалість анімації */
+.usa_cars__title {
+  animation: rotateAnimation 2s forwards; /* 3 секунди тривалість анімації */
 }
 
 // pulse
@@ -44,7 +44,7 @@
     transform: scale(1); /* початковий масштаб */
   }
   50% {
-    transform: scale(1.02); /* збільшення об'єкта на 5% в середині анімації */
+    transform: scale(1.03); /* збільшення об'єкта на 5% в середині анімації */
   }
 }
 
@@ -63,11 +63,74 @@
 }
 
 .open-mobile-menu-btn img,
-#scrollToTopBtn {
+#scrollToTopBtn,
+.logo-up_icon {
   animation: rotateAnimationZ 3s forwards; /* 3 секунди тривалість анімації */
 }
 
-.open-mobile-menu-btn img {
-  width: 40px;
-  height: 40px;
+@keyframes mobileModalAnimation {
+  0% {
+    opacity: 0;
+    width: 50%;
+    height: 50%;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 300px;
+    height: 100%;
+    margin-top: 20px;
+  }
+}
+@keyframes tabletModalAnimation {
+  0% {
+    opacity: 0;
+    width: 50%;
+    height: 50%;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 700px;
+    height: 500px;
+    margin-top: 20px;
+  }
+}
+
+@keyframes desktopModalAnimation {
+  0% {
+    opacity: 0;
+    width: 50%;
+    height: 50%;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 840px;
+    height: 526px;
+    margin-top: 20px;
+  }
+}
+
+.modal {
+  opacity: 0;
+  width: 50%;
+  height: 50%;
+  animation: mobileModalAnimation 1s forwards;
+}
+@include tablet {
+  .modal {
+    opacity: 0;
+    width: 50%;
+    height: 50%;
+    animation: tabletModalAnimation 1s forwards;
+  }
+}
+@include desktop {
+  .modal {
+    opacity: 0;
+    width: 50%;
+    height: 50%;
+    animation: desktopModalAnimation 1s forwards;
+  }
 }
