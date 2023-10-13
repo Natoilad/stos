@@ -615,7 +615,7 @@
               src="./images/svg/phone.svg"
               alt="phone icon"
             />
-            <ul class="list-contact list">
+            <ul style="gap: 15px" class="list-contact list">
               <li class="list-contact__item">
                 <a class="list-contact-link link" href="tel:+380963039767">
                   +38(096) 303-97-67</a
@@ -653,6 +653,7 @@
 
           <div class="hero_address_wraper">
             <img
+              class="clock_icon_anime"
               loading="lazy"
               style="width: 40px"
               src="./images/svg/little_clock.svg"
@@ -677,6 +678,9 @@
     </footer>
     <!-- button topup -->
     <button id="scrollToTopBtn" style="display: none"></button>
+    <!-- query for modal -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- query for modal end -->
 
     <script src="./js/totop.js"></script>
     <script src="./js/menu.js"></script>
@@ -691,14 +695,20 @@
             url: './sender.php', // Змініть на шлях до вашого PHP скрипта
             data: $(this).serialize(),
             success: function (response) {
-              // Ваш код для обробки успішної відправки
-              alert('Форма успішно відправлена!');
+              // Відображаємо сповіщення
+              let notification = $(
+                '<div class="notification"><p>Форма успішно відправлена!</p></div>'
+              );
+              $('body').append(notification);
+              setTimeout(() => {
+                notification.fadeOut(1000, function () {
+                  $(this).remove(); // Видалити елемент після анімації fadeOut
+                  $('[data-modal]').addClass('is-hidden'); // Приховати модальне вікно
+                });
+              }, 3000); // Через 3 секунди
               $('#first_modal')[0].reset(); // Скинути форму
-              // Якщо у вас є модальне вікно або щось подібне для закриття форми:
-              // $('#yourModalId').modal('hide');
             },
             error: function (error) {
-              // Ваш код для обробки помилки
               alert('Помилка при відправці форми. Спробуйте ще раз.');
             },
           });

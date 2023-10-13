@@ -7,6 +7,7 @@
       name="description"
       content="VIVAT - car service! Якісне обслуговування Оперативний ремонт Доступні ціни"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>VIVAT - car service</title>
     <!-- favicon -->
@@ -323,7 +324,7 @@
               <a href="https://autotechnics.ua/" target="_blank">
                 <img
                   loading="lazy"
-                  src="/images/svg/ad.svg"
+                  src="./images/svg/ad.svg"
                   alt="autotechnics logo"
                 />
               </a>
@@ -332,7 +333,7 @@
               <a href="https://www.elit.ua/" target="_blank">
                 <img
                   loading="lazy"
-                  src="/images//svg/elit.svg"
+                  src="./images//svg/elit.svg"
                   alt="elit logo"
                 />
               </a>
@@ -341,7 +342,7 @@
               <a href="https://www.forma-parts.ua/" target="_blank">
                 <img
                   loading="lazy"
-                  src="/images/svg/fps.svg"
+                  src="./images/svg/fps.svg"
                   alt="forma-parts logo"
                 />
               </a>
@@ -350,7 +351,7 @@
               <a href="https://standox.com.ua/" target="_blank">
                 <img
                   loading="lazy"
-                  src="/images/svg/color_system.svg"
+                  src="./images/svg/color_system.svg"
                   alt="standox logo"
                 />
               </a>
@@ -359,7 +360,7 @@
               <a href="https://colormarket.online/ua" target="_blank">
                 <img
                   loading="lazy"
-                  src="/images/svg/cm.svg"
+                  src="./images/svg/cm.svg"
                   alt="colormarket logo"
                 />
               </a>
@@ -368,7 +369,7 @@
               <a href="https://utr.ua/ua" target="_blank">
                 <img
                   loading="lazy"
-                  src="/images/svg/uti_icon.svg"
+                  src="./images/svg/uti_icon.svg"
                   alt="autonom logo"
                 />
               </a>
@@ -559,7 +560,7 @@
               src="./images/svg/phone.svg"
               alt="phone icon"
             />
-            <ul class="list-contact list">
+            <ul style="gap: 15px" class="list-contact list">
               <li class="list-contact__item">
                 <a class="list-contact-link link" href="tel:+380963039767">
                   +38(096) 303-97-67</a
@@ -597,6 +598,7 @@
 
           <div class="hero_address_wraper">
             <img
+              class="clock_icon_anime"
               loading="lazy"
               style="width: 40px"
               src="./images/svg/little_clock.svg"
@@ -681,9 +683,13 @@
     <!-- button topup -->
     <button id="scrollToTopBtn" style="display: none"></button>
 
+    <!-- query for modal -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- query for modal end -->
+
     <script src="./js/totop.js"></script>
-    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script>
       $(document).ready(function () {
         $('#first_modal').submit(function (e) {
@@ -694,14 +700,20 @@
             url: './sender.php', // Змініть на шлях до вашого PHP скрипта
             data: $(this).serialize(),
             success: function (response) {
-              // Ваш код для обробки успішної відправки
-              alert('Форма успішно відправлена!');
+              // Відображаємо сповіщення
+              let notification = $(
+                '<div class="notification"><p>Форма успішно відправлена!</p></div>'
+              );
+              $('body').append(notification);
+              setTimeout(() => {
+                notification.fadeOut(1000, function () {
+                  $(this).remove(); // Видалити елемент після анімації fadeOut
+                  $('[data-modal]').addClass('is-hidden'); // Приховати модальне вікно
+                });
+              }, 3000); // Через 3 секунди
               $('#first_modal')[0].reset(); // Скинути форму
-              // Якщо у вас є модальне вікно або щось подібне для закриття форми:
-              // $('#yourModalId').modal('hide');
             },
             error: function (error) {
-              // Ваш код для обробки помилки
               alert('Помилка при відправці форми. Спробуйте ще раз.');
             },
           });

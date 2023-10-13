@@ -1,0 +1,73 @@
+// 3D rotate
+@keyframes initialRotate {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 1080deg);
+  }
+}
+
+@keyframes hoverRotate {
+  0% {
+    transform: rotate3d(1, 1, 1, 1080deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 1440deg);
+  }
+}
+.usa_cars_offer_mobile_desktop,
+.clock_icon_anime {
+  animation: initialRotate 3s forwards;
+}
+
+// rotateY
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(1080deg); /* 3 обороти * 360 градусів = 1080 градусів */
+  }
+}
+
+.logo-up_icon {
+  animation: rotateAnimation 3s forwards; /* 3 секунди тривалість анімації */
+}
+
+// pulse
+
+@keyframes softPulse {
+  0%,
+  100% {
+    transform: scale(1); /* початковий масштаб */
+  }
+  50% {
+    transform: scale(1.02); /* збільшення об'єкта на 5% в середині анімації */
+  }
+}
+
+.button-active {
+  animation: softPulse 2s infinite; /* 2 секунди тривалість одного циклу анімації */
+}
+
+// rotateZ
+@keyframes rotateAnimationZ {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(1080deg); /* 3 обороти * 360 градусів = 1080 градусів */
+  }
+}
+
+.open-mobile-menu-btn img,
+#scrollToTopBtn {
+  animation: rotateAnimationZ 3s forwards; /* 3 секунди тривалість анімації */
+}
+
+.open-mobile-menu-btn img {
+  width: 40px;
+  height: 40px;
+}

@@ -365,6 +365,9 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   background-color: var(--brend-color);
   color: var(--primery-text-color);
   width: 100%;
+  &:hover {
+    scale: 1.1;
+  }
 }
 
 // $hero-bg-color: rgba(47, 48, 58, 0.4);
