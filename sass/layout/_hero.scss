@@ -113,63 +113,29 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
       }
     }
   }
-}
-
-.button_container {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  @include desktop {
-    flex-direction: row;
-  }
-}
-
-// .hero__title_sub {
-//   text-align: center;
-//   margin-bottom: 30px;
-//   @include desktop {
-//     text-align: start;
-//     margin-bottom: 80px;
-//   }
-//   li {
-//     margin-bottom: 12px;
-//   }
-//   &_wraper {
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     margin-bottom: 10px;
-//     @include desktop {
-//       flex-direction: row;
-//       justify-content: space-between;
-//     }
-//   }
-// }
-
-.discount_img {
-  &_mobile {
-    position: relative;
-    width: 80px;
-    right: -75%;
-    margin-top: -50px;
-    @include desktop {
-      display: none;
+  &_discount_img {
+    &_mobile {
+      position: relative;
+      width: 80px;
+      right: -75%;
+      margin-top: -50px;
+      @include desktop {
+        display: none;
+      }
     }
-  }
-  &_desktop {
-    display: none;
-    @include desktop {
-      display: block;
-      margin-top: -275px;
-      margin-right: -50px;
+    &_desktop {
+      display: none;
+      @include desktop {
+        display: block;
+        margin-top: -275px;
+        margin-right: -50px;
+      }
     }
   }
 }
 
 @media (max-width: 1300px) {
-  .discount_img_desktop {
+  .hero_discount_img_desktop {
     margin-right: 50px;
   }
 }

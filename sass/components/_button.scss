@@ -159,3 +159,14 @@
 .brend_color_text {
   color: var(--brend-color);
 }
+
+.button_container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  @include desktop {
+    flex-direction: row;
+  }
+}
