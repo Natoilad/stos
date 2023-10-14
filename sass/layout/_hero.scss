@@ -1,5 +1,4 @@
 $hero-bg-color: rgba(47, 48, 58, 0.4);
-
 .hero {
   padding-top: 100px;
   background: {
@@ -11,10 +10,6 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     color: #2f303a;
   }
   text-align: center;
-
-  @include mobile {
-  }
-
   @include tablet {
     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
       url(../images/bg/hero-bg-tablet.jpg);
@@ -24,7 +19,6 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   @include desktop {
     background-image: linear-gradient($hero-bg-color, $hero-bg-color),
       url(../images/bg/hero-bg-desktop.jpg);
-    // padding: 150px 50px 50px 50px;
     padding: 100px 0;
     max-width: 1600px;
     margin: 0 auto;
@@ -56,6 +50,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     @include font(26px, 500);
     line-height: 1.62;
     margin: 0 auto;
+    // margin-bottom: 20px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -71,11 +66,53 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
       text-align: start;
       width: 500px;
     }
+    &_sub {
+      text-align: center;
+      @include desktop {
+        text-align: start;
+        margin-bottom: 80px;
+      }
+      li {
+        margin-bottom: 12px;
+      }
+      &_wraper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+        @include desktop {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    }
   }
-}
-
-.brend_color_text {
-  color: var(--brend-color);
+  &_address {
+    &_wraper {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 20px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      margin: 0 auto 20px;
+      max-width: 400px;
+      @include desktop {
+        margin: 20px 0;
+        height: 120px;
+      }
+    }
+    &_container {
+      @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 20px;
+        margin: 20px 0;
+      }
+    }
+  }
 }
 
 .button_container {
@@ -84,101 +121,55 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-
   @include desktop {
     flex-direction: row;
   }
 }
 
-.sub_title {
-  @include font(18px, 400);
-  text-align: center;
+// .hero__title_sub {
+//   text-align: center;
+//   margin-bottom: 30px;
+//   @include desktop {
+//     text-align: start;
+//     margin-bottom: 80px;
+//   }
+//   li {
+//     margin-bottom: 12px;
+//   }
+//   &_wraper {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     margin-bottom: 10px;
+//     @include desktop {
+//       flex-direction: row;
+//       justify-content: space-between;
+//     }
+//   }
+// }
 
-  @include desktop {
-    text-align: start;
-    // width: 500px;
-    margin-bottom: 80px;
+.discount_img {
+  &_mobile {
+    position: relative;
+    width: 80px;
+    right: -75%;
+    margin-top: -50px;
+    @include desktop {
+      display: none;
+    }
   }
-
-  li {
-    margin-bottom: 12px;
-  }
-}
-
-.hero_address_wraper {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  padding: 20px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  margin: 0 auto 20px;
-  max-width: 400px;
-
-  @include desktop {
-    margin: 20px 0;
-    height: 120px;
-  }
-}
-
-.hero_address_container {
-  @include desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 20px;
-    margin: 20px 0;
-  }
-}
-
-.sub_title_wraper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 10px;
-
-  @include desktop {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.discount_img_mobile {
-  position: relative;
-  width: 80px;
-  right: -75%;
-  margin-top: -50px;
-
-  @include desktop {
+  &_desktop {
     display: none;
-  }
-}
-
-.discount_img_desktop {
-  display: none;
-
-  @include desktop {
-    display: block;
-    margin-top: -275px;
-    margin-right: -50px;
+    @include desktop {
+      display: block;
+      margin-top: -275px;
+      margin-right: -50px;
+    }
   }
 }
 
 @media (max-width: 1300px) {
   .discount_img_desktop {
     margin-right: 50px;
-  }
-}
-
-.telegram_link {
-  padding: 15px 0;
-  text-transform: uppercase;
-  color: var(--primery-text-color);
-  font-size: 12px;
-  background-color: var(--brend-color);
-  &:hover {
-    color: var(--brend-color);
-    background-color: var(--primery-text-color);
   }
 }

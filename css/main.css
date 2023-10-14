@@ -376,6 +376,22 @@ body {
   width: 50px;
 }
 
+.telegram_link {
+  padding: 15px 0;
+  text-transform: uppercase;
+  color: var(--primery-text-color);
+  font-size: 12px;
+  background-color: var(--brend-color);
+}
+.telegram_link:hover {
+  color: var(--brend-color);
+  background-color: var(--primery-text-color);
+}
+
+.brend_color_text {
+  color: var(--brend-color);
+}
+
 .mail-form {
   text-align: center;
 }
@@ -1142,39 +1158,30 @@ textarea {
     width: 500px;
   }
 }
-
-.brend_color_text {
-  color: var(--brend-color);
-}
-
-.button_container {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .button_container {
-    flex-direction: row;
-  }
-}
-
-.sub_title {
-  font-size: 18px;
-  font-weight: 400;
+.hero__title_sub {
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
-  .sub_title {
+  .hero__title_sub {
     text-align: start;
     margin-bottom: 80px;
   }
 }
-.sub_title li {
+.hero__title_sub li {
   margin-bottom: 12px;
 }
-
+.hero__title_sub_wraper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title_sub_wraper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .hero_address_wraper {
   display: flex;
   gap: 20px;
@@ -1192,7 +1199,6 @@ textarea {
     height: 120px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .hero_address_container {
     display: flex;
@@ -1203,16 +1209,16 @@ textarea {
   }
 }
 
-.sub_title_wraper {
+.button_container {
   display: flex;
-  justify-content: center;
+  gap: 20px;
   flex-direction: column;
-  margin-bottom: 10px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
-  .sub_title_wraper {
+  .button_container {
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -1227,7 +1233,6 @@ textarea {
     display: none;
   }
 }
-
 .discount_img_desktop {
   display: none;
 }
@@ -1244,18 +1249,6 @@ textarea {
     margin-right: 50px;
   }
 }
-.telegram_link {
-  padding: 15px 0;
-  text-transform: uppercase;
-  color: var(--primery-text-color);
-  font-size: 12px;
-  background-color: var(--brend-color);
-}
-.telegram_link:hover {
-  color: var(--brend-color);
-  background-color: var(--primery-text-color);
-}
-
 .technology {
   text-align: center;
 }

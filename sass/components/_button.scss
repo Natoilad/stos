@@ -144,3 +144,18 @@
   transform: rotate(90deg);
   width: 50px;
 }
+
+.telegram_link {
+  padding: 15px 0;
+  text-transform: uppercase;
+  color: var(--primery-text-color);
+  font-size: 12px;
+  background-color: var(--brend-color);
+  &:hover {
+    color: var(--brend-color);
+    background-color: var(--primery-text-color);
+  }
+}
+.brend_color_text {
+  color: var(--brend-color);
+}
