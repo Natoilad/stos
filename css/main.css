@@ -1213,6 +1213,9 @@ textarea {
     height: 120px;
   }
 }
+.hero_address_wraper a {
+  color: var(--primery-text-color);
+}
 @media screen and (min-width: 1200px) {
   .hero_address_container {
     display: flex;
@@ -1500,6 +1503,9 @@ textarea {
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 400;
+}
+.usa_plan_wraper ul {
+  margin-bottom: 50px;
 }
 .usa_plan_paragraph {
   display: none;
@@ -1869,6 +1875,15 @@ textarea {
 .mobile_footer_menu a {
   color: var(--primery-text-color);
 }
+.mobile_footer_menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.mobile_footer_menu ul li {
+  margin: 10px;
+}
 
 @media (min-width: 320px) and (max-width: 363px) {
   .mobile_footer_menu {
@@ -1887,6 +1902,16 @@ textarea {
   .desktop_footer_menu {
     display: block;
   }
+}
+.desktop_footer_menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 450px;
+}
+.desktop_footer_menu ul a {
+  text-transform: uppercase;
+  padding: 5px;
 }
 
 .desktop_footer_menu a:hover {

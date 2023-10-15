@@ -272,37 +272,37 @@ ul.slick-dots li.slick-active button {
   }
 }
 
-.my-slider button {
+.carousel_slider button {
   /* display: none !important; */
 }
 .gallery_img_wraper img {
   width: 100%;
   padding: 10px;
 }
-.my-slider .slick-next {
+.carousel_slider .slick-next {
   left: 40% !important;
 }
 
-/* .my-slider .slick-prev {
+/* .carousel_slider .slick-prev {
   right: 60% !important;
   background-image: url(../images/svg/gallery_arrow_prev.svg) !important;
   background-repeat: no-repeat;
   background-position: center;
 }
-.my-slider .slick-next {
+.carousel_slider .slick-next {
   right: 17% !important;
   background-image: url(../images/svg/gallery_arrow_next.svg) !important;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.my-slider .slick-prev:hover {
+.carousel_slider .slick-prev:hover {
   right: 60% !important;
   background-image: url(../images/svg/gallery_arrow_prev_hover.svg) !important;
   background-repeat: no-repeat;
   background-position: center;
 }
-.my-slider .slick-next:hover {
+.carousel_slider .slick-next:hover {
   right: 17% !important;
   background-image: url(../images/svg/gallery_arrow_next_hover.svg) !important;
   background-repeat: no-repeat;

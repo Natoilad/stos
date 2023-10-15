@@ -56,6 +56,9 @@
       text-transform: uppercase;
       @include font(26px, 400);
     }
+    ul {
+      margin-bottom: 50px;
+    }
   }
   &_plan_paragraph {
     display: none;

@@ -109,6 +109,15 @@
   a {
     color: var(--primery-text-color);
   }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    li {
+      margin: 10px;
+    }
+  }
 }
 @media (min-width: 320px) and (max-width: 363px) {
   .mobile_footer_menu {
@@ -125,6 +134,16 @@
   display: none;
   @include desktop {
     display: block;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 450px;
+    a {
+      text-transform: uppercase;
+      padding: 5px;
+    }
   }
 }
 .desktop_footer_menu a:hover {
