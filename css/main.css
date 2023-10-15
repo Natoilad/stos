@@ -1617,6 +1617,10 @@ textarea {
   padding-right: 0;
   border-left: 1px solid var(--brend-color);
 }
+.about_title_wraper button {
+  margin-top: 50px;
+  background-color: var(--brend-color);
+}
 @media screen and (min-width: 1200px) {
   .about_description .container {
     display: flex;
@@ -1874,6 +1878,7 @@ textarea {
 }
 .mobile_footer_menu a {
   color: var(--primery-text-color);
+  text-transform: uppercase;
 }
 .mobile_footer_menu ul {
   display: flex;
@@ -2448,6 +2453,14 @@ textarea {
 .price p {
   font-style: normal;
   line-height: normal;
+}
+.price_button_wraper {
+  text-align: center;
+  margin-top: 50px;
+}
+.price_button_wraper button {
+  margin: 0 auto;
+  background-color: var(--brend-color);
 }
 .price_list_content_wraper {
   border-bottom: 1px solid var(--brend-color);

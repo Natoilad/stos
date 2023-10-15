@@ -77,9 +77,6 @@
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="about.html">Про нас</a>
             </li>
-            <!-- <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#gallery">Галерея</a>
-            </li> -->
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="usa_cars.html">Авто з USA</a>
             </li>
@@ -839,9 +836,8 @@
             </div>
             <!-- item end -->
           </div>
-          <div style="text-align: center; margin-top: 50px">
+          <div class="price_button_wraper">
             <button
-              style="margin: 0 auto; background-color: var(--brend-color)"
               type="button"
               class="button-active hero-btn button"
               data-modal-open
@@ -1261,9 +1257,8 @@
             </ul>
           </div>
         </div>
-        <div style="text-align: center; margin-top: 50px">
+        <div class="price_button_wraper">
           <button
-            style="margin: 0 auto; background-color: var(--brend-color)"
             type="button"
             class="button-active hero-btn button"
             data-modal-open
@@ -1305,51 +1300,28 @@
           <div class="mobile_footer_menu">
             <ul class="list">
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="index.html"
-                >
-                  головна</a
-                >
+                <a class="menu-nav__link link" href="index.html"> головна</a>
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="price.html"
+                <a class="menu-nav__link link" href="price.html"
                   ><span class="brend_color_text">ціни</span></a
                 >
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="about.html"
-                  >про нас</a
-                >
+                <a class="menu-nav__link link" href="about.html">про нас</a>
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="./index.html#service"
+                <a class="menu-nav__link link" href="./index.html#service"
                   >послуги</a
                 >
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="./index.html#testimonials"
+                <a class="menu-nav__link link" href="./index.html#testimonials"
                   >відгуки</a
                 >
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="./index.html#gallery"
+                <a class="menu-nav__link link" href="./index.html#gallery"
                   >галерея</a
                 >
               </li>
@@ -1495,21 +1467,6 @@
             placeholder="+380"
           />
         </div>
-
-        <!-- <label class="modal__label-title" for="user-email"
-          ><span class="modal__label-name"
-            >Коли Вам зателефонувати?</span
-          ></label
-        >
-        <div class="modal__input-position">
-          <input
-            required
-            class="modal__input-mail"
-            type="email"
-            name="user-email"
-            id="user-email"
-          />
-        </div> -->
         <label class="modal__label-title" for="user-comment"
           ><span class="modal__label-name">Послуга</span></label
         >
@@ -1521,23 +1478,6 @@
           placeholder="Введіть текст"
         ></textarea>
         <div class="centre">
-          <!-- <div class="agree">
-            <label class="polity" for="agree">
-              <input
-                class="checkbox visually-hidden"
-                required
-                type="checkbox"
-                name="topic"
-                value="agree"
-                id="agree"
-                title="Дайте згоду"
-              />
-              <span class="checkbox__icon"> </span>
-              Погоджуюся з розсилкою та приймаю
-              <a class="checkbox__link" href="#">&nbsp;Умови договору</a>
-            </label>
-          </div> -->
-
           <button class="modal__btn-send" type="submit">
             <img
               class="write_on_img"
@@ -1613,25 +1553,23 @@
     <script>
       $(document).ready(function () {
         $('#first_modal').submit(function (e) {
-          e.preventDefault(); // Зупинити стандартну відправку форми
-
+          e.preventDefault();
           $.ajax({
             type: 'POST',
-            url: './sender.php', // Змініть на шлях до вашого PHP скрипта
+            url: './sender.php',
             data: $(this).serialize(),
             success: function (response) {
-              // Відображаємо сповіщення
               let notification = $(
                 '<div class="notification"><p>Форма успішно відправлена!</p></div>'
               );
               $('body').append(notification);
               setTimeout(() => {
                 notification.fadeOut(1000, function () {
-                  $(this).remove(); // Видалити елемент після анімації fadeOut
-                  $('[data-modal]').addClass('is-hidden'); // Приховати модальне вікно
+                  $(this).remove();
+                  $('[data-modal]').addClass('is-hidden');
                 });
-              }, 3000); // Через 3 секунди
-              $('#first_modal')[0].reset(); // Скинути форму
+              }, 3000);
+              $('#first_modal')[0].reset();
             },
             error: function (error) {
               alert('Помилка при відправці форми. Спробуйте ще раз.');

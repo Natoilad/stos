@@ -77,9 +77,6 @@
                 ><span class="link-active"> Про нас</span></a
               >
             </li>
-            <!-- <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#gallery">Галерея</a>
-            </li> -->
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="usa_cars.html">
                 Авто з USA</a
@@ -187,7 +184,6 @@
               насолоджуватися дорогою без жодних турбот.
             </p>
             <button
-              style="margin-top: 50px; background-color: var(--brend-color)"
               type="button"
               class="button-active hero-btn button"
               data-modal-open
@@ -416,51 +412,28 @@
           <div class="mobile_footer_menu">
             <ul class="list">
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="index.html"
-                >
-                  головна</a
-                >
+                <a class="menu-nav__link link" href="index.html"> головна</a>
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="price.html#item9"
-                  >ціни</a
-                >
+                <a class="menu-nav__link link" href="price.html#item9">ціни</a>
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="about.html"
+                <a class="menu-nav__link link" href="about.html"
                   ><span class="brend_color_text">про нас</span></a
                 >
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="./index.html#service"
+                <a class="menu-nav__link link" href="./index.html#service"
                   >послуги</a
                 >
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="./index.html#testimonials"
+                <a class="menu-nav__link link" href="./index.html#testimonials"
                   >відгуки</a
                 >
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="./index.html#gallery"
+                <a class="menu-nav__link link" href="./index.html#gallery"
                   >галерея</a
                 >
               </li>
@@ -646,25 +619,23 @@
     <script>
       $(document).ready(function () {
         $('#first_modal').submit(function (e) {
-          e.preventDefault(); // Зупинити стандартну відправку форми
-
+          e.preventDefault();
           $.ajax({
             type: 'POST',
-            url: './sender.php', // Змініть на шлях до вашого PHP скрипта
+            url: './sender.php',
             data: $(this).serialize(),
             success: function (response) {
-              // Відображаємо сповіщення
               let notification = $(
                 '<div class="notification"><p>Форма успішно відправлена!</p></div>'
               );
               $('body').append(notification);
               setTimeout(() => {
                 notification.fadeOut(1000, function () {
-                  $(this).remove(); // Видалити елемент після анімації fadeOut
-                  $('[data-modal]').addClass('is-hidden'); // Приховати модальне вікно
+                  $(this).remove();
+                  $('[data-modal]').addClass('is-hidden');
                 });
-              }, 3000); // Через 3 секунди
-              $('#first_modal')[0].reset(); // Скинути форму
+              }, 3000);
+              $('#first_modal')[0].reset();
             },
             error: function (error) {
               alert('Помилка при відправці форми. Спробуйте ще раз.');

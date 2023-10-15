@@ -889,53 +889,24 @@
           <div class="mobile_footer_menu">
             <ul class="list">
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="index.html"
-                >
+                <a class="menu-nav__link link" href="index.html">
                   <span class="brend_color_text">головна</span></a
                 >
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="price.html#item9"
-                  >ціни</a
-                >
+                <a class="menu-nav__link link" href="price.html#item9">ціни</a>
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="about.html"
-                  >про нас</a
-                >
+                <a class="menu-nav__link link" href="about.html">про нас</a>
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="#service"
-                  >послуги</a
-                >
+                <a class="menu-nav__link link" href="#service">послуги</a>
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="#testimonials"
-                  >відгуки</a
-                >
+                <a class="menu-nav__link link" href="#testimonials">відгуки</a>
               </li>
               <li>
-                <a
-                  class="menu-nav__link link"
-                  style="text-transform: uppercase"
-                  href="#gallery"
-                  >галерея</a
-                >
+                <a class="menu-nav__link link" href="#gallery">галерея</a>
               </li>
             </ul>
           </div>
@@ -1122,8 +1093,6 @@
       href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/slick.css"
       rel="stylesheet"
     />
-    <!-- slider end -->
-    <!-- slider -->
     <script src="./js/slider.js"></script>
     <script src="./js/gallery_slider.js"></script>
     <!-- slider end -->
@@ -1133,25 +1102,23 @@
     <script>
       $(document).ready(function () {
         $('#first_modal').submit(function (e) {
-          e.preventDefault(); // Зупинити стандартну відправку форми
-
+          e.preventDefault();
           $.ajax({
             type: 'POST',
-            url: './sender.php', // Змініть на шлях до вашого PHP скрипта
+            url: './sender.php',
             data: $(this).serialize(),
             success: function (response) {
-              // Відображаємо сповіщення
               let notification = $(
                 '<div class="notification"><p>Форма успішно відправлена!</p></div>'
               );
               $('body').append(notification);
               setTimeout(() => {
                 notification.fadeOut(1000, function () {
-                  $(this).remove(); // Видалити елемент після анімації fadeOut
-                  $('[data-modal]').addClass('is-hidden'); // Приховати модальне вікно
+                  $(this).remove();
+                  $('[data-modal]').addClass('is-hidden');
                 });
-              }, 3000); // Через 3 секунди
-              $('#first_modal')[0].reset(); // Скинути форму
+              }, 3000);
+              $('#first_modal')[0].reset();
             },
             error: function (error) {
               alert('Помилка при відправці форми. Спробуйте ще раз.');

@@ -25,6 +25,14 @@
     font-style: normal;
     line-height: normal;
   }
+  &_button_wraper {
+    text-align: center;
+    margin-top: 50px;
+    button {
+      margin: 0 auto;
+      background-color: var(--brend-color);
+    }
+  }
   &_list_content_wraper {
     border-bottom: 1px solid var(--brend-color);
     padding: 10px 0;
