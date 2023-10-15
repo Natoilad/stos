@@ -109,8 +109,16 @@
   }
 }
 .testimonial {
+  .testimonial .slick-slide .slick-active {
+    height: 350px !important;
+  }
   h3 {
+    font-size: 20px;
     color: #000;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .testimonial_link {

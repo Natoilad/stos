@@ -1421,8 +1421,16 @@ textarea {
   }
 }
 
+.testimonial .testimonial .slick-slide .slick-active {
+  height: 350px !important;
+}
 .testimonial h3 {
+  font-size: 20px;
   color: #000;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonial_link {
@@ -2172,7 +2180,7 @@ textarea {
 }
 .usa_cars_pay_list {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 50px;
@@ -2723,7 +2731,7 @@ textarea {
   opacity: 0;
   width: 0%;
   height: 0%;
-  animation: mobileModalAnimation 1s forwards;
+  animation: mobileModalAnimation 1.5s forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -2731,7 +2739,7 @@ textarea {
     opacity: 0;
     width: 0%;
     height: 0%;
-    animation: tabletModalAnimation 1s forwards;
+    animation: tabletModalAnimation 1.5s forwards;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2739,6 +2747,6 @@ textarea {
     opacity: 0;
     width: 0%;
     height: 0%;
-    animation: desktopModalAnimation 1s forwards;
+    animation: desktopModalAnimation 1.5s forwards;
   }
 }/*# sourceMappingURL=main.css.map */

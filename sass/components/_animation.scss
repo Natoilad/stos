@@ -132,14 +132,14 @@
   opacity: 0;
   width: 0%;
   height: 0%;
-  animation: mobileModalAnimation 1s forwards;
+  animation: mobileModalAnimation 1.5s forwards;
 }
 @include tablet {
   .modal {
     opacity: 0;
     width: 0%;
     height: 0%;
-    animation: tabletModalAnimation 1s forwards;
+    animation: tabletModalAnimation 1.5s forwards;
   }
 }
 @include desktop {
@@ -147,6 +147,6 @@
     opacity: 0;
     width: 0%;
     height: 0%;
-    animation: desktopModalAnimation 1s forwards;
+    animation: desktopModalAnimation 1.5s forwards;
   }
 }

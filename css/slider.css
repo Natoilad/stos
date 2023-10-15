@@ -31,7 +31,8 @@
   transform: scale(1);
 }
 .slick-slide {
-  /* max-width: 285px !important; */
+  /* display: flex; */
+  /* height: 450px !important; */
 }
 .author-img {
   position: absolute;
