@@ -5,14 +5,13 @@
 
 @import './base/base';
 @import './base/section';
-@import './base/conteiner';
+@import './base/container';
 
 @import './components/logo';
 @import './components/button';
-@import './components/mail-form';
 @import './components/backdrop';
 @import './components/modal-window';
-@import './components/madal-form';
+@import './components/modal-form';
 @import './components/mobile-menu';
 @import './components/slider';
 @import './layout/header';
@@ -28,7 +27,3 @@
 @import './layout/price';
 @import './layout/service_page';
 @import './components/animation';
-
-// not use
-// @import './components/follow';
-// @import './components/social';

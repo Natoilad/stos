@@ -270,7 +270,7 @@ ul.slick-dots li.slick-active button {
 .carousel_slider button {
   /* display: none !important; */
 }
-.gallery_img_wraper img {
+.gallery_img_wrapper img {
   width: 100%;
   padding: 10px;
 }

@@ -12,11 +12,11 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
   h1 {
     font-family: Montserrat;
     font-style: normal;
-    line-height: 140%; /* 70px */
+    line-height: 140%;
     text-transform: uppercase;
     @include desktop {
       text-align: start;
-      @include font(50px, 600); /* ЗАГОЛОВОК */
+      @include font(50px, 600);
     }
   }
   text-align: center;
@@ -35,7 +35,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
       justify-content: space-between;
     }
   }
-  &_title_wraper {
+  &_title_wrapper {
     @include desktop {
       width: 50%;
       margin-bottom: 50px;
@@ -105,13 +105,13 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
       position: center;
       color: #2f303a;
     }
-    &_wraper {
+
+    &_wrapper {
       margin-bottom: 20px;
       background-color: #fff;
       display: flex;
       justify-content: center;
       padding: 30px 20px;
-      // box-sizing: border-box;
       flex-wrap: wrap;
       @include desktop {
         flex-direction: row;

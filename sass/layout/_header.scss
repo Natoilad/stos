@@ -10,7 +10,13 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
+  &__conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   @include tablet {
     .container {
       display: flex;
@@ -127,7 +133,6 @@
   background-color: transparent;
   padding: 0;
   line-height: 0;
-  // scale: 1.5;
   margin-right: 5px;
   img {
     width: 40px;
@@ -139,12 +144,4 @@
   .open-mobile-menu-btn {
     display: none;
   }
-}
-
-.page-header__conteiner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
 }

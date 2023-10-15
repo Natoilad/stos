@@ -50,7 +50,6 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     @include font(26px, 500);
     line-height: 1.62;
     margin: 0 auto;
-    // margin-bottom: 20px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -75,7 +74,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
       li {
         margin-bottom: 12px;
       }
-      &_wraper {
+      &_wrapper {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -88,7 +87,7 @@ $hero-bg-color: rgba(47, 48, 58, 0.4);
     }
   }
   &_address {
-    &_wraper {
+    &_wrapper {
       display: flex;
       gap: 20px;
       align-items: center;

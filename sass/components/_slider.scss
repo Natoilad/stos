@@ -5,9 +5,6 @@ $arrow-prev: url(../images/svg/arrow_prew.svg);
 $arrow-prev-hover: url(../images/arrow_prew_hover.svg);
 $arrow-next: url(../images/arrow_next.svg);
 $arrow-next-hover: url(../images/arrow_next_hover.svg);
-
-/* ... (попередній код) ... */
-
 .heading {
   text-align: center;
   padding: 20px 0;
@@ -45,10 +42,6 @@ $arrow-next-hover: url(../images/arrow_next_hover.svg);
       bottom: 0;
     }
   }
-
-  p {
-    // color: $primary-color;
-  }
 }
 
 .img-fluid {
@@ -71,18 +64,11 @@ $arrow-next-hover: url(../images/arrow_next_hover.svg);
   }
 }
 
-/* ... (налаштування slick-prev та slick-next) ... */
-
 @media (max-width: 1200px) {
   .slider_container {
     width: 100%;
   }
-
   .slick-arrow {
     display: none;
   }
-}
-
-@media (max-width: 480px) {
-  /* ... (код для мобільних екранів) ... */
 }

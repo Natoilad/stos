@@ -7,7 +7,6 @@
     transform: rotate3d(1, 1, 1, 1080deg);
   }
 }
-
 @keyframes hoverRotate {
   0% {
     transform: rotate3d(1, 1, 1, 1080deg);
@@ -20,70 +19,58 @@
 .clock_icon_anime {
   animation: initialRotate 3s forwards;
 }
-
 // rotateY
-
 @keyframes rotateAnimation {
   0% {
     transform: rotateY(0deg);
   }
   100% {
-    transform: rotateY(1080deg); /* 3 обороти * 360 градусів = 1080 градусів */
+    transform: rotateY(1080deg);
   }
 }
-
 .usa_cars__title {
-  animation: rotateAnimation 2s forwards; /* 3 секунди тривалість анімації */
+  animation: rotateAnimation 2s forwards;
 }
-
 // pulse
-
 @keyframes softPulse {
   0%,
   100% {
-    transform: scale(1); /* початковий масштаб */
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.03); /* збільшення об'єкта на 5% в середині анімації */
+    transform: scale(1.03);
   }
 }
-
 .button-active {
-  animation: softPulse 2s infinite; /* 2 секунди тривалість одного циклу анімації */
+  animation: softPulse 2s infinite;
 }
-
 @keyframes softPulse {
   0%,
   100% {
-    transform: scale(1); /* початковий масштаб */
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.03); /* збільшення об'єкта на 5% в середині анімації */
+    transform: scale(1.03);
   }
 }
-
 .telegram_link {
-  animation: softPulse 4s infinite; /* 2 секунди тривалість одного циклу анімації */
+  animation: softPulse 4s infinite;
 }
-
 // rotateZ
 @keyframes rotateAnimationZ {
   0% {
     transform: rotateZ(0deg);
   }
   100% {
-    transform: rotateZ(1080deg); /* 3 обороти * 360 градусів = 1080 градусів */
+    transform: rotateZ(1080deg);
   }
 }
-
 .open-mobile-menu-btn img,
 #scrollToTopBtn,
 .logo-up_icon {
-  animation: rotateAnimationZ 3s forwards; /* 3 секунди тривалість анімації */
+  animation: rotateAnimationZ 3s forwards;
 }
-
 // ModalAnimation
-
 @keyframes mobileModalAnimation {
   0% {
     opacity: 0;
@@ -112,7 +99,6 @@
     margin-top: 20px;
   }
 }
-
 @keyframes desktopModalAnimation {
   0% {
     opacity: 0;
@@ -127,7 +113,6 @@
     margin-top: 20px;
   }
 }
-
 .modal {
   opacity: 0;
   width: 0%;
