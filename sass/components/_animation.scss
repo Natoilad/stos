@@ -82,6 +82,8 @@
   animation: rotateAnimationZ 3s forwards; /* 3 секунди тривалість анімації */
 }
 
+// ModalAnimation
+
 @keyframes mobileModalAnimation {
   0% {
     opacity: 0;
@@ -114,8 +116,8 @@
 @keyframes desktopModalAnimation {
   0% {
     opacity: 0;
-    width: 50%;
-    height: 50%;
+    width: 0%;
+    height: 0%;
     margin-top: 0;
   }
   100% {
@@ -128,23 +130,23 @@
 
 .modal {
   opacity: 0;
-  width: 50%;
-  height: 50%;
+  width: 0%;
+  height: 0%;
   animation: mobileModalAnimation 1s forwards;
 }
 @include tablet {
   .modal {
     opacity: 0;
-    width: 50%;
-    height: 50%;
+    width: 0%;
+    height: 0%;
     animation: tabletModalAnimation 1s forwards;
   }
 }
 @include desktop {
   .modal {
     opacity: 0;
-    width: 50%;
-    height: 50%;
+    width: 0%;
+    height: 0%;
     animation: desktopModalAnimation 1s forwards;
   }
 }

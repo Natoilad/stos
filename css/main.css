@@ -2708,8 +2708,8 @@ textarea {
 @keyframes desktopModalAnimation {
   0% {
     opacity: 0;
-    width: 50%;
-    height: 50%;
+    width: 0%;
+    height: 0%;
     margin-top: 0;
   }
   100% {
@@ -2721,24 +2721,24 @@ textarea {
 }
 .modal {
   opacity: 0;
-  width: 50%;
-  height: 50%;
+  width: 0%;
+  height: 0%;
   animation: mobileModalAnimation 1s forwards;
 }
 
 @media screen and (min-width: 768px) {
   .modal {
     opacity: 0;
-    width: 50%;
-    height: 50%;
+    width: 0%;
+    height: 0%;
     animation: tabletModalAnimation 1s forwards;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     opacity: 0;
-    width: 50%;
-    height: 50%;
+    width: 0%;
+    height: 0%;
     animation: desktopModalAnimation 1s forwards;
   }
 }/*# sourceMappingURL=main.css.map */
