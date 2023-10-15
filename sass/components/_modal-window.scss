@@ -38,25 +38,23 @@
 }
 @media screen and (max-width: 450px) {
   .modal {
-    // width: 90%;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 .modal__btn-close {
+  zoom: 2;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 0;
+  right: 0;
   @extend%flex-just;
   align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background: transparent;
-  // background: var(--color-text-dark-theme);
   border: none;
-  // border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   transform: fill var(--transition-dur-fun);
 }

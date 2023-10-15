@@ -334,7 +334,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .modal__btn-send:hover {
-    scale: 1.3;
+    scale: 1.8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
@@ -532,9 +532,10 @@ body {
   }
 }
 .modal__btn-close {
+  zoom: 2;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 0;
+  right: 0;
   align-items: center;
   width: 30px;
   height: 30px;
@@ -1583,7 +1584,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .about_title_wraper {
     width: 50%;
-    margin-bottom: 160px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2648,6 +2649,18 @@ textarea {
 }
 .button-active {
   animation: softPulse 2s infinite; /* 2 секунди тривалість одного циклу анімації */
+}
+
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1); /* початковий масштаб */
+  }
+  50% {
+    transform: scale(1.03); /* збільшення об'єкта на 5% в середині анімації */
+  }
+}
+.telegram_link {
+  animation: softPulse 4s infinite; /* 2 секунди тривалість одного циклу анімації */
 }
 
 @keyframes rotateAnimationZ {

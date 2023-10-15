@@ -52,6 +52,20 @@
   animation: softPulse 2s infinite; /* 2 секунди тривалість одного циклу анімації */
 }
 
+@keyframes softPulse {
+  0%,
+  100% {
+    transform: scale(1); /* початковий масштаб */
+  }
+  50% {
+    transform: scale(1.03); /* збільшення об'єкта на 5% в середині анімації */
+  }
+}
+
+.telegram_link {
+  animation: softPulse 4s infinite; /* 2 секунди тривалість одного циклу анімації */
+}
+
 // rotateZ
 @keyframes rotateAnimationZ {
   0% {
