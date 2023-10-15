@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
       clickable: true,
     },
   });
-
   const subSliders = document.querySelectorAll('.sub-slider');
   subSliders.forEach(subSlider => {
     new Swiper(subSlider, {

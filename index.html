@@ -1094,38 +1094,11 @@
       rel="stylesheet"
     />
     <script src="./js/slider.js"></script>
-    <script src="./js/gallery_slider.js"></script>
+    <script src="./js/gallerySlider.js"></script>
     <!-- slider end -->
     <script src="./js/totop.js"></script>
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('#first_modal').submit(function (e) {
-          e.preventDefault();
-          $.ajax({
-            type: 'POST',
-            url: './sender.php',
-            data: $(this).serialize(),
-            success: function (response) {
-              let notification = $(
-                '<div class="notification"><p>Форма успішно відправлена!</p></div>'
-              );
-              $('body').append(notification);
-              setTimeout(() => {
-                notification.fadeOut(1000, function () {
-                  $(this).remove();
-                  $('[data-modal]').addClass('is-hidden');
-                });
-              }, 3000);
-              $('#first_modal')[0].reset();
-            },
-            error: function (error) {
-              alert('Помилка при відправці форми. Спробуйте ще раз.');
-            },
-          });
-        });
-      });
-    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modalForm.js"></script>
   </body>
 </html>

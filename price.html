@@ -1327,9 +1327,7 @@
               </li>
             </ul>
           </div>
-
           <!-- mobile_footer_menu end -->
-
           <!-- desktop_footer_menu -->
           <div class="desktop_footer_menu">
             <ul class="list">
@@ -1357,10 +1355,8 @@
               </li>
             </ul>
           </div>
-
           <!-- desktop_footer_menu end -->
         </div>
-
         <address class="footer-address">
           <div class="hero_address_wraper">
             <img
@@ -1403,7 +1399,6 @@
               </li>
             </ul>
           </div>
-
           <div class="hero_address_wraper">
             <img
               class="clock_icon_anime"
@@ -1412,7 +1407,6 @@
               src="./images/svg/little_clock.svg"
               alt="clock icon"
             />
-
             <ul class="list">
               <li><p>Субота : з 9:00 до 15:00</p></li>
               <li><p>Пн-Пт: з 9:00 до 18:00</p></li>
@@ -1470,7 +1464,6 @@
         <label class="modal__label-title" for="user-comment"
           ><span class="modal__label-name">Послуга</span></label
         >
-
         <textarea
           class="modal__input-coment"
           name="user-comment"
@@ -1497,86 +1490,7 @@
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/accordion.js"></script>
-    <script>
-      window.addEventListener('load', function () {
-        const anchors = [
-          'item1',
-          'item2',
-          'item3',
-          'item4',
-          'item5',
-          'item6',
-          'item7',
-          'item8',
-          'item9',
-          'item10',
-          'item11',
-          'item12',
-        ];
-        let currentHash = window.location.hash.substring(1);
-        if (anchors.includes(currentHash)) {
-          const anchorElement = document.getElementById(currentHash);
-          if (anchorElement) {
-            const yOffset = -100;
-            const y =
-              anchorElement.getBoundingClientRect().top +
-              window.pageYOffset +
-              yOffset;
-            window.scrollTo({ top: y, behavior: 'smooth' });
-          }
-        }
-      });
-    </script>
-    <!-- пошук по id для дексктопної сторінки -->
-    <script>
-      window.addEventListener('load', function () {
-        const currentHash = window.location.hash.substring(1);
-
-        const section = document.getElementById('price_desktop_section');
-        if (section) {
-          const targetElement = section.querySelector(`#${currentHash}`);
-          if (targetElement) {
-            targetElement.classList.add('active');
-            const targetContentId = targetElement.getAttribute('data-target');
-            const targetContent = document.getElementById(targetContentId);
-            if (targetContent) {
-              targetContent.classList.remove('hidden');
-            }
-            section.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            });
-          }
-        }
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $('#first_modal').submit(function (e) {
-          e.preventDefault();
-          $.ajax({
-            type: 'POST',
-            url: './sender.php',
-            data: $(this).serialize(),
-            success: function (response) {
-              let notification = $(
-                '<div class="notification"><p>Форма успішно відправлена!</p></div>'
-              );
-              $('body').append(notification);
-              setTimeout(() => {
-                notification.fadeOut(1000, function () {
-                  $(this).remove();
-                  $('[data-modal]').addClass('is-hidden');
-                });
-              }, 3000);
-              $('#first_modal')[0].reset();
-            },
-            error: function (error) {
-              alert('Помилка при відправці форми. Спробуйте ще раз.');
-            },
-          });
-        });
-      });
-    </script>
+    <script src="./js/modalForm.js"></script>
+    <script src="./js/price.js"></script>
   </body>
 </html>

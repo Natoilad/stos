@@ -29,15 +29,11 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Inter:wght@500&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- font -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
+    </style>
     <!-- font end -->
-
     <!-- styles css -->
     <link
       rel="stylesheet"
@@ -64,11 +60,11 @@
             </li>
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="index.html#service"
-                >Послуги</a
-              >
+                ><span class="link-active"> Послуги </span>
+              </a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="price.html#item9">Ціни</a>
+              <a class="menu-nav__link link" href="price.html#item9"> Ціни </a>
             </li>
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="index.html#testimonials"
@@ -76,13 +72,8 @@
               >
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="about.html"
-                ><span class="link-active"> Про нас</span></a
-              >
+              <a class="menu-nav__link link" href="about.html"> Про нас</a>
             </li>
-            <!-- <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#gallery">Галерея</a>
-            </li> -->
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="usa_cars.html">
                 Авто з USA</a
@@ -127,7 +118,9 @@
               <a class="mobile-menu__link link" href="./index.html">Головна</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="./index.html#service"
+              <a
+                class="mobile-menu__link current link"
+                href="./index.html#service"
                 >Послуги</a
               >
             </li>
@@ -140,9 +133,7 @@
               >
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link current link" href="about.html"
-                >Про нас</a
-              >
+              <a class="mobile-menu__link link" href="about.html">Про нас</a>
             </li>
 
             <li class="mobile-menu__item">
@@ -466,17 +457,16 @@
                 <a class="menu-nav__link link" href="index.html"> головна</a>
               </li>
               <li>
-                <a class="menu-nav__link link" href="price.html#item9">ціни</a>
+                <a class="menu-nav__link link" href="price.html#item9"></a>
+                ціни
               </li>
               <li>
-                <a class="menu-nav__link link" href="about.html"
-                  ><span class="brend_color_text">про нас</span></a
-                >
+                <a class="menu-nav__link link" href="about.html">про нас</a>
               </li>
               <li>
                 <a class="menu-nav__link link" href="./index.html#service"
-                  >послуги</a
-                >
+                  ><span class="brend_color_text"> послуги </span>
+                </a>
               </li>
               <li>
                 <a class="menu-nav__link link" href="./index.html#testimonials"
@@ -490,9 +480,7 @@
               </li>
             </ul>
           </div>
-
           <!-- mobile_footer_menu end -->
-
           <!-- desktop_footer_menu -->
           <div class="desktop_footer_menu">
             <ul class="list">
@@ -500,19 +488,17 @@
                 <a class="menu-nav__link link" href="index.html"> головна</a>
               </li>
               <li>
-                <a class="menu-nav__link link" href="price.html">ціни</a>
+                <a class="menu-nav__link link" href="price.html"> ціни </a>
               </li>
               <li>
-                <a class="menu-nav__link link" href="about.html"
-                  ><span class="brend_color_text">про нас</span></a
-                >
+                <a class="menu-nav__link link" href="about.html">про нас</a>
               </li>
             </ul>
             <ul class="list">
               <li>
                 <a class="menu-nav__link link" href="index.html#service"
-                  >послуги</a
-                >
+                  ><span class="brend_color_text"> послуги </span>
+                </a>
               </li>
               <li>
                 <a class="menu-nav__link link" href="index.html#testimonials"
@@ -526,10 +512,8 @@
               </li>
             </ul>
           </div>
-
           <!-- desktop_footer_menu end -->
         </div>
-
         <address class="footer-address">
           <div class="hero_address_wraper">
             <img
@@ -600,42 +584,70 @@
     </footer>
     <!-- button topup -->
     <button id="scrollToTopBtn" style="display: none"></button>
+    <!-- form -->
+    <div class="backdrop is-hidden" data-modal>
+      <form id="first_modal" action="sender.php" method="post" class="modal">
+        <button type="button" class="modal__btn-close" data-modal-close>
+          <svg class="modal__close-icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#modal-close-btn"></use>
+          </svg>
+        </button>
+        <p class="modal__cta-title">записатись на сервіс</p>
+        <label class="modal__label-title" for="user-name"
+          ><span class="modal__label-name">Ваше Ім’я</span></label
+        >
+        <div class="modal__input-position">
+          <input
+            required
+            class="modal__input-name"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Сергій"
+          />
+        </div>
+        <label class="modal__label-title" for="user-phone"
+          ><span class="modal__label-name">Номер телефону</span></label
+        >
+        <div class="modal__input-position">
+          <input
+            required
+            class="modal__input-phone"
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            pattern="(\+380[0-9]{9}|0[0-9]{9})"
+            title="+380XXXXXXXXX або 0XXXXXXXXX"
+            placeholder="+380"
+          />
+        </div>
+        <label class="modal__label-title" for="user-comment"
+          ><span class="modal__label-name">Послуга</span></label
+        >
+        <textarea
+          class="modal__input-coment"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Введіть текст"
+        ></textarea>
+        <div class="centre">
+          <button class="modal__btn-send" type="submit">
+            <img
+              class="write_on_img"
+              src="./images/svg/write_on.svg"
+              alt="write on icon"
+            />
+          </button>
+        </div>
+      </form>
+    </div>
     <!-- query for modal -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- query for modal end -->
-
     <script src="./js/totop.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="./js/service_page.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('#first_modal').submit(function (e) {
-          e.preventDefault(); // Зупинити стандартну відправку форми
-
-          $.ajax({
-            type: 'POST',
-            url: './sender.php', // Змініть на шлях до вашого PHP скрипта
-            data: $(this).serialize(),
-            success: function (response) {
-              // Відображаємо сповіщення
-              let notification = $(
-                '<div class="notification"><p>Форма успішно відправлена!</p></div>'
-              );
-              $('body').append(notification);
-              setTimeout(() => {
-                notification.fadeOut(1000, function () {
-                  $(this).remove(); // Видалити елемент після анімації fadeOut
-                  $('[data-modal]').addClass('is-hidden'); // Приховати модальне вікно
-                });
-              }, 3000); // Через 3 секунди
-              $('#first_modal')[0].reset(); // Скинути форму
-            },
-            error: function (error) {
-              alert('Помилка при відправці форми. Спробуйте ще раз.');
-            },
-          });
-        });
-      });
-    </script>
+    <script src="./js/servicePage.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modalForm.js"></script>
   </body>
 </html>

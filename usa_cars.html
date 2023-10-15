@@ -8,7 +8,6 @@
       content="VIVAT - car service! Якісне обслуговування Оперативний ремонт Доступні ціни"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>VIVAT - car service</title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -74,9 +73,6 @@
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="about.html">Про нас</a>
             </li>
-            <!-- <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="#gallery">Галерея</a>
-            </li> -->
             <li class="menu-nav__item">
               <a class="menu-nav__link link" href="usa_cars.html">
                 <span class="link-active">Авто з USA</span></a
@@ -631,9 +627,7 @@
               </li>
             </ul>
           </div>
-
           <!-- mobile_footer_menu end -->
-
           <!-- desktop_footer_menu -->
           <div class="desktop_footer_menu">
             <ul class="list">
@@ -670,7 +664,6 @@
 
           <!-- desktop_footer_menu end -->
         </div>
-
         <address class="footer-address">
           <div class="hero_address_wraper">
             <img
@@ -739,56 +732,22 @@
         </p>
       </div>
     </footer>
-
     <!-- button topup -->
     <button id="scrollToTopBtn" style="display: none"></button>
-
     <!-- slider -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
       defer
     ></script>
-
     <link
       href="https://srmahour.github.io/custom-testimonial-slider-and-blog/css/slick.css"
       rel="stylesheet"
     />
-
-    <script src="./js/case_slider.js"></script>
+    <script src="./js/caseSlider.js"></script>
     <!-- slider end -->
     <script src="./js/totop.js"></script>
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('#first_modal').submit(function (e) {
-          e.preventDefault(); // Зупинити стандартну відправку форми
-
-          $.ajax({
-            type: 'POST',
-            url: './sender.php', // Змініть на шлях до вашого PHP скрипта
-            data: $(this).serialize(),
-            success: function (response) {
-              // Відображаємо сповіщення
-              let notification = $(
-                '<div class="notification"><p>Форма успішно відправлена!</p></div>'
-              );
-              $('body').append(notification);
-              setTimeout(() => {
-                notification.fadeOut(1000, function () {
-                  $(this).remove(); // Видалити елемент після анімації fadeOut
-                  $('[data-modal]').addClass('is-hidden'); // Приховати модальне вікно
-                });
-              }, 3000); // Через 3 секунди
-              $('#first_modal')[0].reset(); // Скинути форму
-            },
-            error: function (error) {
-              alert('Помилка при відправці форми. Спробуйте ще раз.');
-            },
-          });
-        });
-      });
-    </script>
+    <script src="./js/modalForm.js"></script>
   </body>
 </html>
