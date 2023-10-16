@@ -4,21 +4,15 @@
     transform: rotate3d(1, 1, 1, 0deg);
   }
   100% {
-    transform: rotate3d(1, 1, 1, 1080deg);
+    transform: rotate3d(1, 1, 1, 720deg);
   }
 }
-@keyframes hoverRotate {
-  0% {
-    transform: rotate3d(1, 1, 1, 1080deg);
-  }
-  100% {
-    transform: rotate3d(1, 1, 1, 1440deg);
-  }
-}
+
 .usa_cars_offer_mobile_desktop,
 .clock_icon_anime {
   animation: initialRotate 3s forwards;
 }
+
 // rotateY
 @keyframes rotateAnimation {
   0% {
@@ -28,9 +22,9 @@
     transform: rotateY(1080deg);
   }
 }
-.usa_cars__title {
-  animation: rotateAnimation 2s forwards;
-}
+// .usa_cars__title {
+//   animation: rotateAnimation 2s forwards;
+// }
 // pulse
 @keyframes softPulse {
   0%,
@@ -68,7 +62,7 @@
 .open-mobile-menu-btn img,
 #scrollToTopBtn,
 .logo-up_icon {
-  animation: rotateAnimationZ 3s forwards;
+  animation: rotateAnimationZ 2s forwards;
 }
 // ModalAnimation
 @keyframes mobileModalAnimation {

@@ -80,16 +80,18 @@
 
     &_container {
       box-sizing: border-box;
-      // padding: 10px;
       width: 315px;
+      padding: 20px;
 
       @include tablet {
+        padding: 10px;
+        padding-top: 20px;
         width: 280px;
+        height: 230px;
       }
 
       @include desktop {
         width: 270px;
-        height: 220px;
       }
     }
 

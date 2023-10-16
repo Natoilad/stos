@@ -290,7 +290,7 @@ ul.slick-dots li.slick-active button {
   background-position: center;
 }
 .carousel_slider .slick-next {
-  right: 17% !important;
+  right: 14% !important;
   background-image: url(../images/svg/gallery_arrow_next.svg) !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -303,7 +303,7 @@ ul.slick-dots li.slick-active button {
   background-position: center;
 }
 .carousel_slider .slick-next:hover {
-  right: 17% !important;
+  right: 14% !important;
   background-image: url(../images/svg/gallery_arrow_next_hover.svg) !important;
   background-repeat: no-repeat;
   background-position: center;

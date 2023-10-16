@@ -1307,16 +1307,19 @@ textarea {
 .service_img_container {
   box-sizing: border-box;
   width: 315px;
+  padding: 20px;
 }
 @media screen and (min-width: 768px) {
   .service_img_container {
+    padding: 10px;
+    padding-top: 20px;
     width: 280px;
+    height: 230px;
   }
 }
 @media screen and (min-width: 1200px) {
   .service_img_container {
     width: 270px;
-    height: 220px;
   }
 }
 .service_img_title {
@@ -1402,6 +1405,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 10px;
   padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -1412,7 +1416,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .usa_plan_wrapper {
     width: 270px;
-    height: 490px;
+    height: 460px;
   }
 }
 .usa_plan_wrapper img {
@@ -1429,6 +1433,8 @@ textarea {
   margin-bottom: 20px;
   color: var(--brend-color);
   text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
 }
 @media screen and (min-width: 1200px) {
   .usa_plan_wrapper h4 {
@@ -2582,15 +2588,7 @@ textarea {
     transform: rotate3d(1, 1, 1, 0deg);
   }
   100% {
-    transform: rotate3d(1, 1, 1, 1080deg);
-  }
-}
-@keyframes hoverRotate {
-  0% {
-    transform: rotate3d(1, 1, 1, 1080deg);
-  }
-  100% {
-    transform: rotate3d(1, 1, 1, 1440deg);
+    transform: rotate3d(1, 1, 1, 720deg);
   }
 }
 .usa_cars_offer_mobile_desktop,
@@ -2606,10 +2604,6 @@ textarea {
     transform: rotateY(1080deg);
   }
 }
-.usa_cars__title {
-  animation: rotateAnimation 2s forwards;
-}
-
 @keyframes softPulse {
   0%, 100% {
     transform: scale(1);
@@ -2645,7 +2639,7 @@ textarea {
 .open-mobile-menu-btn img,
 #scrollToTopBtn,
 .logo-up_icon {
-  animation: rotateAnimationZ 3s forwards;
+  animation: rotateAnimationZ 2s forwards;
 }
 
 @keyframes mobileModalAnimation {
