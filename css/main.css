@@ -1367,6 +1367,16 @@ textarea {
   text-align: center;
   color: #000;
 }
+.usa .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 768px) {
+  .usa .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .usa {
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/bg/usa_bg.png);
@@ -1407,15 +1417,25 @@ textarea {
   }
 }
 .usa_plan_wrapper img {
+  width: 100px;
   min-height: auto;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .usa_plan_wrapper img {
+    width: auto;
+  }
 }
 .usa_plan_wrapper h4 {
   margin-bottom: 20px;
   color: var(--brend-color);
   text-transform: uppercase;
-  font-size: 26px;
-  font-weight: 400;
+}
+@media screen and (min-width: 1200px) {
+  .usa_plan_wrapper h4 {
+    font-size: 26px;
+    font-weight: 400;
+  }
 }
 .usa_plan_wrapper ul {
   margin-bottom: 50px;
@@ -2486,7 +2506,6 @@ textarea {
   margin: 100px auto;
 }
 .service_page_list {
-  background-image: url(../images/bg/usa_bg.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2543,6 +2562,11 @@ textarea {
 .service_page_list img {
   margin: 20px auto;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .service_page_list img {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .service_page_list img {

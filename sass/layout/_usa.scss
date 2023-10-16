@@ -6,6 +6,14 @@
   background-color: #efefef;
   text-align: center;
   color: #000;
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    @include tablet {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 
   @include tablet {
     background: linear-gradient(
@@ -38,6 +46,7 @@
     align-items: center;
     text-align: center;
     padding: 20px;
+
     @include tablet {
       width: 270px;
     }
@@ -47,14 +56,20 @@
       height: 490px;
     }
     img {
+      width: 100px;
       min-height: auto;
       margin-bottom: 20px;
+      @include tablet {
+        width: auto;
+      }
     }
     h4 {
       margin-bottom: 20px;
       color: var(--brend-color);
       text-transform: uppercase;
-      @include font(26px, 400);
+      @include desktop {
+        @include font(26px, 400);
+      }
     }
     ul {
       margin-bottom: 50px;
