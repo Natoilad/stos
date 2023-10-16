@@ -1306,7 +1306,6 @@ textarea {
 }
 .service_img_container {
   box-sizing: border-box;
-  padding: 10px;
   width: 315px;
 }
 @media screen and (min-width: 768px) {
@@ -1403,7 +1402,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .usa_plan_wrapper {
