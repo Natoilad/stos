@@ -1893,8 +1893,14 @@ textarea {
     line-height: normal;
   }
 }
+.usa_cars .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 @media screen and (min-width: 768px) {
   .usa_cars .container {
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     justify-content: space-around;
   }
@@ -2118,8 +2124,14 @@ textarea {
   }
 }
 .usa_cars_delivery_wrapper img {
+  width: 100px;
   min-height: auto;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .usa_cars_delivery_wrapper img {
+    width: 140px;
+  }
 }
 .usa_cars_delivery_wrapper h4 {
   margin-bottom: 20px;
