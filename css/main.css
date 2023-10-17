@@ -1893,14 +1893,8 @@ textarea {
     line-height: normal;
   }
 }
-.usa_cars .container {
-  padding-left: 30px;
-  padding-right: 30px;
-}
 @media screen and (min-width: 768px) {
   .usa_cars .container {
-    padding-left: 15px;
-    padding-right: 15px;
     display: flex;
     justify-content: space-around;
   }
@@ -2046,6 +2040,16 @@ textarea {
     background-size: cover;
   }
 }
+.usa_cars_delivery .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 768px) {
+  .usa_cars_delivery .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .usa_cars_delivery_title {
   margin-bottom: 50px;
   font-size: 18px;
@@ -2110,10 +2114,12 @@ textarea {
   align-items: center;
   text-align: center;
   padding: 20px;
+  padding-bottom: 0;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .usa_cars_delivery_wrapper {
+    padding: 20px;
     width: 270px;
   }
 }
